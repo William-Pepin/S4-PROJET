@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar  9 09:03:23 2023
+# Process ID: 12564
+# Current directory: C:/Xilinx/projects/PROJET/s4InfoAtelier4/s4InfoAtelier4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22352 C:\Xilinx\projects\PROJET\s4InfoAtelier4\s4InfoAtelier4\s4InfoAtelier4.xpr
+# Log file: C:/Xilinx/projects/PROJET/s4InfoAtelier4/s4InfoAtelier4/vivado.log
+# Journal file: C:/Xilinx/projects/PROJET/s4InfoAtelier4/s4InfoAtelier4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/projects/PROJET/s4InfoAtelier4/s4InfoAtelier4/s4InfoAtelier4.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_project
+open_project C:/test/s4InfoAtelier4.xpr
+update_compile_order -fileset sources_1
