@@ -96,26 +96,23 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci">
-          <Proxy FileSetName="atelier4_testPatternGen2_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0.xci">
-          <Proxy FileSetName="atelier4_v_proc_ss_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xci">
-          <Proxy FileSetName="atelier4_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xci">
-          <Proxy FileSetName="atelier4_axi_vdma_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xci">
-          <Proxy FileSetName="atelier4_pixelDataToVideoStre_0_3"/>
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/ip_1/bd_0837_vsc_0.xci">
+          <Proxy FileSetName="bd_0837_vsc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/ip_2/bd_0837_hsc_0.xci">
           <Proxy FileSetName="bd_0837_hsc_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/ip_1/bd_0837_vsc_0.xci">
-          <Proxy FileSetName="bd_0837_vsc_0"/>
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xci">
+          <Proxy FileSetName="atelier4_axi_vdma_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xci">
+          <Proxy FileSetName="atelier4_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xci">
+          <Proxy FileSetName="atelier4_pixelDataToVideoStre_0_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0.xci">
+          <Proxy FileSetName="atelier4_v_proc_ss_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/atelier4_wrapper.vhd">
@@ -127,6 +124,13 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/colorRegister.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="atelier4_wrapper"/>
@@ -268,9 +272,7 @@
     </Run>
     <Run Id="atelier4_v_proc_ss_0_0_synth_1" Type="Ft3:Synth" SrcSet="atelier4_v_proc_ss_0_0" Part="xc7z010clg400-1" ConstrsSet="atelier4_v_proc_ss_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_v_proc_ss_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_v_proc_ss_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -280,9 +282,7 @@
     </Run>
     <Run Id="bd_0837_hsc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_0837_hsc_0" Part="xc7z010clg400-1" ConstrsSet="bd_0837_hsc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_0837_hsc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_hsc_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -292,9 +292,7 @@
     </Run>
     <Run Id="bd_0837_vsc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_0837_vsc_0" Part="xc7z010clg400-1" ConstrsSet="bd_0837_vsc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_0837_vsc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_vsc_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -373,9 +371,7 @@
     </Run>
     <Run Id="atelier4_v_proc_ss_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_v_proc_ss_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_v_proc_ss_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_v_proc_ss_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -392,9 +388,7 @@
     </Run>
     <Run Id="bd_0837_hsc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="bd_0837_hsc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_0837_hsc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_hsc_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -411,9 +405,7 @@
     </Run>
     <Run Id="bd_0837_vsc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="bd_0837_vsc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_0837_vsc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_vsc_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
