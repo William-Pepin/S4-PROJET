@@ -35,7 +35,7 @@ entity colorRegister is
     Port ( i_readColorCode : in STD_LOGIC_VECTOR (3 downto 0);
            i_writeColorValue : in STD_LOGIC_VECTOR (23 downto 0);
            i_we : in STD_LOGIC;
-           i_writeColorCode : in STD_LOGIC_VECTOR (0 downto 0);
+           i_writeColorCode : in STD_LOGIC_VECTOR (3 downto 0);
            i_clk : in STD_LOGIC;
            i_reset : in STD_LOGIC;
            o_readColorValue : out STD_LOGIC_VECTOR (23 downto 0));
