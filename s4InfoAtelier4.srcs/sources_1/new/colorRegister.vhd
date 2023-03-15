@@ -43,11 +43,6 @@ end colorRegister;
 
 architecture Behavioral of colorRegister is
 
-type etats_Mux is (readOnly, readWrite);
-
-signal curr_State: etats_Mux := readOnly;
-signal next_State: etats_Mux := readOnly;
-
 signal color0: STD_LOGIC_VECTOR (23 downto 0) := (others => '0');
 signal color1: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
 signal color2: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
@@ -65,127 +60,86 @@ signal color13: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
 signal color14: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
 signal color15: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
 
-signal color0Next: STD_LOGIC_VECTOR (23 downto 0) := (others => '0');
-signal color1Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color2Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color3Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color4Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color5Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color6Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color7Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color8Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color9Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color10Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color11Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color12Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color13Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color14Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-signal color15Next: STD_LOGIC_VECTOR (23 downto 0):= (others => '0');
-
 begin
    
-   --Process #1 - Etats
+   --Process d'update des registres
     process(i_clk, i_reset)      
     begin     
         if(rising_edge(i_clk)) then     
-            if(i_reset ='1') then      
-                curr_State <= readOnly;   
-                color0Next <= (others => '0');
-                color1Next <= (others => '0');
-                color2Next <= (others => '0');
-                color3Next <= (others => '0');
-                color4Next <= (others => '0');
-                color5Next <= (others => '0');
-                color6Next <= (others => '0');
-                color7Next <= (others => '0');
-                color8Next <= (others => '0');
-                color9Next <= (others => '0');
-                color10Next <= (others => '0');
-                color11Next <= (others => '0');
-                color12Next <= (others => '0');
-                color13Next <= (others => '0');
-                color14Next <= (others => '0');
-                color15Next <= (others => '0');  
-             else     
-                curr_State <= next_State;   
-                color0 <=  color0Next;
-                color1 <=  color1Next;
-                color2 <=  color2Next;
-                color3 <=  color3Next;
-                color4 <=  color4Next;
-                color5 <=  color5Next;
-                color6 <=  color6Next;
-                color7 <=  color7Next;
-                color8 <=  color8Next;
-                color9 <=  color9Next;
-                color10<=  color10Next;
-                color11<=  color11Next;
-                color12<=  color12Next;
-                color13<=  color13Next;
-                color14<=  color14Next;
-                color15<=  color15Next;
+            if(i_reset ='1') then         
+                color0 <= (others => '0');
+                color1 <= (others => '0');
+                color2 <= (others => '0');
+                color3 <= (others => '0');
+                color4 <= (others => '0');
+                color5 <= (others => '0');
+                color6 <= (others => '0');
+                color7 <= (others => '0');
+                color8 <= (others => '0');
+                color9 <= (others => '0');
+                color10 <= (others => '0');
+                color11 <= (others => '0');
+                color12 <= (others => '0');
+                color13 <= (others => '0');
+                color14 <= (others => '0');
+                color15 <= (others => '0');  
+             elsif(i_we = '1') then  
+                case(i_writeColorCode) is   
+                    when "0000" =>
+                        color0 <= i_writeColorValue;
+                    when "0001" =>
+                        color1 <= i_writeColorValue;
+                    when "0010" =>
+                        color2 <= i_writeColorValue;
+                    when "0011" =>
+                        color3 <= i_writeColorValue;
+                    when "0100" =>
+                        color4 <= i_writeColorValue;
+                    when "0101" =>
+                        color5 <= i_writeColorValue;
+                    when "0110" =>
+                        color6 <= i_writeColorValue;
+                    when "0111" =>
+                        color7 <= i_writeColorValue;
+                    when "1000" =>
+                        color8 <= i_writeColorValue;
+                    when "1001" =>
+                        color9 <= i_writeColorValue;
+                    when "1010" =>
+                        color10 <= i_writeColorValue;
+                    when "1011" =>
+                        color11 <= i_writeColorValue;
+                    when "1100" =>
+                        color12 <= i_writeColorValue;
+                    when "1101" =>
+                        color13 <= i_writeColorValue;
+                    when "1110" =>
+                        color14 <= i_writeColorValue;
+                    when "1111" =>
+                        color15 <= i_writeColorValue;
+                    when others =>
+                end case;    
              end if;     
          end if;     
-    end process;
-    
---Process #2 - Transitions     
-    process(curr_State, i_we, i_reset)      
-    begin     
-       case (curr_State) is     
-          when readOnly => 
-                if(i_reset='1') then 
-                    next_State <= readOnly; 
-                elsif (i_we='1') then
-                    next_State <= readWrite;
-                end if;
-          when readWrite  =>    
-                if(i_reset='1' OR i_we='0') then 
-                    next_State <= readOnly; 
-                elsif (i_we='1') then
-                    next_State <= readWrite;
-                end if;
-          when others =>
-            next_State <= readOnly; 
-       end case;     
-    end process;     
-    
-    process(i_readColorCode)
-    begin
-    case (i_readColorCode) is
-      when "0000" =>
-         o_readColorValue <= color0;
-      when "0001" =>
-         o_readColorValue <= color1;
-      when "0010" =>
-         o_readColorValue <= color2;
-      when "0011" =>
-         o_readColorValue <= color3;
-      when "0100" =>
-         o_readColorValue <= color4;
-      when "0101" =>
-         o_readColorValue <= color5;
-      when "0110" =>
-         o_readColorValue <= color6;
-      when "0111" =>
-         o_readColorValue <= color7;
-      when "1000" =>
-         o_readColorValue <= color8;
-      when "1001" =>
-         o_readColorValue <= color9;
-      when "1010" =>
-         o_readColorValue <= color10;
-      when "1011" =>
-         o_readColorValue <= color11;
-      when "1100" =>
-         o_readColorValue <= color12;
-      when "1101" =>
-         o_readColorValue <= color13;
-      when "1110" =>
-         o_readColorValue <= color14;
-      when "1111" =>
-         o_readColorValue <= color15;
-      when others =>
-         o_readColorValue <= (others => '0');
-    end case;
-    end process;
+    end process;    
+        
+    o_readColorValue <= 
+    color0 when i_readColorCode="0000" else
+    color1 when i_readColorCode="0001" else
+    color2 when i_readColorCode="0010" else
+    color3 when i_readColorCode="0011" else
+    color4 when i_readColorCode="0100" else
+    color5 when i_readColorCode="0101" else
+    color6 when i_readColorCode="0110" else
+    color7 when i_readColorCode="0111" else
+    color8 when i_readColorCode="1000" else
+    color9 when i_readColorCode="1001" else
+    color10 when i_readColorCode="1010" else
+    color11 when i_readColorCode="1011" else
+    color12 when i_readColorCode="1100" else
+    color13 when i_readColorCode="1101" else
+    color14 when i_readColorCode="1110" else
+    color15 when i_readColorCode="1111" else
+    (others => '0');
+         
 end Behavioral;
