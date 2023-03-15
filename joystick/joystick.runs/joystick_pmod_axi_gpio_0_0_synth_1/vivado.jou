@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 15 10:45:01 2023
+# Process ID: 8976
+# Current directory: C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick.runs/joystick_pmod_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log joystick_pmod_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source joystick_pmod_axi_gpio_0_0.tcl
+# Log file: C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick.runs/joystick_pmod_axi_gpio_0_0_synth_1/joystick_pmod_axi_gpio_0_0.vds
+# Journal file: C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick.runs/joystick_pmod_axi_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source joystick_pmod_axi_gpio_0_0.tcl -notrace
