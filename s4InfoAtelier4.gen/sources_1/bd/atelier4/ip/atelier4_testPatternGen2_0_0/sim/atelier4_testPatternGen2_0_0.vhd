@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -61,8 +61,8 @@ ENTITY atelier4_testPatternGen2_0_0 IS
     i_y : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
     o_dataValid : OUT STD_LOGIC;
     o_dataPixel : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
-    i_colorDataA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    i_colorDataB : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
+    i_colorDataA : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+    i_colorDataB : IN STD_LOGIC_VECTOR(23 DOWNTO 0)
   );
 END atelier4_testPatternGen2_0_0;
 
@@ -77,8 +77,8 @@ ARCHITECTURE atelier4_testPatternGen2_0_0_arch OF atelier4_testPatternGen2_0_0 I
       i_y : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
       o_dataValid : OUT STD_LOGIC;
       o_dataPixel : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
-      i_colorDataA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      i_colorDataB : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
+      i_colorDataA : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+      i_colorDataB : IN STD_LOGIC_VECTOR(23 DOWNTO 0)
     );
   END COMPONENT testPatternGen2;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;

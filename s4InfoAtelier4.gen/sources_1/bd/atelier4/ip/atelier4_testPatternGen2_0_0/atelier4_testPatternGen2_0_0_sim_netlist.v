@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Jan 23 14:35:41 2023
-// Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
+// Date        : Wed Mar 15 11:18:15 2023
+// Host        : William_PC running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0_sim_netlist.v
+//               c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0_sim_netlist.v
 // Design      : atelier4_testPatternGen2_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -30,19 +30,19 @@ module atelier4_testPatternGen2_0_0
   input [11:0]i_y;
   output o_dataValid;
   output [23:0]o_dataPixel;
-  input [31:0]i_colorDataA;
-  input [31:0]i_colorDataB;
+  input [23:0]i_colorDataA;
+  input [23:0]i_colorDataB;
 
   wire \<const1> ;
-  wire [31:0]i_colorDataA;
-  wire [31:0]i_colorDataB;
+  wire [23:0]i_colorDataA;
+  wire [23:0]i_colorDataB;
   wire [11:0]i_y;
   wire [23:0]o_dataPixel;
 
   assign o_dataValid = \<const1> ;
   atelier4_testPatternGen2_0_0_testPatternGen2 U0
-       (.i_colorDataA(i_colorDataA[23:0]),
-        .i_colorDataB(i_colorDataB[23:0]),
+       (.i_colorDataA(i_colorDataA),
+        .i_colorDataB(i_colorDataB),
         .i_y(i_y[3]),
         .o_dataPixel(o_dataPixel));
   VCC VCC

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1'
+HD_PWD='C:/Users/wpepi/projet/s4InfoAtelier4.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Jan 23 16:42:34 2023
-| Host         : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
+| Date         : Thu Mar 16 14:54:01 2023
+| Host         : William_PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file atelier4_wrapper_utilization_synth.rpt -pb atelier4_wrapper_utilization_synth.pb
 | Design       : atelier4_wrapper
 | Device       : 7z010clg400-1
@@ -166,9 +166,11 @@ Table of Contents
 | atelier4_processing_system7_0_0   |    1 |
 | atelier4_proc_sys_reset_0_0       |    1 |
 | atelier4_pixelDataToVideoStre_0_3 |    1 |
-| atelier4_mycolorRegister_0_0      |    1 |
+| atelier4_colorRegister_0_0        |    1 |
 | atelier4_clk_wiz_0_0              |    1 |
 | atelier4_axi_vdma_0_0             |    1 |
+| atelier4_InstructionRegister_0_1  |    1 |
+| atelier4_InstructionDecoder_0_0   |    1 |
 +-----------------------------------+------+
 
 

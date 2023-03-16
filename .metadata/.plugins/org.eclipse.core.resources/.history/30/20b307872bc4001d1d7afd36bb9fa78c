@@ -1,0 +1,21 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "instructionRegister.h"
+#include "api.h"
+
+int main()
+{
+	configureScaler();
+    configureVdma();
+
+
+    while(1)
+    {
+
+    	setColorByPaletteId(1,1);
+    }
+
+    return 0;
+}
