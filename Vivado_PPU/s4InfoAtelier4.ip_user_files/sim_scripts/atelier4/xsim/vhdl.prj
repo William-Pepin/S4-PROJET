@@ -1,0 +1,86 @@
+vhdl xpm  \
+"C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl lib_cdc_v1_0_2  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vhdl lib_pkg_v1_0_2  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vhdl fifo_generator_v13_2_5  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/276e/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vhdl lib_fifo_v1_0_14  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd" \
+
+vhdl lib_bmg_v1_0_13  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/af67/hdl/lib_bmg_v1_0_rfs.vhd" \
+
+vhdl lib_srl_fifo_v1_0_2  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+
+vhdl axi_datamover_v5_1_24  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+
+vhdl axi_vdma_v6_3_10  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/7860/hdl/axi_vdma_v6_3_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/atelier4/ip/atelier4_axi_vdma_0_0/sim/atelier4_axi_vdma_0_0.vhd" \
+"../../../bd/atelier4/ipshared/0c88/hdl/mycolorRegister_v1_0_S00_AXI.vhd" \
+"../../../bd/atelier4/ipshared/0c88/hdl/mycolorRegister_v1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_mycolorRegister_0_0/sim/atelier4_mycolorRegister_0_0.vhd" \
+
+vhdl proc_sys_reset_v5_0_13  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/atelier4/ip/atelier4_proc_sys_reset_0_0/sim/atelier4_proc_sys_reset_0_0.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/ClockGen.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/SyncAsync.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/SyncAsyncReset.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/DVI_Constants.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/OutputSERDES.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/TMDS_Encoder.vhd" \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d57c/src/rgb2dvi.vhd" \
+"../../../bd/atelier4/ip/atelier4_rgb2dvi_0_0/sim/atelier4_rgb2dvi_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_de31_psr0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_de31_psr_aclk_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_de31_psr_aclk1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_1/sim/bd_1ef0_psr0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_2/sim/bd_1ef0_psr_aclk_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_3/sim/bd_1ef0_psr_aclk1_0.vhd" \
+
+vhdl axi_lite_ipif_v3_0_4  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vhdl v_tc_v6_1_13  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/b92e/hdl/v_tc_v6_1_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/sim/bd_0cc7_psr_aclk_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/sim/bd_0837_rst_axis_0.vhd" \
+
+vhdl interrupt_control_v3_1_4  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+
+vhdl axi_gpio_v2_0_24  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4318/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/sim/bd_0837_reset_sel_axis_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/sim/bd_0837.vhd" \
+"../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/sim/atelier4_v_proc_ss_0_0.vhd" \
+
+vhdl v_tc_v6_2_1  \
+"../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/cd2e/hdl/v_tc_v6_2_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/atelier4/ip/atelier4_v_tc_0_0/sim/atelier4_v_tc_0_0.vhd" \
+"../../../bd/atelier4/ipshared/7229/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd" \
+"../../../bd/atelier4/ipshared/7229/hdl/pixelDataToVideoStream_v1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/sim/atelier4_pixelDataToVideoStre_0_3.vhd" \
+"../../../bd/atelier4/ip/atelier4_testPatternGen2_0_0/sim/atelier4_testPatternGen2_0_0.vhd" \
+"../../../bd/atelier4/sim/atelier4.vhd" \
+
+nosort
