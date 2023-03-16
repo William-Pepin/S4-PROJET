@@ -1,5 +1,6 @@
 # Ignore everything
-*
+**/Vivado_PPU/*
+**/Vitis_API_JEU/*
 
 # Don't ignore file for Vitis
 !./Vitis_API_JEU/atelier4_wrapper.xsa
