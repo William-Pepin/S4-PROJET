@@ -1,5 +1,6 @@
 # Ignore everything
 *
+
 # Don't ignore file for Vitis
 !./Vitis_API_JEU/atelier4_wrapper.xsa
 !./Vitis_API_JEU/atelier4_wrapper
