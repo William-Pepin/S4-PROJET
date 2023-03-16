@@ -41,8 +41,7 @@ Port (
     o_dataPixel : out std_logic_vector(23 downto 0);
     i_colorDataA : in std_logic_vector(31 downto 0);
     i_colorDataB : in std_logic_vector(31 downto 0);
-    i_colorDataC : in std_logic_vector(31 downto 0);
-    i_colorDataD : in std_logic_vector(31 downto 0)
+    i_colorDataC : in std_logic_vector(31 downto 0)
 );
 end testPatternGen2;
 
@@ -53,14 +52,12 @@ begin
 
 process(i_y)
 begin
-   if(i_y(3) = '1') then
+   if(i_y(2) = '1') then
        o_dataPixel <= i_colorDataA(23 downto 0);
-   elsif(i_y(5) = '1') then
+   elsif(i_y(3) = '1') then
        o_dataPixel <= i_colorDataB(23 downto 0);
-   elsif(i_y(7) = '1') then
+   elsif(i_y(5) = '1') then
        o_dataPixel <= i_colorDataC(23 downto 0);
-   else
-       o_dataPixel <= i_colorDataD(23 downto 0);
    end if;
 end process;
 

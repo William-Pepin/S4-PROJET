@@ -12,9 +12,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_ax
 # IP: bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_clk_wiz_0_0 || ORIG_REF_NAME==atelier4_clk_wiz_0_0} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_mycolorRegister_0_0 || ORIG_REF_NAME==atelier4_mycolorRegister_0_0} -quiet] -quiet
-
 # IP: bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_proc_sys_reset_0_0 || ORIG_REF_NAME==atelier4_proc_sys_reset_0_0} -quiet] -quiet
 
@@ -42,7 +39,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_v_
 # IP: bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_pixelDataToVideoStre_0_3 || ORIG_REF_NAME==atelier4_pixelDataToVideoStre_0_3} -quiet] -quiet
 
+# IP: bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_mycolorRegister_0_0 || ORIG_REF_NAME==atelier4_mycolorRegister_0_0} -quiet] -quiet
+
 # IP: bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_testPatternGen2_0_0 || ORIG_REF_NAME==atelier4_testPatternGen2_0_0} -quiet] -quiet
 
-# XDC: c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc
+# XDC: c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc

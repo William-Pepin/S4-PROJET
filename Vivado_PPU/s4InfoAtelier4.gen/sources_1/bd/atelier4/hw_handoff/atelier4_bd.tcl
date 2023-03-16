@@ -1101,7 +1101,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net mycolorRegister_0_o_imageDataA [get_bd_pins mycolorRegister_0/o_imageDataA] [get_bd_pins testPatternGen2_0/i_colorDataA]
   connect_bd_net -net mycolorRegister_0_o_imageDataB [get_bd_pins mycolorRegister_0/o_imageDataB] [get_bd_pins testPatternGen2_0/i_colorDataB]
   connect_bd_net -net mycolorRegister_0_o_imageDataC [get_bd_pins mycolorRegister_0/o_imageDataC] [get_bd_pins testPatternGen2_0/i_colorDataC]
-  connect_bd_net -net mycolorRegister_0_o_imageDataD [get_bd_pins mycolorRegister_0/o_imageDataD] [get_bd_pins testPatternGen2_0/i_colorDataD]
   connect_bd_net -net pixelDataToVideoStre_0_o_pixel_x [get_bd_pins pixelDataToVideoStre_0/o_pixel_x] [get_bd_pins testPatternGen2_0/i_x]
   connect_bd_net -net pixelDataToVideoStre_0_o_pixel_y [get_bd_pins pixelDataToVideoStre_0/o_pixel_y] [get_bd_pins testPatternGen2_0/i_y]
   connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins mycolorRegister_0/s00_axi_aresetn] [get_bd_pins pixelDataToVideoStre_0/i_aresetn] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins testPatternGen2_0/rstn] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_proc_ss_0/aresetn_ctrl] [get_bd_pins v_tc_0/resetn]

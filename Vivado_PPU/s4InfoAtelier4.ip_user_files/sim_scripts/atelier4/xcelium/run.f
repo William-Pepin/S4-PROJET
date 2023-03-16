@@ -60,11 +60,6 @@
   "../../../bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0_clk_wiz.v" \
   "../../../bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.v" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/atelier4/ipshared/0c88/hdl/mycolorRegister_v1_0_S00_AXI.vhd" \
-  "../../../bd/atelier4/ipshared/0c88/hdl/mycolorRegister_v1_0.vhd" \
-  "../../../bd/atelier4/ip/atelier4_mycolorRegister_0_0/sim/atelier4_mycolorRegister_0_0.vhd" \
--endlib
 -makelib xcelium_lib/proc_sys_reset_v5_0_13 \
   "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
 -endlib
@@ -457,6 +452,9 @@
   "../../../bd/atelier4/ipshared/7229/hdl/pixelDataToVideoStream_v1_0_S00_AXI.vhd" \
   "../../../bd/atelier4/ipshared/7229/hdl/pixelDataToVideoStream_v1_0.vhd" \
   "../../../bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/sim/atelier4_pixelDataToVideoStre_0_3.vhd" \
+  "../../../bd/atelier4/ipshared/2355/hdl/mycolorRegister_v1_0_S00_AXI.vhd" \
+  "../../../bd/atelier4/ipshared/2355/hdl/mycolorRegister_v1_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_mycolorRegister_0_0/sim/atelier4_mycolorRegister_0_0.vhd" \
   "../../../bd/atelier4/ip/atelier4_testPatternGen2_0_0/sim/atelier4_testPatternGen2_0_0.vhd" \
   "../../../bd/atelier4/sim/atelier4.vhd" \
 -endlib

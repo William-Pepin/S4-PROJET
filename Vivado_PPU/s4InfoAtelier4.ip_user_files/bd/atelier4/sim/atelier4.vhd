@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Thu Mar 16 10:18:47 2023
+--Date        : Thu Mar 16 14:54:57 2023
 --Host        : Antoine-PC running 64-bit major release  (build 9200)
 --Command     : generate_target atelier4.bd
 --Design      : atelier4
@@ -600,7 +600,6 @@ architecture STRUCTURE of atelier4 is
     o_imageDataA : out STD_LOGIC_VECTOR ( 31 downto 0 );
     o_imageDataB : out STD_LOGIC_VECTOR ( 31 downto 0 );
     o_imageDataC : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    o_imageDataD : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -634,8 +633,7 @@ architecture STRUCTURE of atelier4 is
     o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
     i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
     i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataC : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataD : in STD_LOGIC_VECTOR ( 31 downto 0 )
+    i_colorDataC : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component atelier4_testPatternGen2_0_0;
   signal Net : STD_LOGIC;
@@ -680,7 +678,6 @@ architecture STRUCTURE of atelier4 is
   signal mycolorRegister_0_o_imageDataA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal mycolorRegister_0_o_imageDataB : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal mycolorRegister_0_o_imageDataC : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal mycolorRegister_0_o_imageDataD : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal pixelDataToVideoStre_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal pixelDataToVideoStre_0_M00_AXIS_TLAST : STD_LOGIC;
   signal pixelDataToVideoStre_0_M00_AXIS_TREADY : STD_LOGIC;
@@ -1036,7 +1033,6 @@ mycolorRegister_0: component atelier4_mycolorRegister_0_0
       o_imageDataA(31 downto 0) => mycolorRegister_0_o_imageDataA(31 downto 0),
       o_imageDataB(31 downto 0) => mycolorRegister_0_o_imageDataB(31 downto 0),
       o_imageDataC(31 downto 0) => mycolorRegister_0_o_imageDataC(31 downto 0),
-      o_imageDataD(31 downto 0) => mycolorRegister_0_o_imageDataD(31 downto 0),
       s00_axi_aclk => clk_wiz_0_clk_out1,
       s00_axi_araddr(3 downto 0) => smartconnect_0_M03_AXI_ARADDR(3 downto 0),
       s00_axi_aresetn => proc_sys_reset_0_peripheral_aresetn(0),
@@ -1433,7 +1429,6 @@ testPatternGen2_0: component atelier4_testPatternGen2_0_0
       i_colorDataA(31 downto 0) => mycolorRegister_0_o_imageDataA(31 downto 0),
       i_colorDataB(31 downto 0) => mycolorRegister_0_o_imageDataB(31 downto 0),
       i_colorDataC(31 downto 0) => mycolorRegister_0_o_imageDataC(31 downto 0),
-      i_colorDataD(31 downto 0) => mycolorRegister_0_o_imageDataD(31 downto 0),
       i_x(11 downto 0) => pixelDataToVideoStre_0_o_pixel_x(11 downto 0),
       i_y(11 downto 0) => pixelDataToVideoStre_0_o_pixel_y(11 downto 0),
       o_dataPixel(23 downto 0) => testPatternGen2_0_o_dataPixel(23 downto 0),

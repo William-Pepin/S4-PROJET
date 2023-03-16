@@ -51,6 +51,7 @@
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.versal.system.emulation" value="false"/>
     <stringAttribute key="ide.launch.pdi.path" value=""/>
     <stringAttribute key="ide.launch.program.device" value="false"/>
+    <booleanAttribute key="ignore_elfs_validation_warning" value="true"/>
     <stringAttribute key="launch.version" value="2020.2"/>
     <booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="true"/>
     <booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="false"/>

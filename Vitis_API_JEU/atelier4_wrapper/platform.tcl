@@ -32,3 +32,6 @@ platform generate
 platform active {atelier4_wrapper}
 platform config -updatehw {C:/Vivado/S4-PROJET/Vitis_API_JEU/atelier4_wrapper.xsa}
 platform generate
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Vivado/S4-PROJET/Vitis_API_JEU/atelier4_wrapper.xsa}
+platform generate

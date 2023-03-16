@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu Mar 16 10:14:14 2023
+// Date        : Thu Mar 16 14:55:57 2023
 // Host        : Antoine-PC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Vivado/S4-PROJET/Vivado -
-//               PPU/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim
+//               c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0_sim_netlist.v
 // Design      : atelier4_mycolorRegister_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -18,7 +18,6 @@ module atelier4_mycolorRegister_0_0
    (o_imageDataA,
     o_imageDataB,
     o_imageDataC,
-    o_imageDataD,
     s00_axi_aclk,
     s00_axi_aresetn,
     s00_axi_awaddr,
@@ -43,7 +42,6 @@ module atelier4_mycolorRegister_0_0
   output [31:0]o_imageDataA;
   output [31:0]o_imageDataB;
   output [31:0]o_imageDataC;
-  output [31:0]o_imageDataD;
   (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 74250000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input s00_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 74250000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
@@ -70,7 +68,6 @@ module atelier4_mycolorRegister_0_0
   wire [31:0]o_imageDataA;
   wire [31:0]o_imageDataB;
   wire [31:0]o_imageDataC;
-  wire [31:0]o_imageDataD;
   wire s00_axi_aclk;
   wire [3:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -102,7 +99,6 @@ module atelier4_mycolorRegister_0_0
         .o_imageDataA(o_imageDataA),
         .o_imageDataB(o_imageDataB),
         .o_imageDataC(o_imageDataC),
-        .o_imageDataD(o_imageDataD),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr(s00_axi_araddr[3:2]),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -126,7 +122,6 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0
     o_imageDataA,
     o_imageDataB,
     o_imageDataC,
-    o_imageDataD,
     S_AXI_ARREADY,
     s00_axi_rdata,
     s00_axi_rvalid,
@@ -147,7 +142,6 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0
   output [31:0]o_imageDataA;
   output [31:0]o_imageDataB;
   output [31:0]o_imageDataC;
-  output [31:0]o_imageDataD;
   output S_AXI_ARREADY;
   output [31:0]s00_axi_rdata;
   output s00_axi_rvalid;
@@ -170,7 +164,6 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0
   wire [31:0]o_imageDataA;
   wire [31:0]o_imageDataB;
   wire [31:0]o_imageDataC;
-  wire [31:0]o_imageDataD;
   wire s00_axi_aclk;
   wire [1:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -193,7 +186,6 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0
         .o_imageDataA(o_imageDataA),
         .o_imageDataB(o_imageDataB),
         .o_imageDataC(o_imageDataC),
-        .o_imageDataD(o_imageDataD),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr(s00_axi_araddr),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -217,7 +209,6 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     o_imageDataA,
     o_imageDataB,
     o_imageDataC,
-    o_imageDataD,
     S_AXI_ARREADY,
     s00_axi_rdata,
     s00_axi_rvalid,
@@ -238,7 +229,6 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
   output [31:0]o_imageDataA;
   output [31:0]o_imageDataB;
   output [31:0]o_imageDataC;
-  output [31:0]o_imageDataD;
   output S_AXI_ARREADY;
   output [31:0]s00_axi_rdata;
   output s00_axi_rvalid;
@@ -273,7 +263,6 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
   wire [31:0]o_imageDataA;
   wire [31:0]o_imageDataB;
   wire [31:0]o_imageDataC;
-  wire [31:0]o_imageDataD;
   wire [1:0]p_0_in;
   wire [31:7]p_1_in;
   wire [31:0]reg_data_out;
@@ -300,6 +289,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
   wire \slv_reg2[23]_i_1_n_0 ;
   wire \slv_reg2[31]_i_1_n_0 ;
   wire \slv_reg2[7]_i_1_n_0 ;
+  wire [31:0]slv_reg3;
   wire \slv_reg3[15]_i_1_n_0 ;
   wire \slv_reg3[23]_i_1_n_0 ;
   wire \slv_reg3[31]_i_1_n_0 ;
@@ -432,7 +422,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[0]_i_1 
        (.I0(o_imageDataB[0]),
         .I1(o_imageDataA[0]),
-        .I2(o_imageDataD[0]),
+        .I2(slv_reg3[0]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[0]),
@@ -442,7 +432,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[10]_i_1 
        (.I0(o_imageDataB[10]),
         .I1(o_imageDataA[10]),
-        .I2(o_imageDataD[10]),
+        .I2(slv_reg3[10]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[10]),
@@ -452,7 +442,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[11]_i_1 
        (.I0(o_imageDataB[11]),
         .I1(o_imageDataA[11]),
-        .I2(o_imageDataD[11]),
+        .I2(slv_reg3[11]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[11]),
@@ -462,7 +452,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[12]_i_1 
        (.I0(o_imageDataB[12]),
         .I1(o_imageDataA[12]),
-        .I2(o_imageDataD[12]),
+        .I2(slv_reg3[12]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[12]),
@@ -472,7 +462,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[13]_i_1 
        (.I0(o_imageDataB[13]),
         .I1(o_imageDataA[13]),
-        .I2(o_imageDataD[13]),
+        .I2(slv_reg3[13]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[13]),
@@ -482,7 +472,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[14]_i_1 
        (.I0(o_imageDataB[14]),
         .I1(o_imageDataA[14]),
-        .I2(o_imageDataD[14]),
+        .I2(slv_reg3[14]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[14]),
@@ -492,7 +482,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[15]_i_1 
        (.I0(o_imageDataB[15]),
         .I1(o_imageDataA[15]),
-        .I2(o_imageDataD[15]),
+        .I2(slv_reg3[15]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[15]),
@@ -502,7 +492,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[16]_i_1 
        (.I0(o_imageDataB[16]),
         .I1(o_imageDataA[16]),
-        .I2(o_imageDataD[16]),
+        .I2(slv_reg3[16]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[16]),
@@ -512,7 +502,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[17]_i_1 
        (.I0(o_imageDataB[17]),
         .I1(o_imageDataA[17]),
-        .I2(o_imageDataD[17]),
+        .I2(slv_reg3[17]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[17]),
@@ -522,7 +512,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[18]_i_1 
        (.I0(o_imageDataB[18]),
         .I1(o_imageDataA[18]),
-        .I2(o_imageDataD[18]),
+        .I2(slv_reg3[18]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[18]),
@@ -532,7 +522,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[19]_i_1 
        (.I0(o_imageDataB[19]),
         .I1(o_imageDataA[19]),
-        .I2(o_imageDataD[19]),
+        .I2(slv_reg3[19]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[19]),
@@ -542,7 +532,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[1]_i_1 
        (.I0(o_imageDataB[1]),
         .I1(o_imageDataA[1]),
-        .I2(o_imageDataD[1]),
+        .I2(slv_reg3[1]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[1]),
@@ -552,7 +542,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[20]_i_1 
        (.I0(o_imageDataB[20]),
         .I1(o_imageDataA[20]),
-        .I2(o_imageDataD[20]),
+        .I2(slv_reg3[20]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[20]),
@@ -562,7 +552,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[21]_i_1 
        (.I0(o_imageDataB[21]),
         .I1(o_imageDataA[21]),
-        .I2(o_imageDataD[21]),
+        .I2(slv_reg3[21]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[21]),
@@ -572,7 +562,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[22]_i_1 
        (.I0(o_imageDataB[22]),
         .I1(o_imageDataA[22]),
-        .I2(o_imageDataD[22]),
+        .I2(slv_reg3[22]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[22]),
@@ -582,7 +572,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[23]_i_1 
        (.I0(o_imageDataB[23]),
         .I1(o_imageDataA[23]),
-        .I2(o_imageDataD[23]),
+        .I2(slv_reg3[23]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[23]),
@@ -592,7 +582,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[24]_i_1 
        (.I0(o_imageDataB[24]),
         .I1(o_imageDataA[24]),
-        .I2(o_imageDataD[24]),
+        .I2(slv_reg3[24]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[24]),
@@ -602,7 +592,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[25]_i_1 
        (.I0(o_imageDataB[25]),
         .I1(o_imageDataA[25]),
-        .I2(o_imageDataD[25]),
+        .I2(slv_reg3[25]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[25]),
@@ -612,7 +602,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[26]_i_1 
        (.I0(o_imageDataB[26]),
         .I1(o_imageDataA[26]),
-        .I2(o_imageDataD[26]),
+        .I2(slv_reg3[26]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[26]),
@@ -622,7 +612,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[27]_i_1 
        (.I0(o_imageDataB[27]),
         .I1(o_imageDataA[27]),
-        .I2(o_imageDataD[27]),
+        .I2(slv_reg3[27]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[27]),
@@ -632,7 +622,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[28]_i_1 
        (.I0(o_imageDataB[28]),
         .I1(o_imageDataA[28]),
-        .I2(o_imageDataD[28]),
+        .I2(slv_reg3[28]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[28]),
@@ -642,7 +632,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[29]_i_1 
        (.I0(o_imageDataB[29]),
         .I1(o_imageDataA[29]),
-        .I2(o_imageDataD[29]),
+        .I2(slv_reg3[29]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[29]),
@@ -652,7 +642,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[2]_i_1 
        (.I0(o_imageDataB[2]),
         .I1(o_imageDataA[2]),
-        .I2(o_imageDataD[2]),
+        .I2(slv_reg3[2]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[2]),
@@ -662,7 +652,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[30]_i_1 
        (.I0(o_imageDataB[30]),
         .I1(o_imageDataA[30]),
-        .I2(o_imageDataD[30]),
+        .I2(slv_reg3[30]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[30]),
@@ -679,7 +669,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[31]_i_2 
        (.I0(o_imageDataB[31]),
         .I1(o_imageDataA[31]),
-        .I2(o_imageDataD[31]),
+        .I2(slv_reg3[31]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[31]),
@@ -689,7 +679,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[3]_i_1 
        (.I0(o_imageDataB[3]),
         .I1(o_imageDataA[3]),
-        .I2(o_imageDataD[3]),
+        .I2(slv_reg3[3]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[3]),
@@ -699,7 +689,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[4]_i_1 
        (.I0(o_imageDataB[4]),
         .I1(o_imageDataA[4]),
-        .I2(o_imageDataD[4]),
+        .I2(slv_reg3[4]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[4]),
@@ -709,7 +699,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[5]_i_1 
        (.I0(o_imageDataB[5]),
         .I1(o_imageDataA[5]),
-        .I2(o_imageDataD[5]),
+        .I2(slv_reg3[5]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[5]),
@@ -719,7 +709,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[6]_i_1 
        (.I0(o_imageDataB[6]),
         .I1(o_imageDataA[6]),
-        .I2(o_imageDataD[6]),
+        .I2(slv_reg3[6]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[6]),
@@ -729,7 +719,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[7]_i_1 
        (.I0(o_imageDataB[7]),
         .I1(o_imageDataA[7]),
-        .I2(o_imageDataD[7]),
+        .I2(slv_reg3[7]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[7]),
@@ -739,7 +729,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[8]_i_1 
        (.I0(o_imageDataB[8]),
         .I1(o_imageDataA[8]),
-        .I2(o_imageDataD[8]),
+        .I2(slv_reg3[8]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[8]),
@@ -749,7 +739,7 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
     \axi_rdata[9]_i_1 
        (.I0(o_imageDataB[9]),
         .I1(o_imageDataA[9]),
-        .I2(o_imageDataD[9]),
+        .I2(slv_reg3[9]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(o_imageDataC[9]),
@@ -1697,193 +1687,193 @@ module atelier4_mycolorRegister_0_0_mycolorRegister_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[0]),
-        .Q(o_imageDataD[0]),
+        .Q(slv_reg3[0]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[10] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[10]),
-        .Q(o_imageDataD[10]),
+        .Q(slv_reg3[10]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[11] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[11]),
-        .Q(o_imageDataD[11]),
+        .Q(slv_reg3[11]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[12] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[12]),
-        .Q(o_imageDataD[12]),
+        .Q(slv_reg3[12]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[13] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[13]),
-        .Q(o_imageDataD[13]),
+        .Q(slv_reg3[13]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[14] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[14]),
-        .Q(o_imageDataD[14]),
+        .Q(slv_reg3[14]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[15] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[15]),
-        .Q(o_imageDataD[15]),
+        .Q(slv_reg3[15]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[16] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[16]),
-        .Q(o_imageDataD[16]),
+        .Q(slv_reg3[16]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[17] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[17]),
-        .Q(o_imageDataD[17]),
+        .Q(slv_reg3[17]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[18] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[18]),
-        .Q(o_imageDataD[18]),
+        .Q(slv_reg3[18]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[19] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[19]),
-        .Q(o_imageDataD[19]),
+        .Q(slv_reg3[19]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[1] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[1]),
-        .Q(o_imageDataD[1]),
+        .Q(slv_reg3[1]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[20] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[20]),
-        .Q(o_imageDataD[20]),
+        .Q(slv_reg3[20]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[21] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[21]),
-        .Q(o_imageDataD[21]),
+        .Q(slv_reg3[21]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[22] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[22]),
-        .Q(o_imageDataD[22]),
+        .Q(slv_reg3[22]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[23] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[23]),
-        .Q(o_imageDataD[23]),
+        .Q(slv_reg3[23]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[24] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[24]),
-        .Q(o_imageDataD[24]),
+        .Q(slv_reg3[24]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[25] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[25]),
-        .Q(o_imageDataD[25]),
+        .Q(slv_reg3[25]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[26] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[26]),
-        .Q(o_imageDataD[26]),
+        .Q(slv_reg3[26]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[27] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[27]),
-        .Q(o_imageDataD[27]),
+        .Q(slv_reg3[27]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[28] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[28]),
-        .Q(o_imageDataD[28]),
+        .Q(slv_reg3[28]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[29] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[29]),
-        .Q(o_imageDataD[29]),
+        .Q(slv_reg3[29]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[2] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[2]),
-        .Q(o_imageDataD[2]),
+        .Q(slv_reg3[2]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[30] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[30]),
-        .Q(o_imageDataD[30]),
+        .Q(slv_reg3[30]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[31] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[31]),
-        .Q(o_imageDataD[31]),
+        .Q(slv_reg3[31]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[3] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[3]),
-        .Q(o_imageDataD[3]),
+        .Q(slv_reg3[3]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[4] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[4]),
-        .Q(o_imageDataD[4]),
+        .Q(slv_reg3[4]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[5] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[5]),
-        .Q(o_imageDataD[5]),
+        .Q(slv_reg3[5]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[6] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[6]),
-        .Q(o_imageDataD[6]),
+        .Q(slv_reg3[6]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[7] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[7]),
-        .Q(o_imageDataD[7]),
+        .Q(slv_reg3[7]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[8] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[8]),
-        .Q(o_imageDataD[8]),
+        .Q(slv_reg3[8]),
         .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[9] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[9]),
-        .Q(o_imageDataD[9]),
+        .Q(slv_reg3[9]),
         .R(\slv_reg0[31]_i_1_n_0 ));
 endmodule
 `ifndef GLBL

@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: grams:gramslib:mycolorRegister:1.0
--- IP Revision: 3
+-- IP Revision: 4
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -58,7 +58,6 @@ ENTITY atelier4_mycolorRegister_0_0 IS
     o_imageDataA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     o_imageDataB : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     o_imageDataC : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    o_imageDataD : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -95,7 +94,6 @@ ARCHITECTURE atelier4_mycolorRegister_0_0_arch OF atelier4_mycolorRegister_0_0 I
       o_imageDataA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       o_imageDataB : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       o_imageDataC : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      o_imageDataD : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -156,7 +154,6 @@ BEGIN
       o_imageDataA => o_imageDataA,
       o_imageDataB => o_imageDataB,
       o_imageDataC => o_imageDataC,
-      o_imageDataD => o_imageDataD,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

@@ -63,8 +63,7 @@ ENTITY atelier4_testPatternGen2_0_0 IS
     o_dataPixel : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
     i_colorDataA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     i_colorDataB : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    i_colorDataC : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    i_colorDataD : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
+    i_colorDataC : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END atelier4_testPatternGen2_0_0;
 
@@ -81,8 +80,7 @@ ARCHITECTURE atelier4_testPatternGen2_0_0_arch OF atelier4_testPatternGen2_0_0 I
       o_dataPixel : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
       i_colorDataA : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       i_colorDataB : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      i_colorDataC : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      i_colorDataD : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
+      i_colorDataC : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
   END COMPONENT testPatternGen2;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
@@ -104,7 +102,6 @@ BEGIN
       o_dataPixel => o_dataPixel,
       i_colorDataA => i_colorDataA,
       i_colorDataB => i_colorDataB,
-      i_colorDataC => i_colorDataC,
-      i_colorDataD => i_colorDataD
+      i_colorDataC => i_colorDataC
     );
 END atelier4_testPatternGen2_0_0_arch;

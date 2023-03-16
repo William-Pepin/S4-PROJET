@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Mar 16 10:24:36 2023
+| Date             : Thu Mar 16 15:01:51 2023
 | Host             : Antoine-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file atelier4_wrapper_power_routed.rpt -pb atelier4_wrapper_power_summary_routed.pb -rpx atelier4_wrapper_power_routed.rpx
 | Design           : atelier4_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.983        |
+| Total On-Chip Power (W)  | 1.982        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.850        |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.032 |        9 |       --- |             --- |
-| Slice Logic              |     0.011 |    28991 |       --- |             --- |
-|   LUT as Logic           |     0.009 |     8860 |     17600 |           50.34 |
-|   Register               |    <0.001 |    13632 |     35200 |           38.73 |
+| Slice Logic              |     0.011 |    28994 |       --- |             --- |
+|   LUT as Logic           |     0.009 |     8855 |     17600 |           50.31 |
+|   Register               |    <0.001 |    13656 |     35200 |           38.80 |
 |   CARRY4                 |    <0.001 |      398 |      4400 |            9.05 |
 |   LUT as Distributed RAM |    <0.001 |      646 |      6000 |           10.77 |
 |   LUT as Shift Register  |    <0.001 |      376 |      6000 |            6.27 |
 |   F7/F8 Muxes            |    <0.001 |       37 |     17600 |            0.21 |
-|   Others                 |     0.000 |     1663 |       --- |             --- |
-| Signals                  |     0.012 |    21802 |       --- |             --- |
+|   Others                 |     0.000 |     1665 |       --- |             --- |
+| Signals                  |     0.012 |    21793 |       --- |             --- |
 | Block RAM                |     0.011 |       26 |        60 |           43.33 |
 | MMCM                     |     0.116 |        1 |         2 |           50.00 |
 | PLL                      |     0.135 |        1 |         2 |           50.00 |
@@ -177,8 +177,8 @@ Table of Contents
 |       inst               |     0.016 |
 |     v_axi4s_vid_out_0    |     0.002 |
 |       inst               |     0.002 |
-|     v_proc_ss_0          |     0.025 |
-|       U0                 |     0.025 |
+|     v_proc_ss_0          |     0.024 |
+|       U0                 |     0.024 |
 +--------------------------+-----------+
 
 

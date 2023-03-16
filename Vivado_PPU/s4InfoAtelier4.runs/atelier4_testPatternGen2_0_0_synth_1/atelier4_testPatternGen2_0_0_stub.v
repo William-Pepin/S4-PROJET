@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu Mar 16 10:19:42 2023
+// Date        : Thu Mar 16 14:56:27 2023
 // Host        : Antoine-PC running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ atelier4_testPatternGen2_0_0_stub.v
@@ -15,8 +15,8 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "testPatternGen2,Vivado 2020.2" *)
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(clk, rstn, i_x, i_y, o_dataValid, o_dataPixel, 
-  i_colorDataA, i_colorDataB, i_colorDataC, i_colorDataD)
-/* synthesis syn_black_box black_box_pad_pin="clk,rstn,i_x[11:0],i_y[11:0],o_dataValid,o_dataPixel[23:0],i_colorDataA[31:0],i_colorDataB[31:0],i_colorDataC[31:0],i_colorDataD[31:0]" */;
+  i_colorDataA, i_colorDataB, i_colorDataC)
+/* synthesis syn_black_box black_box_pad_pin="clk,rstn,i_x[11:0],i_y[11:0],o_dataValid,o_dataPixel[23:0],i_colorDataA[31:0],i_colorDataB[31:0],i_colorDataC[31:0]" */;
   input clk;
   input rstn;
   input [11:0]i_x;
@@ -26,5 +26,4 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(clk, rstn, i_x, i_y, o_dataVali
   input [31:0]i_colorDataA;
   input [31:0]i_colorDataB;
   input [31:0]i_colorDataC;
-  input [31:0]i_colorDataD;
 endmodule
