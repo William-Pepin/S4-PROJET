@@ -1,8 +1,8 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_Layers":"/Net:true|/clk_in1_0_1:true|/clk_wiz_0_clk_out1:true|/processing_system7_0_FCLK_RESET0_N:true|/reset_0_1:true|/proc_sys_reset_0_peripheral_aresetn:true|",
-   "Default View_ScaleFactor":"1.33481",
-   "Default View_TopLeft":"464,148",
+   "Default View_ScaleFactor":"0.982193",
+   "Default View_TopLeft":"1427,153",
    "Display-PortTypeClock":"true",
    "Display-PortTypeOthers":"true",
    "Display-PortTypeReset":"true",
@@ -10,6 +10,9 @@
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f07b34 (test)
 preplace port hdmi_out -pg 1 -lvl 10 -x 3390 -y 580 -defaultsOSRD
 preplace port DDR -pg 1 -lvl 10 -x 3390 -y 230 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -lvl 10 -x 3390 -y 260 -defaultsOSRD
@@ -72,6 +75,7 @@ preplace netloc v_proc_ss_0_m_axis 1 7 1 2810 510n
 preplace netloc rgb2dvi_0_TMDS 1 9 1 NJ 580
 levelinfo -pg 1 -10 260 600 1040 1490 1870 2230 2630 3000 3270 3390
 pagesize -pg 1 -db -bbox -sgen -110 -20 3500 940
+<<<<<<< HEAD
 =======
 preplace port hdmi_out -pg 1 -lvl 7 -x 2370 -y 280 -defaultsOSRD
 preplace port DDR -pg 1 -lvl 7 -x 2370 -y 510 -defaultsOSRD
@@ -125,6 +129,8 @@ preplace netloc smartconnect_1_M00_AXI 1 5 1 N 560
 levelinfo -pg 1 -30 210 600 980 1380 1740 2120 2370
 pagesize -pg 1 -db -bbox -sgen -130 -10 2480 820
 >>>>>>> 6b46a57 (reset)
+=======
+>>>>>>> 5f07b34 (test)
 "
 }
 {

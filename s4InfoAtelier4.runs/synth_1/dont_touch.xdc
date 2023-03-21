@@ -12,12 +12,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_ax
 # IP: bd/atelier4/ip/atelier4_clk_wiz_0_0/atelier4_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_clk_wiz_0_0 || ORIG_REF_NAME==atelier4_clk_wiz_0_0} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_mycolorRegister_0_0 || ORIG_REF_NAME==atelier4_mycolorRegister_0_0} -quiet] -quiet
-
-# IP: bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_pixelDataToVideoStre_0_3 || ORIG_REF_NAME==atelier4_pixelDataToVideoStre_0_3} -quiet] -quiet
-
 # IP: bd/atelier4/ip/atelier4_proc_sys_reset_0_0/atelier4_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_proc_sys_reset_0_0 || ORIG_REF_NAME==atelier4_proc_sys_reset_0_0} -quiet] -quiet
 
@@ -33,9 +27,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_sm
 # IP: bd/atelier4/ip/atelier4_smartconnect_0_1/atelier4_smartconnect_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_smartconnect_0_1 || ORIG_REF_NAME==atelier4_smartconnect_0_1} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_testPatternGen2_0_0 || ORIG_REF_NAME==atelier4_testPatternGen2_0_0} -quiet] -quiet
-
 # IP: bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/atelier4_v_axi4s_vid_out_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_v_axi4s_vid_out_0_0 || ORIG_REF_NAME==atelier4_v_axi4s_vid_out_0_0} -quiet] -quiet
 
@@ -45,4 +36,28 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_v_
 # IP: bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_v_tc_0_0 || ORIG_REF_NAME==atelier4_v_tc_0_0} -quiet] -quiet
 
-# XDC: c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc
+# IP: bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_pixelDataToVideoStre_0_3 || ORIG_REF_NAME==atelier4_pixelDataToVideoStre_0_3} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_InstructionRegister_0_1/atelier4_InstructionRegister_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_InstructionRegister_0_1 || ORIG_REF_NAME==atelier4_InstructionRegister_0_1} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_testPatternGen2_0_0 || ORIG_REF_NAME==atelier4_testPatternGen2_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_colorRegister_0_0/atelier4_colorRegister_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_colorRegister_0_0 || ORIG_REF_NAME==atelier4_colorRegister_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_xlconstant_4_0/atelier4_xlconstant_4_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlconstant_4_0 || ORIG_REF_NAME==atelier4_xlconstant_4_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_InstructionDecoder_0_0/atelier4_InstructionDecoder_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_InstructionDecoder_0_0 || ORIG_REF_NAME==atelier4_InstructionDecoder_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_xlslice_0_0/atelier4_xlslice_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlslice_0_0 || ORIG_REF_NAME==atelier4_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_xlslice_0_1/atelier4_xlslice_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlslice_0_1 || ORIG_REF_NAME==atelier4_xlslice_0_1} -quiet] -quiet
+
+# XDC: c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc

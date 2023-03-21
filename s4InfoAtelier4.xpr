@@ -4,10 +4,14 @@
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Project Version="7" Minor="54" Path="C:/Vivado/S4-PROJET/s4InfoAtelier4.xpr">
 =======
 <Project Version="7" Minor="54" Path="C:/Travail/s4InfoAtelier4/s4InfoAtelier4.xpr">
 >>>>>>> 6b46a57 (reset)
+=======
+<Project Version="7" Minor="54" Path="C:/Vivado/S4-PROJET/s4InfoAtelier4.xpr">
+>>>>>>> 5f07b34 (test)
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1814c4d5952d4bc092476e99aecaed19"/>
@@ -40,6 +44,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/InstructionRegister_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/myColorRegister_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/s4InfoAtelier4.ipdefs/mycolorRegister_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/s4InfoAtelier4.ipdefs/rgb2dvi"/>
@@ -91,6 +97,18 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/colorRegister.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/InstructionDecoder.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/atelier4/atelier4.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd"/>
@@ -100,9 +118,20 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci">
           <Proxy FileSetName="atelier4_testPatternGen2_0_0"/>
+=======
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/ip_2/bd_0837_hsc_0.xci">
+          <Proxy FileSetName="bd_0837_hsc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/ip_1/bd_0837_vsc_0.xci">
+          <Proxy FileSetName="bd_0837_vsc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xci">
+          <Proxy FileSetName="atelier4_axi_vdma_0_0"/>
+>>>>>>> 5f07b34 (test)
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0.xci">
           <Proxy FileSetName="atelier4_v_proc_ss_0_0"/>
@@ -110,18 +139,20 @@
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_processing_system7_0_0/atelier4_processing_system7_0_0.xci">
           <Proxy FileSetName="atelier4_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xci">
-          <Proxy FileSetName="atelier4_axi_vdma_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xci">
           <Proxy FileSetName="atelier4_pixelDataToVideoStre_0_3"/>
         </CompFileExtendedInfo>
+<<<<<<< HEAD
 >>>>>>> 6b46a57 (reset)
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/ip_2/bd_0837_hsc_0.xci">
           <Proxy FileSetName="bd_0837_hsc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/ip_1/bd_0837_vsc_0.xci">
           <Proxy FileSetName="bd_0837_vsc_0"/>
+=======
+        <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_InstructionRegister_0_1/atelier4_InstructionRegister_0_1.xci">
+          <Proxy FileSetName="atelier4_InstructionRegister_0_1"/>
+>>>>>>> 5f07b34 (test)
         </CompFileExtendedInfo>
 <<<<<<< HEAD
         <CompFileExtendedInfo CompFileName="atelier4.bd" FileRelPathName="ip/atelier4_axi_vdma_0_0/atelier4_axi_vdma_0_0.xci">
@@ -151,6 +182,13 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
+      <File Path="$PSRCDIR/sources_1/new/InstructionFetch.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="atelier4_wrapper"/>
@@ -206,12 +244,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="atelier4_testPatternGen2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/atelier4_testPatternGen2_0_0" RelGenDir="$PGENDIR/atelier4_testPatternGen2_0_0">
-      <Config>
-        <Option Name="TopModule" Val="atelier4_testPatternGen2_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="atelier4_pixelDataToVideoStre_0_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/atelier4_pixelDataToVideoStre_0_3" RelGenDir="$PGENDIR/atelier4_pixelDataToVideoStre_0_3">
       <Config>
         <Option Name="TopModule" Val="atelier4_pixelDataToVideoStre_0_3"/>
@@ -237,14 +269,20 @@
       </Config>
     </FileSet>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f07b34 (test)
     <FileSet Name="atelier4_InstructionRegister_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/atelier4_InstructionRegister_0_1" RelGenDir="$PGENDIR/atelier4_InstructionRegister_0_1">
       <Config>
         <Option Name="TopModule" Val="atelier4_InstructionRegister_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+<<<<<<< HEAD
 =======
 >>>>>>> 6b46a57 (reset)
+=======
+>>>>>>> 5f07b34 (test)
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -296,10 +334,14 @@
       <RQSFiles/>
     </Run>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Run Id="atelier4_pixelDataToVideoStre_0_3_synth_1" Type="Ft3:Synth" SrcSet="atelier4_pixelDataToVideoStre_0_3" Part="xc7z010clg400-1" ConstrsSet="atelier4_pixelDataToVideoStre_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_pixelDataToVideoStre_0_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_pixelDataToVideoStre_0_3_synth_1">
 =======
     <Run Id="atelier4_testPatternGen2_0_0_synth_1" Type="Ft3:Synth" SrcSet="atelier4_testPatternGen2_0_0" Part="xc7z010clg400-1" ConstrsSet="atelier4_testPatternGen2_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_testPatternGen2_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Users/Julien/Documents/vivado/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_testPatternGen2_0_0_synth_1">
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="atelier4_pixelDataToVideoStre_0_3_synth_1" Type="Ft3:Synth" SrcSet="atelier4_pixelDataToVideoStre_0_3" Part="xc7z010clg400-1" ConstrsSet="atelier4_pixelDataToVideoStre_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_pixelDataToVideoStre_0_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_pixelDataToVideoStre_0_3_synth_1">
+>>>>>>> 5f07b34 (test)
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
@@ -309,6 +351,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Run Id="atelier4_v_proc_ss_0_0_synth_1" Type="Ft3:Synth" SrcSet="atelier4_v_proc_ss_0_0" Part="xc7z010clg400-1" ConstrsSet="atelier4_v_proc_ss_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_v_proc_ss_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_v_proc_ss_0_0_synth_1">
       <Strategy Version="1" Minor="2">
@@ -320,6 +363,11 @@
           <Desc>Vivado Synthesis Defaults</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="atelier4_v_proc_ss_0_0_synth_1" Type="Ft3:Synth" SrcSet="atelier4_v_proc_ss_0_0" Part="xc7z010clg400-1" ConstrsSet="atelier4_v_proc_ss_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_v_proc_ss_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_v_proc_ss_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -327,6 +375,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Run Id="bd_0837_hsc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_0837_hsc_0" Part="xc7z010clg400-1" ConstrsSet="bd_0837_hsc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_0837_hsc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_hsc_0_synth_1">
       <Strategy Version="1" Minor="2">
@@ -338,6 +387,11 @@
           <Desc>Vivado Synthesis Defaults</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="bd_0837_hsc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_0837_hsc_0" Part="xc7z010clg400-1" ConstrsSet="bd_0837_hsc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_0837_hsc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_hsc_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -345,6 +399,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Run Id="bd_0837_vsc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_0837_vsc_0" Part="xc7z010clg400-1" ConstrsSet="bd_0837_vsc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_0837_vsc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_vsc_0_synth_1">
       <Strategy Version="1" Minor="2">
@@ -356,6 +411,11 @@
           <Desc>Vivado Synthesis Defaults</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="bd_0837_vsc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_0837_vsc_0" Part="xc7z010clg400-1" ConstrsSet="bd_0837_vsc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_0837_vsc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_vsc_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -363,6 +423,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Run Id="atelier4_InstructionRegister_0_1_synth_1" Type="Ft3:Synth" SrcSet="atelier4_InstructionRegister_0_1" Part="xc7z010clg400-1" ConstrsSet="atelier4_InstructionRegister_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_InstructionRegister_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Users/wpepi/projet/s4InfoAtelier4.srcs/utils_1/imports/atelier4_InstructionRegister_0_1_synth_1">
       <Strategy Version="1" Minor="2">
@@ -374,6 +435,11 @@
           <Desc>Vivado Synthesis Defaults</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="atelier4_InstructionRegister_0_1_synth_1" Type="Ft3:Synth" SrcSet="atelier4_InstructionRegister_0_1" Part="xc7z010clg400-1" ConstrsSet="atelier4_InstructionRegister_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/atelier4_InstructionRegister_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Users/wpepi/projet/s4InfoAtelier4.srcs/utils_1/imports/atelier4_InstructionRegister_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -434,10 +500,14 @@
       <RQSFiles/>
     </Run>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Run Id="atelier4_pixelDataToVideoStre_0_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_pixelDataToVideoStre_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_pixelDataToVideoStre_0_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_pixelDataToVideoStre_0_3_impl_1">
 =======
     <Run Id="atelier4_testPatternGen2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_testPatternGen2_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_testPatternGen2_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Users/Julien/Documents/vivado/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_testPatternGen2_0_0_impl_1">
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="atelier4_pixelDataToVideoStre_0_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_pixelDataToVideoStre_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_pixelDataToVideoStre_0_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_pixelDataToVideoStre_0_3_impl_1">
+>>>>>>> 5f07b34 (test)
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
@@ -454,6 +524,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Run Id="atelier4_v_proc_ss_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_v_proc_ss_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_v_proc_ss_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_v_proc_ss_0_0_impl_1">
       <Strategy Version="1" Minor="2">
@@ -465,6 +536,11 @@
           <Desc>Default settings for Implementation.</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="atelier4_v_proc_ss_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_v_proc_ss_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_v_proc_ss_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/atelier4_v_proc_ss_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -479,6 +555,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Run Id="bd_0837_hsc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="bd_0837_hsc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_0837_hsc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_hsc_0_impl_1">
       <Strategy Version="1" Minor="2">
@@ -490,6 +567,11 @@
           <Desc>Default settings for Implementation.</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="bd_0837_hsc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="bd_0837_hsc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_0837_hsc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_hsc_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -504,6 +586,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Run Id="bd_0837_vsc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="bd_0837_vsc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_0837_vsc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_vsc_0_impl_1">
       <Strategy Version="1" Minor="2">
@@ -515,6 +598,11 @@
           <Desc>Default settings for Implementation.</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="bd_0837_vsc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="bd_0837_vsc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bd_0837_vsc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Travail/s4InfoAtelier4/s4InfoAtelier4.srcs/utils_1/imports/bd_0837_vsc_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -530,6 +618,7 @@
       <RQSFiles/>
     </Run>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Run Id="atelier4_InstructionRegister_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_InstructionRegister_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_InstructionRegister_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Users/wpepi/projet/s4InfoAtelier4.srcs/utils_1/imports/atelier4_InstructionRegister_0_1_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
@@ -540,6 +629,11 @@
           <Desc>Default settings for Implementation.</Desc>
         </StratHandle>
 >>>>>>> 6b46a57 (reset)
+=======
+    <Run Id="atelier4_InstructionRegister_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="atelier4_InstructionRegister_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="atelier4_InstructionRegister_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Users/wpepi/projet/s4InfoAtelier4.srcs/utils_1/imports/atelier4_InstructionRegister_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+>>>>>>> 5f07b34 (test)
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

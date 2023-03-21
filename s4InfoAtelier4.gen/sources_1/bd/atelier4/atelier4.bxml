@@ -3,11 +3,15 @@
   <CompositeFile CompositeFileTopName="atelier4" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f07b34 (test)
     <Generation Name="SYNTHESIS" State="RESET" Timestamp="1679417431"/>
     <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1679417431"/>
     <Generation Name="SIMULATION" State="RESET" Timestamp="1679417431"/>
     <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1679417431"/>
     <FileCollection Name="SOURCES" Type="SOURCES"/>
+<<<<<<< HEAD
 =======
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1674509865"/>
     <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1674509865"/>
@@ -58,5 +62,7 @@
       </File>
     </FileCollection>
 >>>>>>> 6b46a57 (reset)
+=======
+>>>>>>> 5f07b34 (test)
   </CompositeFile>
 </Root>
