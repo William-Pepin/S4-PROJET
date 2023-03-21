@@ -1,26 +1,23 @@
 #include "scaler.h"
 #include "vdma.h"
 #include "xil_printf.h"
-#include "myColorRegister.h"
 #include "sleep.h"
+#include "instructionRegister.h"
+#include "api.h"
+#include "xparameters.h"
 
 int main()
 {
 	configureScaler();
     configureVdma();
+    int color = 0;
 
-    int colorA = 0xFF0000;
-    int colorB = 0x00FF00;
-    int colorC = 0xFFFF00;
-
-    MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 4, colorB);
-    MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 8, colorC);
 
     while(1)
     {
-    MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0, colorA );
-    colorA = colorA + 1024;
-    sleep(1);
+    	setColorByPaletteId(0, color);
+    	color += 1;
+    	sleep(1);
     }
 
     return 0;

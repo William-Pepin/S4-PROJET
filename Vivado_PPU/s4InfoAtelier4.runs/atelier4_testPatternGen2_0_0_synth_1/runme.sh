@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1'
+HD_PWD='C:/Users/wpepi/projet/s4InfoAtelier4.runs/atelier4_testPatternGen2_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

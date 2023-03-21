@@ -84,6 +84,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
 set_property ip_repo_paths {
+  c:/Vivado/S4-PROJET/ip_repo/InstructionRegister_1.0
+  c:/Vivado/S4-PROJET/ip_repo/myColorRegister_1.0
   c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0
   c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0
   c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/rgb2dvi

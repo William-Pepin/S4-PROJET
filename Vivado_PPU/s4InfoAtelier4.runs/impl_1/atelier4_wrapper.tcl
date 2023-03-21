@@ -133,6 +133,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.cache/wt [current_project]
   set_property parent.project_path C:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.xpr [current_project]
   set_property ip_repo_paths {
+  C:/Vivado/S4-PROJET/ip_repo/InstructionRegister_1.0
+  C:/Vivado/S4-PROJET/ip_repo/myColorRegister_1.0
   C:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0
   C:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0
   C:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/rgb2dvi

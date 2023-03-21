@@ -30,8 +30,26 @@ platform config -updatehw {C:/Travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
 platform generate
 platform active {atelier4_wrapper}
-platform config -updatehw {C:/Vivado/S4-PROJET/Vitis_API_JEU/atelier4_wrapper.xsa}
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
 platform generate
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
+platform generate -domains 
 platform active {atelier4_wrapper}
 platform config -updatehw {C:/Vivado/S4-PROJET/Vitis_API_JEU/atelier4_wrapper.xsa}
 platform generate

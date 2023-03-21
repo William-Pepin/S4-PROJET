@@ -199,7 +199,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4e760b6d</spirit:value>
+            <spirit:value>45a3c451</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4e760b6d</spirit:value>
+            <spirit:value>45a3c451</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -349,23 +349,6 @@
       </spirit:port>
       <spirit:port>
         <spirit:name>o_imageDataB</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>o_imageDataC</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -712,7 +695,7 @@
       <spirit:enumeration>32</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:name>choice_list_74b5137e</spirit:name>
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
@@ -732,7 +715,7 @@
       <spirit:file>
         <spirit:name>hdl/mycolorRegister_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_de5e6df1</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_555f38b6</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -861,8 +844,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>mycolorRegister_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-03-16T18:41:50Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-11-18T23:51:52Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5da9b3c5_ARCHIVE_LOCATION">c:/Users/Julien/Documents/vivado/ip_repo/mycolorRegister_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5a0dd765_ARCHIVE_LOCATION">c:/Users/Julien/Documents/vivado/ip_repo/mycolorRegister_1.0</xilinx:tag>
@@ -881,48 +864,14 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@17f8e31d_ARCHIVE_LOCATION">c:/Users/Julien/Documents/vivado/ip_repo/mycolorRegister_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@11b4947_ARCHIVE_LOCATION">c:/Users/Julien/Documents/vivado/ip_repo/mycolorRegister_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3dec109a_ARCHIVE_LOCATION">c:/Users/Julien/Documents/vivado/ip_repo/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b763aa5_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e278b0c_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@485674e6_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@513312be_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e00fe39_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d7d70ec_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a544ba8_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b03f0de_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a6b8cb2_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@34ca5886_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@476bb873_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f8c1050_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c5b522c_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e97e388_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b0b5782_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@27f371d4_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cfc7147_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado - PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c5465c1_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@16efdedc_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@20585e6f_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a84fd6b_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@10ab5450_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ad0fe6_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@205468a7_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@282d6a73_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@72ac676c_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d5371e_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5022d310_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@635f5489_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4792b9ce_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@117d205a_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@448d7ece_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@39564f89_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@373c4960_ARCHIVE_LOCATION">c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.ipdefs/mycolorRegister_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a6aebf4"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a9987f88"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="1f448c6e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="dd3ee6fe"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0c04a7d8"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="0cc77245"/>
     </xilinx:packagingInfo>

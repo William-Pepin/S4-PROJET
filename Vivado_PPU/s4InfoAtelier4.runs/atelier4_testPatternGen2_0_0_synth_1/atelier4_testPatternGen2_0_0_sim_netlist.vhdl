@@ -1,8 +1,8 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu Mar 16 14:56:27 2023
--- Host        : Antoine-PC running 64-bit major release  (build 9200)
+-- Date        : Wed Mar 15 11:18:14 2023
+-- Host        : William_PC running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ atelier4_testPatternGen2_0_0_sim_netlist.vhdl
 -- Design      : atelier4_testPatternGen2_0_0
@@ -17,626 +17,278 @@ use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_testPatternGen2 is
   port (
     o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    i_y : in STD_LOGIC_VECTOR ( 2 downto 0 );
     i_colorDataA : in STD_LOGIC_VECTOR ( 23 downto 0 );
     i_colorDataB : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    i_colorDataC : in STD_LOGIC_VECTOR ( 23 downto 0 )
+    i_y : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_testPatternGen2;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_testPatternGen2 is
-  signal \o_dataPixel_inferred__0/i__n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[0]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[10]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[11]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[12]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[13]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[14]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[15]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[16]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[17]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[18]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[19]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[1]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[20]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[21]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[22]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[23]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[2]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[3]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[4]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[5]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[6]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[7]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[8]_i_1_n_0\ : STD_LOGIC;
-  signal \o_dataPixel_reg[9]_i_1_n_0\ : STD_LOGIC;
-  attribute XILINX_LEGACY_PRIM : string;
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[0]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[10]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[11]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[12]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[13]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[14]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[15]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[16]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[17]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[18]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[19]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[1]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[20]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[21]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[22]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[23]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[2]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[3]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[4]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[5]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[6]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[7]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[8]\ : label is "LD";
-  attribute XILINX_LEGACY_PRIM of \o_dataPixel_reg[9]\ : label is "LD";
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \o_dataPixel[0]_INST_0\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \o_dataPixel[10]_INST_0\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \o_dataPixel[11]_INST_0\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \o_dataPixel[12]_INST_0\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \o_dataPixel[13]_INST_0\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \o_dataPixel[14]_INST_0\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \o_dataPixel[15]_INST_0\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \o_dataPixel[16]_INST_0\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \o_dataPixel[17]_INST_0\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \o_dataPixel[18]_INST_0\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \o_dataPixel[19]_INST_0\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \o_dataPixel[1]_INST_0\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \o_dataPixel[20]_INST_0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \o_dataPixel[21]_INST_0\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \o_dataPixel[22]_INST_0\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \o_dataPixel[23]_INST_0\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \o_dataPixel[2]_INST_0\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \o_dataPixel[3]_INST_0\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \o_dataPixel[4]_INST_0\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \o_dataPixel[5]_INST_0\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \o_dataPixel[6]_INST_0\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \o_dataPixel[7]_INST_0\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \o_dataPixel[8]_INST_0\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \o_dataPixel[9]_INST_0\ : label is "soft_lutpair4";
 begin
-\o_dataPixel_inferred__0/i_\: unisim.vcomponents.LUT3
+\o_dataPixel[0]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"FE"
-    )
-        port map (
-      I0 => i_y(0),
-      I1 => i_y(2),
-      I2 => i_y(1),
-      O => \o_dataPixel_inferred__0/i__n_0\
-    );
-\o_dataPixel_reg[0]\: unisim.vcomponents.LDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[0]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(0)
-    );
-\o_dataPixel_reg[0]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(0),
-      I1 => i_y(0),
-      I2 => i_colorDataB(0),
-      I3 => i_y(1),
-      I4 => i_colorDataC(0),
-      O => \o_dataPixel_reg[0]_i_1_n_0\
+      I1 => i_colorDataB(0),
+      I2 => i_y(0),
+      O => o_dataPixel(0)
     );
-\o_dataPixel_reg[10]\: unisim.vcomponents.LDCE
+\o_dataPixel[10]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[10]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(10)
-    );
-\o_dataPixel_reg[10]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(10),
-      I1 => i_y(0),
-      I2 => i_colorDataB(10),
-      I3 => i_y(1),
-      I4 => i_colorDataC(10),
-      O => \o_dataPixel_reg[10]_i_1_n_0\
+      I1 => i_colorDataB(10),
+      I2 => i_y(0),
+      O => o_dataPixel(10)
     );
-\o_dataPixel_reg[11]\: unisim.vcomponents.LDCE
+\o_dataPixel[11]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[11]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(11)
-    );
-\o_dataPixel_reg[11]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(11),
-      I1 => i_y(0),
-      I2 => i_colorDataB(11),
-      I3 => i_y(1),
-      I4 => i_colorDataC(11),
-      O => \o_dataPixel_reg[11]_i_1_n_0\
+      I1 => i_colorDataB(11),
+      I2 => i_y(0),
+      O => o_dataPixel(11)
     );
-\o_dataPixel_reg[12]\: unisim.vcomponents.LDCE
+\o_dataPixel[12]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[12]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(12)
-    );
-\o_dataPixel_reg[12]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(12),
-      I1 => i_y(0),
-      I2 => i_colorDataB(12),
-      I3 => i_y(1),
-      I4 => i_colorDataC(12),
-      O => \o_dataPixel_reg[12]_i_1_n_0\
+      I1 => i_colorDataB(12),
+      I2 => i_y(0),
+      O => o_dataPixel(12)
     );
-\o_dataPixel_reg[13]\: unisim.vcomponents.LDCE
+\o_dataPixel[13]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[13]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(13)
-    );
-\o_dataPixel_reg[13]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(13),
-      I1 => i_y(0),
-      I2 => i_colorDataB(13),
-      I3 => i_y(1),
-      I4 => i_colorDataC(13),
-      O => \o_dataPixel_reg[13]_i_1_n_0\
+      I1 => i_colorDataB(13),
+      I2 => i_y(0),
+      O => o_dataPixel(13)
     );
-\o_dataPixel_reg[14]\: unisim.vcomponents.LDCE
+\o_dataPixel[14]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[14]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(14)
-    );
-\o_dataPixel_reg[14]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(14),
-      I1 => i_y(0),
-      I2 => i_colorDataB(14),
-      I3 => i_y(1),
-      I4 => i_colorDataC(14),
-      O => \o_dataPixel_reg[14]_i_1_n_0\
+      I1 => i_colorDataB(14),
+      I2 => i_y(0),
+      O => o_dataPixel(14)
     );
-\o_dataPixel_reg[15]\: unisim.vcomponents.LDCE
+\o_dataPixel[15]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[15]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(15)
-    );
-\o_dataPixel_reg[15]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(15),
-      I1 => i_y(0),
-      I2 => i_colorDataB(15),
-      I3 => i_y(1),
-      I4 => i_colorDataC(15),
-      O => \o_dataPixel_reg[15]_i_1_n_0\
+      I1 => i_colorDataB(15),
+      I2 => i_y(0),
+      O => o_dataPixel(15)
     );
-\o_dataPixel_reg[16]\: unisim.vcomponents.LDCE
+\o_dataPixel[16]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[16]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(16)
-    );
-\o_dataPixel_reg[16]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(16),
-      I1 => i_y(0),
-      I2 => i_colorDataB(16),
-      I3 => i_y(1),
-      I4 => i_colorDataC(16),
-      O => \o_dataPixel_reg[16]_i_1_n_0\
+      I1 => i_colorDataB(16),
+      I2 => i_y(0),
+      O => o_dataPixel(16)
     );
-\o_dataPixel_reg[17]\: unisim.vcomponents.LDCE
+\o_dataPixel[17]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[17]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(17)
-    );
-\o_dataPixel_reg[17]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(17),
-      I1 => i_y(0),
-      I2 => i_colorDataB(17),
-      I3 => i_y(1),
-      I4 => i_colorDataC(17),
-      O => \o_dataPixel_reg[17]_i_1_n_0\
+      I1 => i_colorDataB(17),
+      I2 => i_y(0),
+      O => o_dataPixel(17)
     );
-\o_dataPixel_reg[18]\: unisim.vcomponents.LDCE
+\o_dataPixel[18]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[18]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(18)
-    );
-\o_dataPixel_reg[18]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(18),
-      I1 => i_y(0),
-      I2 => i_colorDataB(18),
-      I3 => i_y(1),
-      I4 => i_colorDataC(18),
-      O => \o_dataPixel_reg[18]_i_1_n_0\
+      I1 => i_colorDataB(18),
+      I2 => i_y(0),
+      O => o_dataPixel(18)
     );
-\o_dataPixel_reg[19]\: unisim.vcomponents.LDCE
+\o_dataPixel[19]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[19]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(19)
-    );
-\o_dataPixel_reg[19]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(19),
-      I1 => i_y(0),
-      I2 => i_colorDataB(19),
-      I3 => i_y(1),
-      I4 => i_colorDataC(19),
-      O => \o_dataPixel_reg[19]_i_1_n_0\
+      I1 => i_colorDataB(19),
+      I2 => i_y(0),
+      O => o_dataPixel(19)
     );
-\o_dataPixel_reg[1]\: unisim.vcomponents.LDCE
+\o_dataPixel[1]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[1]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(1)
-    );
-\o_dataPixel_reg[1]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(1),
-      I1 => i_y(0),
-      I2 => i_colorDataB(1),
-      I3 => i_y(1),
-      I4 => i_colorDataC(1),
-      O => \o_dataPixel_reg[1]_i_1_n_0\
+      I1 => i_colorDataB(1),
+      I2 => i_y(0),
+      O => o_dataPixel(1)
     );
-\o_dataPixel_reg[20]\: unisim.vcomponents.LDCE
+\o_dataPixel[20]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[20]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(20)
-    );
-\o_dataPixel_reg[20]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(20),
-      I1 => i_y(0),
-      I2 => i_colorDataB(20),
-      I3 => i_y(1),
-      I4 => i_colorDataC(20),
-      O => \o_dataPixel_reg[20]_i_1_n_0\
+      I1 => i_colorDataB(20),
+      I2 => i_y(0),
+      O => o_dataPixel(20)
     );
-\o_dataPixel_reg[21]\: unisim.vcomponents.LDCE
+\o_dataPixel[21]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[21]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(21)
-    );
-\o_dataPixel_reg[21]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(21),
-      I1 => i_y(0),
-      I2 => i_colorDataB(21),
-      I3 => i_y(1),
-      I4 => i_colorDataC(21),
-      O => \o_dataPixel_reg[21]_i_1_n_0\
+      I1 => i_colorDataB(21),
+      I2 => i_y(0),
+      O => o_dataPixel(21)
     );
-\o_dataPixel_reg[22]\: unisim.vcomponents.LDCE
+\o_dataPixel[22]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[22]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(22)
-    );
-\o_dataPixel_reg[22]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(22),
-      I1 => i_y(0),
-      I2 => i_colorDataB(22),
-      I3 => i_y(1),
-      I4 => i_colorDataC(22),
-      O => \o_dataPixel_reg[22]_i_1_n_0\
+      I1 => i_colorDataB(22),
+      I2 => i_y(0),
+      O => o_dataPixel(22)
     );
-\o_dataPixel_reg[23]\: unisim.vcomponents.LDCE
+\o_dataPixel[23]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[23]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(23)
-    );
-\o_dataPixel_reg[23]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(23),
-      I1 => i_y(0),
-      I2 => i_colorDataB(23),
-      I3 => i_y(1),
-      I4 => i_colorDataC(23),
-      O => \o_dataPixel_reg[23]_i_1_n_0\
+      I1 => i_colorDataB(23),
+      I2 => i_y(0),
+      O => o_dataPixel(23)
     );
-\o_dataPixel_reg[2]\: unisim.vcomponents.LDCE
+\o_dataPixel[2]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[2]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(2)
-    );
-\o_dataPixel_reg[2]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(2),
-      I1 => i_y(0),
-      I2 => i_colorDataB(2),
-      I3 => i_y(1),
-      I4 => i_colorDataC(2),
-      O => \o_dataPixel_reg[2]_i_1_n_0\
+      I1 => i_colorDataB(2),
+      I2 => i_y(0),
+      O => o_dataPixel(2)
     );
-\o_dataPixel_reg[3]\: unisim.vcomponents.LDCE
+\o_dataPixel[3]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[3]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(3)
-    );
-\o_dataPixel_reg[3]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(3),
-      I1 => i_y(0),
-      I2 => i_colorDataB(3),
-      I3 => i_y(1),
-      I4 => i_colorDataC(3),
-      O => \o_dataPixel_reg[3]_i_1_n_0\
+      I1 => i_colorDataB(3),
+      I2 => i_y(0),
+      O => o_dataPixel(3)
     );
-\o_dataPixel_reg[4]\: unisim.vcomponents.LDCE
+\o_dataPixel[4]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[4]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(4)
-    );
-\o_dataPixel_reg[4]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(4),
-      I1 => i_y(0),
-      I2 => i_colorDataB(4),
-      I3 => i_y(1),
-      I4 => i_colorDataC(4),
-      O => \o_dataPixel_reg[4]_i_1_n_0\
+      I1 => i_colorDataB(4),
+      I2 => i_y(0),
+      O => o_dataPixel(4)
     );
-\o_dataPixel_reg[5]\: unisim.vcomponents.LDCE
+\o_dataPixel[5]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[5]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(5)
-    );
-\o_dataPixel_reg[5]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(5),
-      I1 => i_y(0),
-      I2 => i_colorDataB(5),
-      I3 => i_y(1),
-      I4 => i_colorDataC(5),
-      O => \o_dataPixel_reg[5]_i_1_n_0\
+      I1 => i_colorDataB(5),
+      I2 => i_y(0),
+      O => o_dataPixel(5)
     );
-\o_dataPixel_reg[6]\: unisim.vcomponents.LDCE
+\o_dataPixel[6]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[6]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(6)
-    );
-\o_dataPixel_reg[6]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(6),
-      I1 => i_y(0),
-      I2 => i_colorDataB(6),
-      I3 => i_y(1),
-      I4 => i_colorDataC(6),
-      O => \o_dataPixel_reg[6]_i_1_n_0\
+      I1 => i_colorDataB(6),
+      I2 => i_y(0),
+      O => o_dataPixel(6)
     );
-\o_dataPixel_reg[7]\: unisim.vcomponents.LDCE
+\o_dataPixel[7]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[7]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(7)
-    );
-\o_dataPixel_reg[7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(7),
-      I1 => i_y(0),
-      I2 => i_colorDataB(7),
-      I3 => i_y(1),
-      I4 => i_colorDataC(7),
-      O => \o_dataPixel_reg[7]_i_1_n_0\
+      I1 => i_colorDataB(7),
+      I2 => i_y(0),
+      O => o_dataPixel(7)
     );
-\o_dataPixel_reg[8]\: unisim.vcomponents.LDCE
+\o_dataPixel[8]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[8]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(8)
-    );
-\o_dataPixel_reg[8]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(8),
-      I1 => i_y(0),
-      I2 => i_colorDataB(8),
-      I3 => i_y(1),
-      I4 => i_colorDataC(8),
-      O => \o_dataPixel_reg[8]_i_1_n_0\
+      I1 => i_colorDataB(8),
+      I2 => i_y(0),
+      O => o_dataPixel(8)
     );
-\o_dataPixel_reg[9]\: unisim.vcomponents.LDCE
+\o_dataPixel[9]_INST_0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
-    )
-        port map (
-      CLR => '0',
-      D => \o_dataPixel_reg[9]_i_1_n_0\,
-      G => \o_dataPixel_inferred__0/i__n_0\,
-      GE => '1',
-      Q => o_dataPixel(9)
-    );
-\o_dataPixel_reg[9]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"B8BBB888"
+      INIT => X"AC"
     )
         port map (
       I0 => i_colorDataA(9),
-      I1 => i_y(0),
-      I2 => i_colorDataB(9),
-      I3 => i_y(1),
-      I4 => i_colorDataC(9),
-      O => \o_dataPixel_reg[9]_i_1_n_0\
+      I1 => i_colorDataB(9),
+      I2 => i_y(0),
+      O => o_dataPixel(9)
     );
 end STRUCTURE;
 library IEEE;
@@ -651,9 +303,8 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     i_y : in STD_LOGIC_VECTOR ( 11 downto 0 );
     o_dataValid : out STD_LOGIC;
     o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataC : in STD_LOGIC_VECTOR ( 31 downto 0 )
+    i_colorDataA : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    i_colorDataB : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
@@ -681,9 +332,7 @@ U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_testPatternGen2
      port map (
       i_colorDataA(23 downto 0) => i_colorDataA(23 downto 0),
       i_colorDataB(23 downto 0) => i_colorDataB(23 downto 0),
-      i_colorDataC(23 downto 0) => i_colorDataC(23 downto 0),
-      i_y(2) => i_y(5),
-      i_y(1 downto 0) => i_y(3 downto 2),
+      i_y(0) => i_y(3),
       o_dataPixel(23 downto 0) => o_dataPixel(23 downto 0)
     );
 VCC: unisim.vcomponents.VCC

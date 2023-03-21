@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Thu Mar 16 14:54:57 2023
---Host        : Antoine-PC running 64-bit major release  (build 9200)
+--Date        : Mon Jan 23 15:35:50 2023
+--Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
 --Command     : generate_target atelier4.bd
 --Design      : atelier4
 --Purpose     : IP block netlist
@@ -127,6 +127,33 @@ architecture STRUCTURE of atelier4 is
     locked : out STD_LOGIC
   );
   end component atelier4_clk_wiz_0_0;
+  component atelier4_mycolorRegister_0_0 is
+  port (
+    o_imageDataA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    o_imageDataB : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC
+  );
+  end component atelier4_mycolorRegister_0_0;
   component atelier4_proc_sys_reset_0_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -463,6 +490,18 @@ architecture STRUCTURE of atelier4 is
     M00_AXI_rready : out STD_LOGIC
   );
   end component atelier4_smartconnect_0_1;
+  component atelier4_testPatternGen2_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rstn : in STD_LOGIC;
+    i_x : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    i_y : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    o_dataValid : out STD_LOGIC;
+    o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component atelier4_testPatternGen2_0_0;
   component atelier4_v_axi4s_vid_out_0_0 is
   port (
     aclk : in STD_LOGIC;
@@ -595,47 +634,6 @@ architecture STRUCTURE of atelier4 is
     m00_axis_tuser : out STD_LOGIC
   );
   end component atelier4_pixelDataToVideoStre_0_3;
-  component atelier4_mycolorRegister_0_0 is
-  port (
-    o_imageDataA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    o_imageDataB : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    o_imageDataC : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC
-  );
-  end component atelier4_mycolorRegister_0_0;
-  component atelier4_testPatternGen2_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    rstn : in STD_LOGIC;
-    i_x : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    i_y : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    o_dataValid : out STD_LOGIC;
-    o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    i_colorDataA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataB : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    i_colorDataC : in STD_LOGIC_VECTOR ( 31 downto 0 )
-  );
-  end component atelier4_testPatternGen2_0_0;
   signal Net : STD_LOGIC;
   signal axi_vdma_0_M_AXIS_MM2S_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal axi_vdma_0_M_AXIS_MM2S_TKEEP : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -677,7 +675,6 @@ architecture STRUCTURE of atelier4 is
   signal clk_wiz_0_locked : STD_LOGIC;
   signal mycolorRegister_0_o_imageDataA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal mycolorRegister_0_o_imageDataB : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal mycolorRegister_0_o_imageDataC : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal pixelDataToVideoStre_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal pixelDataToVideoStre_0_M00_AXIS_TLAST : STD_LOGIC;
   signal pixelDataToVideoStre_0_M00_AXIS_TREADY : STD_LOGIC;
@@ -1032,7 +1029,6 @@ mycolorRegister_0: component atelier4_mycolorRegister_0_0
      port map (
       o_imageDataA(31 downto 0) => mycolorRegister_0_o_imageDataA(31 downto 0),
       o_imageDataB(31 downto 0) => mycolorRegister_0_o_imageDataB(31 downto 0),
-      o_imageDataC(31 downto 0) => mycolorRegister_0_o_imageDataC(31 downto 0),
       s00_axi_aclk => clk_wiz_0_clk_out1,
       s00_axi_araddr(3 downto 0) => smartconnect_0_M03_AXI_ARADDR(3 downto 0),
       s00_axi_aresetn => proc_sys_reset_0_peripheral_aresetn(0),
@@ -1428,7 +1424,6 @@ testPatternGen2_0: component atelier4_testPatternGen2_0_0
       clk => clk_wiz_0_clk_out1,
       i_colorDataA(31 downto 0) => mycolorRegister_0_o_imageDataA(31 downto 0),
       i_colorDataB(31 downto 0) => mycolorRegister_0_o_imageDataB(31 downto 0),
-      i_colorDataC(31 downto 0) => mycolorRegister_0_o_imageDataC(31 downto 0),
       i_x(11 downto 0) => pixelDataToVideoStre_0_o_pixel_x(11 downto 0),
       i_y(11 downto 0) => pixelDataToVideoStre_0_o_pixel_y(11 downto 0),
       o_dataPixel(23 downto 0) => testPatternGen2_0_o_dataPixel(23 downto 0),

@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: grams:gramslib:mycolorRegister:1.0
--- IP Revision: 4
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -57,7 +57,6 @@ ENTITY atelier4_mycolorRegister_0_0 IS
   PORT (
     o_imageDataA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     o_imageDataB : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    o_imageDataC : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -93,7 +92,6 @@ ARCHITECTURE atelier4_mycolorRegister_0_0_arch OF atelier4_mycolorRegister_0_0 I
     PORT (
       o_imageDataA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       o_imageDataB : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      o_imageDataC : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -153,7 +151,6 @@ BEGIN
     PORT MAP (
       o_imageDataA => o_imageDataA,
       o_imageDataB => o_imageDataB,
-      o_imageDataC => o_imageDataC,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

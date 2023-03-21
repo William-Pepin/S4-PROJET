@@ -39,10 +39,25 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_v_
 # IP: bd/atelier4/ip/atelier4_pixelDataToVideoStre_0_3/atelier4_pixelDataToVideoStre_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_pixelDataToVideoStre_0_3 || ORIG_REF_NAME==atelier4_pixelDataToVideoStre_0_3} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_mycolorRegister_0_0 || ORIG_REF_NAME==atelier4_mycolorRegister_0_0} -quiet] -quiet
+# IP: bd/atelier4/ip/atelier4_InstructionRegister_0_1/atelier4_InstructionRegister_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_InstructionRegister_0_1 || ORIG_REF_NAME==atelier4_InstructionRegister_0_1} -quiet] -quiet
 
 # IP: bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_testPatternGen2_0_0 || ORIG_REF_NAME==atelier4_testPatternGen2_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_colorRegister_0_0/atelier4_colorRegister_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_colorRegister_0_0 || ORIG_REF_NAME==atelier4_colorRegister_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_xlconstant_4_0/atelier4_xlconstant_4_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlconstant_4_0 || ORIG_REF_NAME==atelier4_xlconstant_4_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_InstructionDecoder_0_0/atelier4_InstructionDecoder_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_InstructionDecoder_0_0 || ORIG_REF_NAME==atelier4_InstructionDecoder_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_xlslice_0_0/atelier4_xlslice_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlslice_0_0 || ORIG_REF_NAME==atelier4_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_xlslice_0_1/atelier4_xlslice_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlslice_0_1 || ORIG_REF_NAME==atelier4_xlslice_0_1} -quiet] -quiet
 
 # XDC: c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc

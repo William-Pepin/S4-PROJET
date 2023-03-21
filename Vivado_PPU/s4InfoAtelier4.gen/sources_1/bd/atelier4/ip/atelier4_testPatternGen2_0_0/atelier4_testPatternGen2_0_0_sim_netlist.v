@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Thu Mar 16 14:56:27 2023
-// Host        : Antoine-PC running 64-bit major release  (build 9200)
+// Date        : Wed Mar 15 11:18:15 2023
+// Host        : William_PC running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Vivado/S4-PROJET/Vivado_PPU/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0_sim_netlist.v
+//               c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0_sim_netlist.v
 // Design      : atelier4_testPatternGen2_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,31 +23,27 @@ module atelier4_testPatternGen2_0_0
     o_dataValid,
     o_dataPixel,
     i_colorDataA,
-    i_colorDataB,
-    i_colorDataC);
+    i_colorDataB);
   (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rstn, FREQ_HZ 74250000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 rstn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME rstn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rstn;
   input [11:0]i_x;
   input [11:0]i_y;
   output o_dataValid;
   output [23:0]o_dataPixel;
-  input [31:0]i_colorDataA;
-  input [31:0]i_colorDataB;
-  input [31:0]i_colorDataC;
+  input [23:0]i_colorDataA;
+  input [23:0]i_colorDataB;
 
   wire \<const1> ;
-  wire [31:0]i_colorDataA;
-  wire [31:0]i_colorDataB;
-  wire [31:0]i_colorDataC;
+  wire [23:0]i_colorDataA;
+  wire [23:0]i_colorDataB;
   wire [11:0]i_y;
   wire [23:0]o_dataPixel;
 
   assign o_dataValid = \<const1> ;
   atelier4_testPatternGen2_0_0_testPatternGen2 U0
-       (.i_colorDataA(i_colorDataA[23:0]),
-        .i_colorDataB(i_colorDataB[23:0]),
-        .i_colorDataC(i_colorDataC[23:0]),
-        .i_y({i_y[5],i_y[3:2]}),
+       (.i_colorDataA(i_colorDataA),
+        .i_colorDataB(i_colorDataB),
+        .i_y(i_y[3]),
         .o_dataPixel(o_dataPixel));
   VCC VCC
        (.P(\<const1> ));
@@ -56,486 +52,211 @@ endmodule
 (* ORIG_REF_NAME = "testPatternGen2" *) 
 module atelier4_testPatternGen2_0_0_testPatternGen2
    (o_dataPixel,
-    i_y,
     i_colorDataA,
     i_colorDataB,
-    i_colorDataC);
+    i_y);
   output [23:0]o_dataPixel;
-  input [2:0]i_y;
   input [23:0]i_colorDataA;
   input [23:0]i_colorDataB;
-  input [23:0]i_colorDataC;
+  input [0:0]i_y;
 
   wire [23:0]i_colorDataA;
   wire [23:0]i_colorDataB;
-  wire [23:0]i_colorDataC;
-  wire [2:0]i_y;
+  wire [0:0]i_y;
   wire [23:0]o_dataPixel;
-  wire \o_dataPixel_inferred__0/i__n_0 ;
-  wire \o_dataPixel_reg[0]_i_1_n_0 ;
-  wire \o_dataPixel_reg[10]_i_1_n_0 ;
-  wire \o_dataPixel_reg[11]_i_1_n_0 ;
-  wire \o_dataPixel_reg[12]_i_1_n_0 ;
-  wire \o_dataPixel_reg[13]_i_1_n_0 ;
-  wire \o_dataPixel_reg[14]_i_1_n_0 ;
-  wire \o_dataPixel_reg[15]_i_1_n_0 ;
-  wire \o_dataPixel_reg[16]_i_1_n_0 ;
-  wire \o_dataPixel_reg[17]_i_1_n_0 ;
-  wire \o_dataPixel_reg[18]_i_1_n_0 ;
-  wire \o_dataPixel_reg[19]_i_1_n_0 ;
-  wire \o_dataPixel_reg[1]_i_1_n_0 ;
-  wire \o_dataPixel_reg[20]_i_1_n_0 ;
-  wire \o_dataPixel_reg[21]_i_1_n_0 ;
-  wire \o_dataPixel_reg[22]_i_1_n_0 ;
-  wire \o_dataPixel_reg[23]_i_1_n_0 ;
-  wire \o_dataPixel_reg[2]_i_1_n_0 ;
-  wire \o_dataPixel_reg[3]_i_1_n_0 ;
-  wire \o_dataPixel_reg[4]_i_1_n_0 ;
-  wire \o_dataPixel_reg[5]_i_1_n_0 ;
-  wire \o_dataPixel_reg[6]_i_1_n_0 ;
-  wire \o_dataPixel_reg[7]_i_1_n_0 ;
-  wire \o_dataPixel_reg[8]_i_1_n_0 ;
-  wire \o_dataPixel_reg[9]_i_1_n_0 ;
 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT3 #(
-    .INIT(8'hFE)) 
-    \o_dataPixel_inferred__0/i_ 
-       (.I0(i_y[0]),
-        .I1(i_y[2]),
-        .I2(i_y[1]),
-        .O(\o_dataPixel_inferred__0/i__n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[0] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[0]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[0]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[0]_i_1 
+    .INIT(8'hAC)) 
+    \o_dataPixel[0]_INST_0 
        (.I0(i_colorDataA[0]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[0]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[0]),
-        .O(\o_dataPixel_reg[0]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[10] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[10]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[10]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[10]_i_1 
+        .I1(i_colorDataB[0]),
+        .I2(i_y),
+        .O(o_dataPixel[0]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[10]_INST_0 
        (.I0(i_colorDataA[10]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[10]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[10]),
-        .O(\o_dataPixel_reg[10]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[11] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[11]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[11]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[11]_i_1 
+        .I1(i_colorDataB[10]),
+        .I2(i_y),
+        .O(o_dataPixel[10]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[11]_INST_0 
        (.I0(i_colorDataA[11]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[11]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[11]),
-        .O(\o_dataPixel_reg[11]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[12] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[12]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[12]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[12]_i_1 
+        .I1(i_colorDataB[11]),
+        .I2(i_y),
+        .O(o_dataPixel[11]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[12]_INST_0 
        (.I0(i_colorDataA[12]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[12]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[12]),
-        .O(\o_dataPixel_reg[12]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[13] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[13]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[13]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[13]_i_1 
+        .I1(i_colorDataB[12]),
+        .I2(i_y),
+        .O(o_dataPixel[12]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[13]_INST_0 
        (.I0(i_colorDataA[13]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[13]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[13]),
-        .O(\o_dataPixel_reg[13]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[14] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[14]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[14]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[14]_i_1 
+        .I1(i_colorDataB[13]),
+        .I2(i_y),
+        .O(o_dataPixel[13]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[14]_INST_0 
        (.I0(i_colorDataA[14]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[14]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[14]),
-        .O(\o_dataPixel_reg[14]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[15] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[15]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[15]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[15]_i_1 
+        .I1(i_colorDataB[14]),
+        .I2(i_y),
+        .O(o_dataPixel[14]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[15]_INST_0 
        (.I0(i_colorDataA[15]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[15]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[15]),
-        .O(\o_dataPixel_reg[15]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[16] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[16]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[16]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[16]_i_1 
+        .I1(i_colorDataB[15]),
+        .I2(i_y),
+        .O(o_dataPixel[15]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[16]_INST_0 
        (.I0(i_colorDataA[16]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[16]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[16]),
-        .O(\o_dataPixel_reg[16]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[17] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[17]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[17]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[17]_i_1 
+        .I1(i_colorDataB[16]),
+        .I2(i_y),
+        .O(o_dataPixel[16]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[17]_INST_0 
        (.I0(i_colorDataA[17]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[17]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[17]),
-        .O(\o_dataPixel_reg[17]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[18] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[18]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[18]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[18]_i_1 
+        .I1(i_colorDataB[17]),
+        .I2(i_y),
+        .O(o_dataPixel[17]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[18]_INST_0 
        (.I0(i_colorDataA[18]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[18]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[18]),
-        .O(\o_dataPixel_reg[18]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[19] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[19]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[19]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[19]_i_1 
+        .I1(i_colorDataB[18]),
+        .I2(i_y),
+        .O(o_dataPixel[18]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[19]_INST_0 
        (.I0(i_colorDataA[19]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[19]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[19]),
-        .O(\o_dataPixel_reg[19]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[1] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[1]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[1]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[1]_i_1 
+        .I1(i_colorDataB[19]),
+        .I2(i_y),
+        .O(o_dataPixel[19]));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[1]_INST_0 
        (.I0(i_colorDataA[1]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[1]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[1]),
-        .O(\o_dataPixel_reg[1]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[20] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[20]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[20]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[20]_i_1 
+        .I1(i_colorDataB[1]),
+        .I2(i_y),
+        .O(o_dataPixel[1]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[20]_INST_0 
        (.I0(i_colorDataA[20]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[20]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[20]),
-        .O(\o_dataPixel_reg[20]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[21] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[21]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[21]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[21]_i_1 
+        .I1(i_colorDataB[20]),
+        .I2(i_y),
+        .O(o_dataPixel[20]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[21]_INST_0 
        (.I0(i_colorDataA[21]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[21]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[21]),
-        .O(\o_dataPixel_reg[21]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[22] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[22]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[22]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[22]_i_1 
+        .I1(i_colorDataB[21]),
+        .I2(i_y),
+        .O(o_dataPixel[21]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[22]_INST_0 
        (.I0(i_colorDataA[22]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[22]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[22]),
-        .O(\o_dataPixel_reg[22]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[23] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[23]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[23]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[23]_i_1 
+        .I1(i_colorDataB[22]),
+        .I2(i_y),
+        .O(o_dataPixel[22]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[23]_INST_0 
        (.I0(i_colorDataA[23]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[23]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[23]),
-        .O(\o_dataPixel_reg[23]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[2] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[2]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[2]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[2]_i_1 
+        .I1(i_colorDataB[23]),
+        .I2(i_y),
+        .O(o_dataPixel[23]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[2]_INST_0 
        (.I0(i_colorDataA[2]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[2]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[2]),
-        .O(\o_dataPixel_reg[2]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[3] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[3]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[3]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[3]_i_1 
+        .I1(i_colorDataB[2]),
+        .I2(i_y),
+        .O(o_dataPixel[2]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[3]_INST_0 
        (.I0(i_colorDataA[3]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[3]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[3]),
-        .O(\o_dataPixel_reg[3]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[4] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[4]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[4]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[4]_i_1 
+        .I1(i_colorDataB[3]),
+        .I2(i_y),
+        .O(o_dataPixel[3]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[4]_INST_0 
        (.I0(i_colorDataA[4]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[4]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[4]),
-        .O(\o_dataPixel_reg[4]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[5] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[5]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[5]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[5]_i_1 
+        .I1(i_colorDataB[4]),
+        .I2(i_y),
+        .O(o_dataPixel[4]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[5]_INST_0 
        (.I0(i_colorDataA[5]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[5]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[5]),
-        .O(\o_dataPixel_reg[5]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[6] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[6]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[6]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[6]_i_1 
+        .I1(i_colorDataB[5]),
+        .I2(i_y),
+        .O(o_dataPixel[5]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[6]_INST_0 
        (.I0(i_colorDataA[6]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[6]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[6]),
-        .O(\o_dataPixel_reg[6]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[7] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[7]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[7]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[7]_i_1 
+        .I1(i_colorDataB[6]),
+        .I2(i_y),
+        .O(o_dataPixel[6]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[7]_INST_0 
        (.I0(i_colorDataA[7]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[7]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[7]),
-        .O(\o_dataPixel_reg[7]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[8] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[8]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[8]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[8]_i_1 
+        .I1(i_colorDataB[7]),
+        .I2(i_y),
+        .O(o_dataPixel[7]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[8]_INST_0 
        (.I0(i_colorDataA[8]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[8]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[8]),
-        .O(\o_dataPixel_reg[8]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \o_dataPixel_reg[9] 
-       (.CLR(1'b0),
-        .D(\o_dataPixel_reg[9]_i_1_n_0 ),
-        .G(\o_dataPixel_inferred__0/i__n_0 ),
-        .GE(1'b1),
-        .Q(o_dataPixel[9]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \o_dataPixel_reg[9]_i_1 
+        .I1(i_colorDataB[8]),
+        .I2(i_y),
+        .O(o_dataPixel[8]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \o_dataPixel[9]_INST_0 
        (.I0(i_colorDataA[9]),
-        .I1(i_y[0]),
-        .I2(i_colorDataB[9]),
-        .I3(i_y[1]),
-        .I4(i_colorDataC[9]),
-        .O(\o_dataPixel_reg[9]_i_1_n_0 ));
+        .I1(i_colorDataB[9]),
+        .I2(i_y),
+        .O(o_dataPixel[9]));
 endmodule
 `ifndef GLBL
 `define GLBL
