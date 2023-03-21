@@ -1,0 +1,23 @@
+# Ignore everything
+*
+
+# Don't ignore file for Vitis
+!.atelier4_wrapper.xsa
+!.atelier4_wrapper
+!.project
+!.project_system
+
+# Don't ignore file for Vivado
+!.s4InfoAtelier4.cache
+!.s4InfoAtelier4.gen
+!.s4InfoAtelier4.hw
+!.s4InfoAtelier4.ip_user_files
+!.s4InfoAtelier4.ipdefs
+!.s4InfoAtelier4.runs
+!.s4InfoAtelier4.srcs
+!.s4InfoAtelier4.xpr
+!.archive_project_summary.txt
+
+
+# Don't ignore this file
+!.gitignore
