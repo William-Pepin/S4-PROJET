@@ -39,8 +39,8 @@ Port (
     i_y : in std_logic_vector(11 downto 0);
     o_dataValid : out std_logic;
     o_dataPixel : out std_logic_vector(23 downto 0);
-    i_colorDataA : in std_logic_vector(23 downto 0);
-    i_colorDataB : in std_logic_vector(23 downto 0)
+    i_colorDataA : in std_logic_vector(31 downto 0);
+    i_colorDataB : in std_logic_vector(31 downto 0)
 );
 end testPatternGen2;
 

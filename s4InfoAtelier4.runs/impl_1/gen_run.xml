@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1678992801">
+=======
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1674511177">
+  <File Type="BITSTR-BMM" Name="atelier4_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="atelier4_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="atelier4_wrapper_timing_summary_init.rpt"/>
+>>>>>>> 6b46a57 (reset)
   <File Type="ROUTE-PWR" Name="atelier4_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="atelier4_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="atelier4_wrapper_power_summary_routed.pb"/>
@@ -67,18 +74,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/colorRegister.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/InstructionDecoder.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/atelier4/atelier4.bd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../s4InfoAtelier4.srcs/sources_1/bd/atelier4/atelier4.bd"/>
@@ -97,13 +92,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/archive_project_summary.txt"/>
-    <File Path="$PSRCDIR/sources_1/new/InstructionFetch.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="atelier4_wrapper"/>
@@ -144,13 +132,20 @@
     <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_axi_vdma_0_0"/>
+<<<<<<< HEAD
   <BlockFileSet Type="BlockSrcs" Name="atelier4_pixelDataToVideoStre_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_InstructionRegister_0_1"/>
+=======
+  <BlockFileSet Type="BlockSrcs" Name="atelier4_processing_system7_0_0"/>
+>>>>>>> 6b46a57 (reset)
   <BlockFileSet Type="BlockSrcs" Name="bd_0837_hsc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_v_proc_ss_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_testPatternGen2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_0837_vsc_0"/>
+<<<<<<< HEAD
   <BlockFileSet Type="BlockSrcs" Name="atelier4_colorRegister_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_InstructionDecoder_0_0"/>
+=======
+>>>>>>> 6b46a57 (reset)
 </GenRun>

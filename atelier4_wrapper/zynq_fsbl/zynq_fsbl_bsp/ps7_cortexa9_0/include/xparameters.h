@@ -31,17 +31,6 @@
  
  
 /******************************************************************/
-/* Definitions for driver INSTRUCTIONREGISTER */
-#define XPAR_INSTRUCTIONREGISTER_NUM_INSTANCES 1
-
-/* Definitions for peripheral INSTRUCTIONREGISTER_0 */
-#define XPAR_INSTRUCTIONREGISTER_0_DEVICE_ID 0
-#define XPAR_INSTRUCTIONREGISTER_0_S00_AXI_BASEADDR 0x43C40000
-#define XPAR_INSTRUCTIONREGISTER_0_S00_AXI_HIGHADDR 0x43C4FFFF
-
-
-/******************************************************************/
-
 /* Definitions for driver AXIVDMA */
 #define XPAR_XAXIVDMA_NUM_INSTANCES 1U
 
@@ -356,6 +345,17 @@
 #define XPAR_XGPIOPS_0_DEVICE_ID XPAR_PS7_GPIO_0_DEVICE_ID
 #define XPAR_XGPIOPS_0_BASEADDR 0xE000A000
 #define XPAR_XGPIOPS_0_HIGHADDR 0xE000AFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver MYCOLORREGISTER */
+#define XPAR_MYCOLORREGISTER_NUM_INSTANCES 1
+
+/* Definitions for peripheral MYCOLORREGISTER_0 */
+#define XPAR_MYCOLORREGISTER_0_DEVICE_ID 0
+#define XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR 0x43C40000
+#define XPAR_MYCOLORREGISTER_0_S00_AXI_HIGHADDR 0x43C4FFFF
 
 
 /******************************************************************/
