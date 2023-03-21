@@ -224,15 +224,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-<<<<<<< HEAD
-<<<<<<< HEAD
       <xilinx:coreCreationDateTime>2023-03-21T16:50:29Z</xilinx:coreCreationDateTime>
-=======
-      <xilinx:coreCreationDateTime>2023-03-21T18:07:09Z</xilinx:coreCreationDateTime>
->>>>>>> 6b46a57 (reset)
-=======
-      <xilinx:coreCreationDateTime>2023-03-21T16:50:29Z</xilinx:coreCreationDateTime>
->>>>>>> 5f07b34 (test)
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>

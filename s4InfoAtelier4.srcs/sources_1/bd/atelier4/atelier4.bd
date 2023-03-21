@@ -20,10 +20,6 @@
       "v_axi4s_vid_out_0": "",
       "v_proc_ss_0": "",
       "v_tc_0": "",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5f07b34 (test)
       "pixelDataToVideoStre_0": "",
       "InstructionRegister_0": "",
       "xlconstant_6": "",
@@ -32,12 +28,6 @@
       "testPatternGen2_0": "",
       "colorRegister_0": "",
       "InstructionDecoder_0": ""
-<<<<<<< HEAD
-=======
-      "pixelDataToVideoStre_0": ""
->>>>>>> 6b46a57 (reset)
-=======
->>>>>>> 5f07b34 (test)
     },
     "interface_ports": {
       "hdmi_out": {
@@ -2323,10 +2313,6 @@
             "value": "640"
           }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5f07b34 (test)
       },
       "InstructionRegister_0": {
         "vlnv": "xilinx.com:user:InstructionRegister:1.0",
@@ -2525,11 +2511,6 @@
             "direction": "O"
           }
         }
-<<<<<<< HEAD
-=======
->>>>>>> 6b46a57 (reset)
-=======
->>>>>>> 5f07b34 (test)
       }
     },
     "interface_nets": {
@@ -2541,24 +2522,8 @@
       },
       "smartconnect_0_M03_AXI": {
         "interface_ports": [
-<<<<<<< HEAD
-<<<<<<< HEAD
           "InstructionRegister_0/S00_AXI",
           "smartconnect_0/M03_AXI"
-=======
-          "v_tc_0/vtiming_out",
-          "v_axi4s_vid_out_0/vtiming_in"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
->>>>>>> 6b46a57 (reset)
-=======
-          "InstructionRegister_0/S00_AXI",
-          "smartconnect_0/M03_AXI"
->>>>>>> 5f07b34 (test)
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -2567,17 +2532,10 @@
           "processing_system7_0/M_AXI_GP0"
         ]
       },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5f07b34 (test)
       "axi_vdma_0_M_AXIS_MM2S": {
         "interface_ports": [
           "axi_vdma_0/M_AXIS_MM2S",
           "v_proc_ss_0/s_axis"
-<<<<<<< HEAD
-=======
-=======
         ]
       },
       "smartconnect_0_M02_AXI": {
@@ -2610,75 +2568,6 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
->>>>>>> 5f07b34 (test)
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
-      "axi_vdma_0_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_MM2S",
-          "smartconnect_1/S00_AXI"
-        ]
-      },
-      "smartconnect_0_M01_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "axi_vdma_0/S_AXI_LITE"
-        ]
-      },
-      "pixelDataToVideoStre_0_M00_AXIS": {
-        "interface_ports": [
-          "pixelDataToVideoStre_0/M00_AXIS",
-          "axi_vdma_0/S_AXIS_S2MM"
->>>>>>> 6b46a57 (reset)
-        ]
-      },
-      "axi_vdma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_S2MM",
-          "smartconnect_1/S01_AXI"
-        ]
-      },
-      "smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "v_proc_ss_0/s_axi_ctrl"
-        ]
-      },
-      "v_axi4s_vid_out_0_vid_io_out": {
-        "interface_ports": [
-          "v_axi4s_vid_out_0/vid_io_out",
-          "rgb2dvi_0/RGB"
-        ]
-<<<<<<< HEAD
-      },
-      "v_proc_ss_0_m_axis": {
-        "interface_ports": [
-          "v_proc_ss_0/m_axis",
-          "v_axi4s_vid_out_0/video_in"
-        ]
-      },
-      "v_tc_0_vtiming_out": {
-        "interface_ports": [
-          "v_tc_0/vtiming_out",
-          "v_axi4s_vid_out_0/vtiming_in"
-        ]
-      },
-      "rgb2dvi_0_TMDS": {
-        "interface_ports": [
-          "hdmi_out",
-          "rgb2dvi_0/TMDS"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
@@ -2720,8 +2609,6 @@
           "v_axi4s_vid_out_0/vid_io_out",
           "rgb2dvi_0/RGB"
         ]
-=======
->>>>>>> 6b46a57 (reset)
       }
     },
     "nets": {
@@ -2798,10 +2685,6 @@
           "pixelDataToVideoStre_0/o_pixel_x",
           "testPatternGen2_0/i_x"
         ]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5f07b34 (test)
       },
       "proc_sys_reset_0_peripheral_aresetn": {
         "ports": [
@@ -2889,11 +2772,6 @@
           "xlslice_1/Dout",
           "InstructionDecoder_0/i_instruction_data"
         ]
-<<<<<<< HEAD
-=======
->>>>>>> 6b46a57 (reset)
-=======
->>>>>>> 5f07b34 (test)
       }
     },
     "addressing": {

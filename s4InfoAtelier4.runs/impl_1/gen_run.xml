@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1678992801">
-=======
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1674511177">
-  <File Type="BITSTR-BMM" Name="atelier4_wrapper_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="atelier4_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="atelier4_wrapper_timing_summary_init.rpt"/>
->>>>>>> 6b46a57 (reset)
-=======
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1678992801">
->>>>>>> 5f07b34 (test)
   <File Type="ROUTE-PWR" Name="atelier4_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="atelier4_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="atelier4_wrapper_power_summary_routed.pb"/>
@@ -155,31 +144,13 @@
     <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_axi_vdma_0_0"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <BlockFileSet Type="BlockSrcs" Name="atelier4_pixelDataToVideoStre_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_InstructionRegister_0_1"/>
-=======
-  <BlockFileSet Type="BlockSrcs" Name="atelier4_processing_system7_0_0"/>
->>>>>>> 6b46a57 (reset)
-=======
-  <BlockFileSet Type="BlockSrcs" Name="atelier4_pixelDataToVideoStre_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="atelier4_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="atelier4_InstructionRegister_0_1"/>
->>>>>>> 5f07b34 (test)
   <BlockFileSet Type="BlockSrcs" Name="bd_0837_hsc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_v_proc_ss_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_testPatternGen2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_0837_vsc_0"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <BlockFileSet Type="BlockSrcs" Name="atelier4_colorRegister_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="atelier4_InstructionDecoder_0_0"/>
-=======
->>>>>>> 6b46a57 (reset)
-=======
-  <BlockFileSet Type="BlockSrcs" Name="atelier4_colorRegister_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="atelier4_InstructionDecoder_0_0"/>
->>>>>>> 5f07b34 (test)
 </GenRun>
