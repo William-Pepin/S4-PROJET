@@ -59,7 +59,13 @@ ENTITY atelier4_InstructionDecoder_0_0 IS
     i_instruction_data : IN STD_LOGIC_VECTOR(27 DOWNTO 0);
     o_colorData : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
     o_colorSel : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    o_colorWriteEN : OUT STD_LOGIC
+    o_colorWriteEN : OUT STD_LOGIC;
+    o_tileId : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    o_paletteId : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    o_x : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+    o_y : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+    o_bufferWriteEn : OUT STD_LOGIC;
+    o_bcgWriteEn : OUT STD_LOGIC
   );
 END atelier4_InstructionDecoder_0_0;
 
@@ -72,7 +78,13 @@ ARCHITECTURE atelier4_InstructionDecoder_0_0_arch OF atelier4_InstructionDecoder
       i_instruction_data : IN STD_LOGIC_VECTOR(27 DOWNTO 0);
       o_colorData : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
       o_colorSel : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-      o_colorWriteEN : OUT STD_LOGIC
+      o_colorWriteEN : OUT STD_LOGIC;
+      o_tileId : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+      o_paletteId : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      o_x : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+      o_y : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+      o_bufferWriteEn : OUT STD_LOGIC;
+      o_bcgWriteEn : OUT STD_LOGIC
     );
   END COMPONENT InstructionDecoder;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -90,6 +102,12 @@ BEGIN
       i_instruction_data => i_instruction_data,
       o_colorData => o_colorData,
       o_colorSel => o_colorSel,
-      o_colorWriteEN => o_colorWriteEN
+      o_colorWriteEN => o_colorWriteEN,
+      o_tileId => o_tileId,
+      o_paletteId => o_paletteId,
+      o_x => o_x,
+      o_y => o_y,
+      o_bufferWriteEn => o_bufferWriteEn,
+      o_bcgWriteEn => o_bcgWriteEn
     );
 END atelier4_InstructionDecoder_0_0_arch;

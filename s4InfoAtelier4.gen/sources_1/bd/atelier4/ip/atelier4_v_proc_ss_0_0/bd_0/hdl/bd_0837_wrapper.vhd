@@ -80,15 +80,6 @@ architecture STRUCTURE of bd_0837_wrapper is
     s_axi_ctrl_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_ctrl_rvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_ctrl_rready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tdest : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis_tid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
-    s_axis_tready : out STD_LOGIC;
-    s_axis_tstrb : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis_tvalid : in STD_LOGIC;
     m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
     m_axis_tdest : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tid : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -97,7 +88,16 @@ architecture STRUCTURE of bd_0837_wrapper is
     m_axis_tready : in STD_LOGIC;
     m_axis_tstrb : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axis_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tvalid : out STD_LOGIC
+    m_axis_tvalid : out STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tdest : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_tid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_tkeep : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC;
+    s_axis_tstrb : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_tvalid : in STD_LOGIC
   );
   end component bd_0837;
 begin

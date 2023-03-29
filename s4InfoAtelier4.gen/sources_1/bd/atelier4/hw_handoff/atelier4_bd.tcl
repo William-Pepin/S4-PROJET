@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# InstructionDecoder, colorRegister, testPatternGen2
+# BackgroundManager, InstructionDecoder, TileBufferBackground, colorRegister
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -177,6 +177,17 @@ proc create_root_design { parentCell } {
  ] $reset_rtl
   set sys_clk [ create_bd_port -dir I -type clk sys_clk ]
 
+  # Create instance: BackgroundManager_0, and set properties
+  set block_name BackgroundManager
+  set block_cell_name BackgroundManager_0
+  if { [catch {set BackgroundManager_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $BackgroundManager_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: InstructionDecoder_0, and set properties
   set block_name InstructionDecoder
   set block_cell_name InstructionDecoder_0
@@ -191,6 +202,17 @@ proc create_root_design { parentCell } {
   # Create instance: InstructionRegister_0, and set properties
   set InstructionRegister_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:InstructionRegister:1.0 InstructionRegister_0 ]
 
+  # Create instance: TileBufferBackground_0, and set properties
+  set block_name TileBufferBackground
+  set block_cell_name TileBufferBackground_0
+  if { [catch {set TileBufferBackground_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $TileBufferBackground_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: axi_vdma_0, and set properties
   set axi_vdma_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.3 axi_vdma_0 ]
   set_property -dict [ list \
@@ -1065,17 +1087,6 @@ proc create_root_design { parentCell } {
    CONFIG.NUM_SI {2} \
  ] $smartconnect_1
 
-  # Create instance: testPatternGen2_0, and set properties
-  set block_name testPatternGen2
-  set block_cell_name testPatternGen2_0
-  if { [catch {set testPatternGen2_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $testPatternGen2_0 eq "" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
   # Create instance: v_axi4s_vid_out_0, and set properties
   set v_axi4s_vid_out_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 v_axi4s_vid_out_0 ]
 
@@ -1097,8 +1108,13 @@ proc create_root_design { parentCell } {
    CONFIG.enable_detection {false} \
  ] $v_tc_0
 
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+  set_property USER_COMMENTS.comment_0 "A changer eventuellement..." [get_bd_cells /xlconstant_0]
+
   # Create instance: xlconstant_6, and set properties
   set xlconstant_6 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_6 ]
+  set_property USER_COMMENTS.comment_1 "a changer eventuellement ....l" [get_bd_cells /xlconstant_6]
   set_property -dict [ list \
    CONFIG.CONST_VAL {0} \
    CONFIG.CONST_WIDTH {1} \
@@ -1119,6 +1135,22 @@ proc create_root_design { parentCell } {
    CONFIG.DOUT_WIDTH {28} \
  ] $xlslice_1
 
+  # Create instance: xlslice_2, and set properties
+  set xlslice_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {9} \
+   CONFIG.DIN_WIDTH {12} \
+   CONFIG.DOUT_WIDTH {10} \
+ ] $xlslice_2
+
+  # Create instance: xlslice_3, and set properties
+  set xlslice_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_3 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {9} \
+   CONFIG.DIN_WIDTH {12} \
+   CONFIG.DOUT_WIDTH {10} \
+ ] $xlslice_3
+
   # Create interface connections
   connect_bd_intf_net -intf_net axi_vdma_0_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_proc_ss_0/s_axis]
   connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_MM2S [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S] [get_bd_intf_pins smartconnect_1/S00_AXI]
@@ -1138,27 +1170,38 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net v_tc_0_vtiming_out [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins v_tc_0/vtiming_out]
 
   # Create port connections
+  connect_bd_net -net BackgroundManager_0_o_readPixelX [get_bd_pins BackgroundManager_0/o_readPixelX] [get_bd_pins TileBufferBackground_0/i_readPosX]
+  connect_bd_net -net BackgroundManager_0_o_readPixelY [get_bd_pins BackgroundManager_0/o_readPixelY] [get_bd_pins TileBufferBackground_0/i_readPosY]
+  connect_bd_net -net BackgroundManager_0_o_readTileID [get_bd_pins BackgroundManager_0/o_readTileID] [get_bd_pins TileBufferBackground_0/i_readTileID]
+  connect_bd_net -net InstructionDecoder_0_o_bcgWriteEn [get_bd_pins BackgroundManager_0/i_we] [get_bd_pins InstructionDecoder_0/o_bcgWriteEn]
+  connect_bd_net -net InstructionDecoder_0_o_bufferWriteEn [get_bd_pins InstructionDecoder_0/o_bufferWriteEn] [get_bd_pins TileBufferBackground_0/i_we]
   connect_bd_net -net InstructionDecoder_0_o_colorData [get_bd_pins InstructionDecoder_0/o_colorData] [get_bd_pins colorRegister_0/i_writeColorValue]
-  connect_bd_net -net InstructionDecoder_0_o_colorSel [get_bd_pins InstructionDecoder_0/o_colorSel] [get_bd_pins colorRegister_0/i_readColorCode] [get_bd_pins colorRegister_0/i_writeColorCode]
+  connect_bd_net -net InstructionDecoder_0_o_colorSel [get_bd_pins InstructionDecoder_0/o_colorSel] [get_bd_pins colorRegister_0/i_writeColorCode]
   connect_bd_net -net InstructionDecoder_0_o_colorWriteEN [get_bd_pins InstructionDecoder_0/o_colorWriteEN] [get_bd_pins colorRegister_0/i_we]
+  connect_bd_net -net InstructionDecoder_0_o_paletteId [get_bd_pins InstructionDecoder_0/o_paletteId] [get_bd_pins TileBufferBackground_0/i_writeColorCode]
+  connect_bd_net -net InstructionDecoder_0_o_tileId [get_bd_pins BackgroundManager_0/i_writeTileID] [get_bd_pins InstructionDecoder_0/o_tileId] [get_bd_pins TileBufferBackground_0/i_writeTileID]
+  connect_bd_net -net InstructionDecoder_0_o_x [get_bd_pins BackgroundManager_0/i_writeTilePosX] [get_bd_pins InstructionDecoder_0/o_x] [get_bd_pins TileBufferBackground_0/i_writePosX]
+  connect_bd_net -net InstructionDecoder_0_o_y [get_bd_pins BackgroundManager_0/i_writeTilePosY] [get_bd_pins InstructionDecoder_0/o_y] [get_bd_pins TileBufferBackground_0/i_writePosY]
   connect_bd_net -net InstructionRegister_0_o_Instruction [get_bd_pins InstructionRegister_0/o_Instruction] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din]
   connect_bd_net -net Net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins smartconnect_0/aclk] [get_bd_pins smartconnect_1/aclk1]
+  connect_bd_net -net TileBufferBackground_0_o_readColorCode [get_bd_pins TileBufferBackground_0/o_readColorCode] [get_bd_pins colorRegister_0/i_readColorCode]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins InstructionRegister_0/s00_axi_aclk] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins colorRegister_0/i_clk] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins smartconnect_0/aclk1] [get_bd_pins smartconnect_1/aclk] [get_bd_pins testPatternGen2_0/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_proc_ss_0/aclk_axis] [get_bd_pins v_proc_ss_0/aclk_ctrl] [get_bd_pins v_tc_0/clk]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins BackgroundManager_0/i_clk] [get_bd_pins InstructionRegister_0/s00_axi_aclk] [get_bd_pins TileBufferBackground_0/i_clk] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins colorRegister_0/i_clk] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins smartconnect_0/aclk1] [get_bd_pins smartconnect_1/aclk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_proc_ss_0/aclk_axis] [get_bd_pins v_proc_ss_0/aclk_ctrl] [get_bd_pins v_tc_0/clk]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked] [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken]
-  connect_bd_net -net colorRegister_0_o_readColorValue [get_bd_pins colorRegister_0/o_readColorValue] [get_bd_pins testPatternGen2_0/i_colorDataA] [get_bd_pins testPatternGen2_0/i_colorDataB]
-  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_x [get_bd_pins pixelDataToVideoStre_0/o_pixel_x] [get_bd_pins testPatternGen2_0/i_x]
-  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_y [get_bd_pins pixelDataToVideoStre_0/o_pixel_y] [get_bd_pins testPatternGen2_0/i_y]
-  connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins InstructionRegister_0/s00_axi_aresetn] [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins pixelDataToVideoStre_0/i_aresetn] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins testPatternGen2_0/rstn] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_proc_ss_0/aresetn_ctrl] [get_bd_pins v_tc_0/resetn]
+  connect_bd_net -net colorRegister_0_o_readColorValue [get_bd_pins colorRegister_0/o_readColorValue] [get_bd_pins pixelDataToVideoStre_0/i_dataPixel]
+  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_x [get_bd_pins pixelDataToVideoStre_0/o_pixel_x] [get_bd_pins xlslice_2/Din]
+  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_y [get_bd_pins pixelDataToVideoStre_0/o_pixel_y] [get_bd_pins xlslice_3/Din]
+  connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins InstructionRegister_0/s00_axi_aresetn] [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins pixelDataToVideoStre_0/i_aresetn] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_proc_ss_0/aresetn_ctrl] [get_bd_pins v_tc_0/resetn]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins smartconnect_0/aresetn] [get_bd_pins smartconnect_1/aresetn]
   connect_bd_net -net reset_0_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset] [get_bd_pins proc_sys_reset_0/ext_reset_in]
-  connect_bd_net -net testPatternGen2_0_o_dataPixel [get_bd_pins pixelDataToVideoStre_0/i_dataPixel] [get_bd_pins testPatternGen2_0/o_dataPixel]
-  connect_bd_net -net testPatternGen2_0_o_dataValid [get_bd_pins pixelDataToVideoStre_0/i_dataValid] [get_bd_pins testPatternGen2_0/o_dataValid]
   connect_bd_net -net v_axi4s_vid_out_0_sof_state_out [get_bd_pins v_axi4s_vid_out_0/sof_state_out] [get_bd_pins v_tc_0/sof_state]
   connect_bd_net -net v_axi4s_vid_out_0_vtg_ce [get_bd_pins v_axi4s_vid_out_0/vtg_ce] [get_bd_pins v_tc_0/gen_clken]
-  connect_bd_net -net xlconstant_6_dout [get_bd_pins colorRegister_0/i_reset] [get_bd_pins xlconstant_6/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins pixelDataToVideoStre_0/i_dataValid] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_6_dout [get_bd_pins BackgroundManager_0/i_reset] [get_bd_pins TileBufferBackground_0/i_reset] [get_bd_pins colorRegister_0/i_reset] [get_bd_pins xlconstant_6/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins InstructionDecoder_0/i_opcode] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins InstructionDecoder_0/i_instruction_data] [get_bd_pins xlslice_1/Dout]
+  connect_bd_net -net xlslice_2_Dout [get_bd_pins BackgroundManager_0/i_readGlobalPosX] [get_bd_pins xlslice_2/Dout]
+  connect_bd_net -net xlslice_3_Dout [get_bd_pins BackgroundManager_0/i_readGlobalPosY] [get_bd_pins xlslice_3/Dout]
 
   # Create address segments
   assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space [get_bd_addr_spaces axi_vdma_0/Data_MM2S] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force

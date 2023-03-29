@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 // Date        : Wed Mar 15 11:15:08 2023
 // Host        : William_PC running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_InstructionRegister_0_1/atelier4_InstructionRegister_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top atelier4_InstructionRegister_0_1 -prefix
+//               atelier4_InstructionRegister_0_1_ atelier4_InstructionRegister_0_1_stub.v
 // Design      : atelier4_InstructionRegister_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

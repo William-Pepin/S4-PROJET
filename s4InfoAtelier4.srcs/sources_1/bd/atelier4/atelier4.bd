@@ -23,12 +23,16 @@
       "v_tc_0": "",
       "pixelDataToVideoStre_0": "",
       "InstructionRegister_0": "",
-      "testPatternGen2_0": "",
-      "colorRegister_0": "",
       "xlconstant_6": "",
-      "InstructionDecoder_0": "",
       "xlslice_0": "",
-      "xlslice_1": ""
+      "xlslice_1": "",
+      "colorRegister_0": "",
+      "xlslice_2": "",
+      "xlslice_3": "",
+      "InstructionDecoder_0": "",
+      "TileBufferBackground_0": "",
+      "xlconstant_0": "",
+      "BackgroundManager_0": ""
     },
     "interface_ports": {
       "hdmi_out": {
@@ -2403,76 +2407,48 @@
         "xci_path": "ip\\atelier4_InstructionRegister_0_1\\atelier4_InstructionRegister_0_1.xci",
         "inst_hier_path": "InstructionRegister_0"
       },
-      "testPatternGen2_0": {
-        "vlnv": "xilinx.com:module_ref:testPatternGen2:1.0",
-        "xci_name": "atelier4_testPatternGen2_0_0",
-        "xci_path": "ip\\atelier4_testPatternGen2_0_0\\atelier4_testPatternGen2_0_0.xci",
-        "inst_hier_path": "testPatternGen2_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "testPatternGen2",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rstn",
-                "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "74250000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              }
-            }
+      "xlconstant_6": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "atelier4_xlconstant_4_0",
+        "xci_path": "ip\\atelier4_xlconstant_4_0\\atelier4_xlconstant_4_0.xci",
+        "inst_hier_path": "xlconstant_6",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
           },
-          "rstn": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
+          "CONST_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "atelier4_xlslice_0_0",
+        "xci_path": "ip\\atelier4_xlslice_0_0\\atelier4_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
           },
-          "i_x": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
+          "DIN_TO": {
+            "value": "28"
           },
-          "i_y": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "atelier4_xlslice_0_1",
+        "xci_path": "ip\\atelier4_xlslice_0_1\\atelier4_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "27"
           },
-          "o_dataValid": {
-            "direction": "O"
-          },
-          "o_dataPixel": {
-            "direction": "O",
-            "left": "23",
-            "right": "0"
-          },
-          "i_colorDataA": {
-            "direction": "I",
-            "left": "23",
-            "right": "0"
-          },
-          "i_colorDataB": {
-            "direction": "I",
-            "left": "23",
-            "right": "0"
+          "DOUT_WIDTH": {
+            "value": "28"
           }
         }
       },
@@ -2538,17 +2514,37 @@
           }
         }
       },
-      "xlconstant_6": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "atelier4_xlconstant_4_0",
-        "xci_path": "ip\\atelier4_xlconstant_4_0\\atelier4_xlconstant_4_0.xci",
-        "inst_hier_path": "xlconstant_6",
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "atelier4_xlslice_2_0",
+        "xci_path": "ip\\atelier4_xlslice_2_0\\atelier4_xlslice_2_0.xci",
+        "inst_hier_path": "xlslice_2",
         "parameters": {
-          "CONST_VAL": {
-            "value": "0"
+          "DIN_FROM": {
+            "value": "9"
           },
-          "CONST_WIDTH": {
-            "value": "1"
+          "DIN_WIDTH": {
+            "value": "12"
+          },
+          "DOUT_WIDTH": {
+            "value": "10"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "atelier4_xlslice_2_1",
+        "xci_path": "ip\\atelier4_xlslice_2_1\\atelier4_xlslice_2_1.xci",
+        "inst_hier_path": "xlslice_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "9"
+          },
+          "DIN_WIDTH": {
+            "value": "12"
+          },
+          "DOUT_WIDTH": {
+            "value": "10"
           }
         }
       },
@@ -2585,52 +2581,223 @@
           },
           "o_colorWriteEN": {
             "direction": "O"
+          },
+          "o_tileId": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "o_paletteId": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "o_x": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "o_y": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "o_bufferWriteEn": {
+            "direction": "O"
+          },
+          "o_bcgWriteEn": {
+            "direction": "O"
           }
         }
       },
-      "xlslice_0": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "atelier4_xlslice_0_0",
-        "xci_path": "ip\\atelier4_xlslice_0_0\\atelier4_xlslice_0_0.xci",
-        "inst_hier_path": "xlslice_0",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "31"
+      "TileBufferBackground_0": {
+        "vlnv": "xilinx.com:module_ref:TileBufferBackground:1.0",
+        "xci_name": "atelier4_TileBufferBackground_0_0",
+        "xci_path": "ip\\atelier4_TileBufferBackground_0_0\\atelier4_TileBufferBackground_0_0.xci",
+        "inst_hier_path": "TileBufferBackground_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TileBufferBackground",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_readTileID": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
           },
-          "DIN_TO": {
-            "value": "28"
+          "i_readPosX": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
           },
-          "DOUT_WIDTH": {
-            "value": "4"
+          "i_readPosY": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "o_readColorCode": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "i_writeTileID": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "i_writePosX": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_writePosY": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_writeColorCode": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_we": {
+            "direction": "I"
+          },
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "74250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_reset": {
+            "type": "rst",
+            "direction": "I"
           }
         }
       },
-      "xlslice_1": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "atelier4_xlslice_0_1",
-        "xci_path": "ip\\atelier4_xlslice_0_1\\atelier4_xlslice_0_1.xci",
-        "inst_hier_path": "xlslice_1",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "27"
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "atelier4_xlconstant_0_0",
+        "xci_path": "ip\\atelier4_xlconstant_0_0\\atelier4_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "BackgroundManager_0": {
+        "vlnv": "xilinx.com:module_ref:BackgroundManager:1.0",
+        "xci_name": "atelier4_BackgroundManager_0_0",
+        "xci_path": "ip\\atelier4_BackgroundManager_0_0\\atelier4_BackgroundManager_0_0.xci",
+        "inst_hier_path": "BackgroundManager_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BackgroundManager",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_readGlobalPosX": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
           },
-          "DOUT_WIDTH": {
-            "value": "28"
+          "i_readGlobalPosY": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "o_readTileID": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "o_readPixelX": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "o_readPixelY": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "i_writeTilePosX": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "i_writeTilePosY": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "i_writeTileID": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "i_we": {
+            "direction": "I"
+          },
+          "i_reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "74250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       }
     },
     "interface_nets": {
-      "smartconnect_1_M00_AXI": {
+      "v_proc_ss_0_m_axis": {
         "interface_ports": [
-          "smartconnect_1/M00_AXI",
-          "processing_system7_0/S_AXI_HP0"
+          "v_proc_ss_0/m_axis",
+          "v_axi4s_vid_out_0/video_in"
         ]
       },
-      "v_tc_0_vtiming_out": {
+      "smartconnect_0_M02_AXI": {
         "interface_ports": [
-          "v_tc_0/vtiming_out",
-          "v_axi4s_vid_out_0/vtiming_in"
+          "pixelDataToVideoStre_0/S00_AXI",
+          "smartconnect_0/M02_AXI"
+        ]
+      },
+      "pixelDataToVideoStre_0_M00_AXIS": {
+        "interface_ports": [
+          "pixelDataToVideoStre_0/M00_AXIS",
+          "axi_vdma_0/S_AXIS_S2MM"
         ]
       },
       "axi_vdma_0_M_AXI_S2MM": {
@@ -2639,22 +2806,58 @@
           "smartconnect_1/S01_AXI"
         ]
       },
-      "smartconnect_0_M00_AXI": {
+      "smartconnect_1_M00_AXI": {
         "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "v_proc_ss_0/s_axi_ctrl"
-        ]
-      },
-      "axi_vdma_0_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_MM2S",
-          "smartconnect_1/S00_AXI"
+          "smartconnect_1/M00_AXI",
+          "processing_system7_0/S_AXI_HP0"
         ]
       },
       "processing_system7_0_FIXED_IO": {
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_io_out": {
+        "interface_ports": [
+          "v_axi4s_vid_out_0/vid_io_out",
+          "rgb2dvi_0/RGB"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "v_proc_ss_0/s_axi_ctrl"
+        ]
+      },
+      "smartconnect_0_M03_AXI": {
+        "interface_ports": [
+          "InstructionRegister_0/S00_AXI",
+          "smartconnect_0/M03_AXI"
+        ]
+      },
+      "smartconnect_0_M01_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M01_AXI",
+          "axi_vdma_0/S_AXI_LITE"
+        ]
+      },
+      "rgb2dvi_0_TMDS": {
+        "interface_ports": [
+          "hdmi_out",
+          "rgb2dvi_0/TMDS"
+        ]
+      },
+      "axi_vdma_0_M_AXIS_MM2S": {
+        "interface_ports": [
+          "axi_vdma_0/M_AXIS_MM2S",
+          "v_proc_ss_0/s_axis"
+        ]
+      },
+      "v_tc_0_vtiming_out": {
+        "interface_ports": [
+          "v_tc_0/vtiming_out",
+          "v_axi4s_vid_out_0/vtiming_in"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -2669,52 +2872,10 @@
           "processing_system7_0/DDR"
         ]
       },
-      "smartconnect_0_M01_AXI": {
+      "axi_vdma_0_M_AXI_MM2S": {
         "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "axi_vdma_0/S_AXI_LITE"
-        ]
-      },
-      "v_axi4s_vid_out_0_vid_io_out": {
-        "interface_ports": [
-          "v_axi4s_vid_out_0/vid_io_out",
-          "rgb2dvi_0/RGB"
-        ]
-      },
-      "smartconnect_0_M03_AXI": {
-        "interface_ports": [
-          "InstructionRegister_0/S00_AXI",
-          "smartconnect_0/M03_AXI"
-        ]
-      },
-      "axi_vdma_0_M_AXIS_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXIS_MM2S",
-          "v_proc_ss_0/s_axis"
-        ]
-      },
-      "pixelDataToVideoStre_0_M00_AXIS": {
-        "interface_ports": [
-          "pixelDataToVideoStre_0/M00_AXIS",
-          "axi_vdma_0/S_AXIS_S2MM"
-        ]
-      },
-      "smartconnect_0_M02_AXI": {
-        "interface_ports": [
-          "pixelDataToVideoStre_0/S00_AXI",
-          "smartconnect_0/M02_AXI"
-        ]
-      },
-      "v_proc_ss_0_m_axis": {
-        "interface_ports": [
-          "v_proc_ss_0/m_axis",
-          "v_axi4s_vid_out_0/video_in"
-        ]
-      },
-      "rgb2dvi_0_TMDS": {
-        "interface_ports": [
-          "hdmi_out",
-          "rgb2dvi_0/TMDS"
+          "axi_vdma_0/M_AXI_MM2S",
+          "smartconnect_1/S00_AXI"
         ]
       }
     },
@@ -2769,28 +2930,16 @@
           "smartconnect_1/aresetn"
         ]
       },
-      "testPatternGen2_0_o_dataValid": {
-        "ports": [
-          "testPatternGen2_0/o_dataValid",
-          "pixelDataToVideoStre_0/i_dataValid"
-        ]
-      },
-      "testPatternGen2_0_o_dataPixel": {
-        "ports": [
-          "testPatternGen2_0/o_dataPixel",
-          "pixelDataToVideoStre_0/i_dataPixel"
-        ]
-      },
       "pixelDataToVideoStre_0_o_pixel_y": {
         "ports": [
           "pixelDataToVideoStre_0/o_pixel_y",
-          "testPatternGen2_0/i_y"
+          "xlslice_3/Din"
         ]
       },
       "pixelDataToVideoStre_0_o_pixel_x": {
         "ports": [
           "pixelDataToVideoStre_0/o_pixel_x",
-          "testPatternGen2_0/i_x"
+          "xlslice_2/Din"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -2803,8 +2952,7 @@
           "v_tc_0/resetn",
           "pixelDataToVideoStre_0/i_aresetn",
           "pixelDataToVideoStre_0/s00_axi_aresetn",
-          "InstructionRegister_0/s00_axi_aresetn",
-          "testPatternGen2_0/rstn"
+          "InstructionRegister_0/s00_axi_aresetn"
         ]
       },
       "clk_wiz_0_clk_out1": {
@@ -2825,21 +2973,17 @@
           "v_tc_0/clk",
           "pixelDataToVideoStre_0/s00_axi_aclk",
           "InstructionRegister_0/s00_axi_aclk",
-          "testPatternGen2_0/clk",
-          "colorRegister_0/i_clk"
-        ]
-      },
-      "colorRegister_0_o_readColorValue": {
-        "ports": [
-          "colorRegister_0/o_readColorValue",
-          "testPatternGen2_0/i_colorDataA",
-          "testPatternGen2_0/i_colorDataB"
+          "colorRegister_0/i_clk",
+          "TileBufferBackground_0/i_clk",
+          "BackgroundManager_0/i_clk"
         ]
       },
       "xlconstant_6_dout": {
         "ports": [
           "xlconstant_6/dout",
-          "colorRegister_0/i_reset"
+          "colorRegister_0/i_reset",
+          "TileBufferBackground_0/i_reset",
+          "BackgroundManager_0/i_reset"
         ]
       },
       "InstructionDecoder_0_o_colorData": {
@@ -2857,8 +3001,7 @@
       "InstructionDecoder_0_o_colorSel": {
         "ports": [
           "InstructionDecoder_0/o_colorSel",
-          "colorRegister_0/i_writeColorCode",
-          "colorRegister_0/i_readColorCode"
+          "colorRegister_0/i_writeColorCode"
         ]
       },
       "xlslice_0_Dout": {
@@ -2879,6 +3022,101 @@
           "xlslice_1/Dout",
           "InstructionDecoder_0/i_instruction_data"
         ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "BackgroundManager_0/i_readGlobalPosX"
+        ]
+      },
+      "colorRegister_0_o_readColorValue": {
+        "ports": [
+          "colorRegister_0/o_readColorValue",
+          "pixelDataToVideoStre_0/i_dataPixel"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "pixelDataToVideoStre_0/i_dataValid"
+        ]
+      },
+      "TileBufferBackground_0_o_readColorCode": {
+        "ports": [
+          "TileBufferBackground_0/o_readColorCode",
+          "colorRegister_0/i_readColorCode"
+        ]
+      },
+      "BackgroundManager_0_o_readTileID": {
+        "ports": [
+          "BackgroundManager_0/o_readTileID",
+          "TileBufferBackground_0/i_readTileID"
+        ]
+      },
+      "BackgroundManager_0_o_readPixelX": {
+        "ports": [
+          "BackgroundManager_0/o_readPixelX",
+          "TileBufferBackground_0/i_readPosX"
+        ]
+      },
+      "BackgroundManager_0_o_readPixelY": {
+        "ports": [
+          "BackgroundManager_0/o_readPixelY",
+          "TileBufferBackground_0/i_readPosY"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "BackgroundManager_0/i_readGlobalPosY"
+        ]
+      },
+      "InstructionDecoder_0_o_x": {
+        "ports": [
+          "InstructionDecoder_0/o_x",
+          "TileBufferBackground_0/i_writePosX",
+          "BackgroundManager_0/i_writeTilePosX"
+        ]
+      },
+      "InstructionDecoder_0_o_y": {
+        "ports": [
+          "InstructionDecoder_0/o_y",
+          "TileBufferBackground_0/i_writePosY",
+          "BackgroundManager_0/i_writeTilePosY"
+        ]
+      },
+      "InstructionDecoder_0_o_paletteId": {
+        "ports": [
+          "InstructionDecoder_0/o_paletteId",
+          "TileBufferBackground_0/i_writeColorCode"
+        ]
+      },
+      "InstructionDecoder_0_o_tileId": {
+        "ports": [
+          "InstructionDecoder_0/o_tileId",
+          "TileBufferBackground_0/i_writeTileID",
+          "BackgroundManager_0/i_writeTileID"
+        ]
+      },
+      "InstructionDecoder_0_o_bufferWriteEn": {
+        "ports": [
+          "InstructionDecoder_0/o_bufferWriteEn",
+          "TileBufferBackground_0/i_we"
+        ]
+      },
+      "InstructionDecoder_0_o_bcgWriteEn": {
+        "ports": [
+          "InstructionDecoder_0/o_bcgWriteEn",
+          "BackgroundManager_0/i_we"
+        ]
+      }
+    },
+    "comments": {
+      "/xlconstant_0": {
+        "comment_0": "A changer eventuellement..."
+      },
+      "/xlconstant_6": {
+        "comment_1": "a changer eventuellement ....l"
       }
     },
     "addressing": {

@@ -1,0 +1,56 @@
+#include "api.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "InstructionRegister.h"
+
+
+int setCurrentInstruction(int instruction)
+{
+	if (instruction > 4294967295 || instruction < 1)
+	{
+		return 0;
+	}
+
+	INSTRUCTIONREGISTER_mWriteReg(XPAR_INSTRUCTIONREGISTER_0_S00_AXI_BASEADDR, 0, instruction);
+
+	return 1;
+}
+
+int setColorByPaletteId(short paletteId, unsigned int colorValue)
+{
+	if (paletteId > 15 || colorValue > 16777215)
+	{
+		return 0;
+	}
+
+	int opCode = SETCOLOR_OPCODE;
+
+	opCode = opCode << OPCODE_OFFSET;
+	paletteId = paletteId << PALETTEID_COLOR_OFFSET;
+	colorValue = colorValue << COLORVALUE_OFFSET;
+
+	int instruction = opCode + paletteId + colorValue;
+
+	return setCurrentInstruction(instruction);
+}
+
+int setPaletteIdForTileId(short tileId, short paletteId, short x, short y)
+{
+	if (paletteId > 15 || tileId > 255 || x > 15 || y > 15)
+	{
+		return 0;
+	}
+
+	int opCode = SETTILE_COLOR_OPCODE;
+
+	opCode = opCode << OPCODE_OFFSET;
+	tileId = tileId << TILID_TILE_OFFSET;
+	paletteId = paletteId << PALETTEID_TILE_OFFSET;
+	x = X_PIXEL_TILE_OFFSET;
+	y = Y_PIXEL_TILE_OFFSET;
+
+	int instruction = opCode + tileId + paletteId + x + y;
+
+	return setCurrentInstruction(instruction);
+}
