@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Tue Mar 21 17:51:43 2023
+-- Date        : Wed Mar 29 14:46:10 2023
 -- Host        : William_PC running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_BackgroundManager_0_0/atelier4_BackgroundManager_0_0_sim_netlist.vhdl
@@ -20,18 +20,17 @@ entity atelier4_BackgroundManager_0_0_BackgroundManager is
     i_writeTileID : in STD_LOGIC_VECTOR ( 7 downto 0 );
     i_clk : in STD_LOGIC;
     i_we : in STD_LOGIC;
-    i_readGlobalPosY : in STD_LOGIC_VECTOR ( 5 downto 0 );
     i_reset : in STD_LOGIC;
-    i_readGlobalPosX : in STD_LOGIC_VECTOR ( 5 downto 0 )
+    i_writeTilePosX : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    i_writeTilePosY : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    i_readGlobalPosY : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    i_readGlobalPosX : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of atelier4_BackgroundManager_0_0_BackgroundManager : entity is "BackgroundManager";
 end atelier4_BackgroundManager_0_0_BackgroundManager;
 
 architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
-  signal \o_readTileID[0]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[0]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[0]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[0]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[0]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[0]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -52,14 +51,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[0]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[0]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[0]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[0]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[0]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[0]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[0]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[0]_INST_0_i_9_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[1]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[1]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[1]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -80,14 +71,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[1]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[1]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[1]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[1]_INST_0_i_9_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[2]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[2]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[2]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -108,14 +91,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[2]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[2]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[2]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[2]_INST_0_i_9_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[3]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[3]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[3]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -136,14 +111,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[3]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[3]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[3]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[3]_INST_0_i_9_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[4]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[4]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[4]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -164,14 +131,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[4]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[4]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[4]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[4]_INST_0_i_9_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[5]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[5]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[5]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -192,14 +151,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[5]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[5]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[5]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[5]_INST_0_i_9_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[6]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[6]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[6]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -220,14 +171,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[6]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[6]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[6]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[6]_INST_0_i_9_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_10_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_11_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_12_n_0\ : STD_LOGIC;
   signal \o_readTileID[7]_INST_0_i_13_n_0\ : STD_LOGIC;
   signal \o_readTileID[7]_INST_0_i_14_n_0\ : STD_LOGIC;
   signal \o_readTileID[7]_INST_0_i_15_n_0\ : STD_LOGIC;
@@ -248,27 +191,34 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \o_readTileID[7]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \o_readTileID[7]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \o_readTileID[7]_INST_0_i_4_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_6_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_8_n_0\ : STD_LOGIC;
-  signal \o_readTileID[7]_INST_0_i_9_n_0\ : STD_LOGIC;
   signal \s_tileMapping[0,0][7]_i_1_n_0\ : STD_LOGIC;
   signal \s_tileMapping[0,0][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[0,0][7]_i_3_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,0]__111\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[0,1][7]_i_1_n_0\ : STD_LOGIC;
   signal \s_tileMapping[0,1][7]_i_2_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,1]__55\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[0,2][7]_i_1_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,2][7]_i_2_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,2]__55\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[0,3][7]_i_1_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,3][7]_i_2_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,3]__55\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[0,4][7]_i_1_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,4][7]_i_2_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,4]__55\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[0,5][7]_i_1_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,5][7]_i_2_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,5]__55\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[0,6][7]_i_1_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,6][7]_i_2_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,6]__55\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[0,7][7]_i_1_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,7][7]_i_2_n_0\ : STD_LOGIC;
+  signal \s_tileMapping[0,7]__55\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping[1,0]\ : STD_LOGIC;
   signal \s_tileMapping[1,0][7]_i_2_n_0\ : STD_LOGIC;
-  signal \s_tileMapping[1,0][7]_i_3_n_0\ : STD_LOGIC;
   signal \s_tileMapping[1,1]\ : STD_LOGIC;
-  signal \s_tileMapping[1,1][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[1,2]\ : STD_LOGIC;
   signal \s_tileMapping[1,3]\ : STD_LOGIC;
   signal \s_tileMapping[1,4]\ : STD_LOGIC;
@@ -276,9 +226,7 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \s_tileMapping[1,6]\ : STD_LOGIC;
   signal \s_tileMapping[1,7]\ : STD_LOGIC;
   signal \s_tileMapping[2,0]\ : STD_LOGIC;
-  signal \s_tileMapping[2,0][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[2,1]\ : STD_LOGIC;
-  signal \s_tileMapping[2,1][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[2,2]\ : STD_LOGIC;
   signal \s_tileMapping[2,3]\ : STD_LOGIC;
   signal \s_tileMapping[2,4]\ : STD_LOGIC;
@@ -286,9 +234,7 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \s_tileMapping[2,6]\ : STD_LOGIC;
   signal \s_tileMapping[2,7]\ : STD_LOGIC;
   signal \s_tileMapping[3,0]\ : STD_LOGIC;
-  signal \s_tileMapping[3,0][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[3,1]\ : STD_LOGIC;
-  signal \s_tileMapping[3,1][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[3,2]\ : STD_LOGIC;
   signal \s_tileMapping[3,3]\ : STD_LOGIC;
   signal \s_tileMapping[3,4]\ : STD_LOGIC;
@@ -296,9 +242,7 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \s_tileMapping[3,6]\ : STD_LOGIC;
   signal \s_tileMapping[3,7]\ : STD_LOGIC;
   signal \s_tileMapping[4,0]\ : STD_LOGIC;
-  signal \s_tileMapping[4,0][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[4,1]\ : STD_LOGIC;
-  signal \s_tileMapping[4,1][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[4,2]\ : STD_LOGIC;
   signal \s_tileMapping[4,3]\ : STD_LOGIC;
   signal \s_tileMapping[4,4]\ : STD_LOGIC;
@@ -306,9 +250,7 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \s_tileMapping[4,6]\ : STD_LOGIC;
   signal \s_tileMapping[4,7]\ : STD_LOGIC;
   signal \s_tileMapping[5,0]\ : STD_LOGIC;
-  signal \s_tileMapping[5,0][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[5,1]\ : STD_LOGIC;
-  signal \s_tileMapping[5,1][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[5,2]\ : STD_LOGIC;
   signal \s_tileMapping[5,3]\ : STD_LOGIC;
   signal \s_tileMapping[5,4]\ : STD_LOGIC;
@@ -316,9 +258,7 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \s_tileMapping[5,6]\ : STD_LOGIC;
   signal \s_tileMapping[5,7]\ : STD_LOGIC;
   signal \s_tileMapping[6,0]\ : STD_LOGIC;
-  signal \s_tileMapping[6,0][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[6,1]\ : STD_LOGIC;
-  signal \s_tileMapping[6,1][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[6,2]\ : STD_LOGIC;
   signal \s_tileMapping[6,3]\ : STD_LOGIC;
   signal \s_tileMapping[6,4]\ : STD_LOGIC;
@@ -328,7 +268,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \s_tileMapping[7,0]\ : STD_LOGIC;
   signal \s_tileMapping[7,0][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[7,1]\ : STD_LOGIC;
-  signal \s_tileMapping[7,1][7]_i_2_n_0\ : STD_LOGIC;
   signal \s_tileMapping[7,2]\ : STD_LOGIC;
   signal \s_tileMapping[7,3]\ : STD_LOGIC;
   signal \s_tileMapping[7,4]\ : STD_LOGIC;
@@ -399,9 +338,6 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0_BackgroundManager is
   signal \s_tileMapping_reg[7,5]\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping_reg[7,6]\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \s_tileMapping_reg[7,7]\ : STD_LOGIC_VECTOR ( 7 downto 0 );
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \s_tileMapping[0,0][7]_i_3\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \s_tileMapping[1,0][7]_i_3\ : label is "soft_lutpair0";
 begin
 \o_readTileID[0]_INST_0\: unisim.vcomponents.LUT6
     generic map(
@@ -418,8 +354,8 @@ begin
     );
 \o_readTileID[0]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[0]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[0]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(0),
+      I1 => \s_tileMapping[0,7]__55\(0),
       O => \o_readTileID[0]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -427,21 +363,21 @@ begin
      port map (
       I0 => \o_readTileID[0]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_24_n_0\,
-      O => \o_readTileID[0]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[0]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[0]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_26_n_0\,
-      O => \o_readTileID[0]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[0]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[0]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_28_n_0\,
-      O => \o_readTileID[0]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[0]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -537,8 +473,8 @@ begin
     );
 \o_readTileID[0]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[0]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[0]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(0),
+      I1 => \s_tileMapping[0,5]__55\(0),
       O => \o_readTileID[0]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -661,15 +597,15 @@ begin
     );
 \o_readTileID[0]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[0]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[0]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(0),
+      I1 => \s_tileMapping[0,3]__55\(0),
       O => \o_readTileID[0]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[0]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[0]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[0]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(0),
+      I1 => \s_tileMapping[0,1]__55\(0),
       O => \o_readTileID[0]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -677,35 +613,35 @@ begin
      port map (
       I0 => \o_readTileID[0]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_14_n_0\,
-      O => \o_readTileID[0]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[0]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[0]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_16_n_0\,
-      O => \o_readTileID[0]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[0]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[0]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_18_n_0\,
-      O => \o_readTileID[0]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[0]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[0]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_20_n_0\,
-      O => \o_readTileID[0]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[0]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[0]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[0]_INST_0_i_22_n_0\,
-      O => \o_readTileID[0]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(0),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0\: unisim.vcomponents.LUT6
@@ -723,8 +659,8 @@ begin
     );
 \o_readTileID[1]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[1]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[1]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(1),
+      I1 => \s_tileMapping[0,7]__55\(1),
       O => \o_readTileID[1]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -732,21 +668,21 @@ begin
      port map (
       I0 => \o_readTileID[1]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_24_n_0\,
-      O => \o_readTileID[1]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[1]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_26_n_0\,
-      O => \o_readTileID[1]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[1]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_28_n_0\,
-      O => \o_readTileID[1]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -842,8 +778,8 @@ begin
     );
 \o_readTileID[1]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[1]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[1]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(1),
+      I1 => \s_tileMapping[0,5]__55\(1),
       O => \o_readTileID[1]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -966,15 +902,15 @@ begin
     );
 \o_readTileID[1]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[1]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[1]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(1),
+      I1 => \s_tileMapping[0,3]__55\(1),
       O => \o_readTileID[1]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[1]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[1]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[1]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(1),
+      I1 => \s_tileMapping[0,1]__55\(1),
       O => \o_readTileID[1]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -982,35 +918,35 @@ begin
      port map (
       I0 => \o_readTileID[1]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_14_n_0\,
-      O => \o_readTileID[1]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[1]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_16_n_0\,
-      O => \o_readTileID[1]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[1]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_18_n_0\,
-      O => \o_readTileID[1]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[1]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_20_n_0\,
-      O => \o_readTileID[1]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[1]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[1]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[1]_INST_0_i_22_n_0\,
-      O => \o_readTileID[1]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(1),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0\: unisim.vcomponents.LUT6
@@ -1028,8 +964,8 @@ begin
     );
 \o_readTileID[2]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[2]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[2]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(2),
+      I1 => \s_tileMapping[0,7]__55\(2),
       O => \o_readTileID[2]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1037,21 +973,21 @@ begin
      port map (
       I0 => \o_readTileID[2]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_24_n_0\,
-      O => \o_readTileID[2]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[2]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_26_n_0\,
-      O => \o_readTileID[2]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[2]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_28_n_0\,
-      O => \o_readTileID[2]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -1147,8 +1083,8 @@ begin
     );
 \o_readTileID[2]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[2]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[2]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(2),
+      I1 => \s_tileMapping[0,5]__55\(2),
       O => \o_readTileID[2]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1271,15 +1207,15 @@ begin
     );
 \o_readTileID[2]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[2]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[2]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(2),
+      I1 => \s_tileMapping[0,3]__55\(2),
       O => \o_readTileID[2]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[2]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[2]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[2]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(2),
+      I1 => \s_tileMapping[0,1]__55\(2),
       O => \o_readTileID[2]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1287,35 +1223,35 @@ begin
      port map (
       I0 => \o_readTileID[2]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_14_n_0\,
-      O => \o_readTileID[2]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[2]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_16_n_0\,
-      O => \o_readTileID[2]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[2]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_18_n_0\,
-      O => \o_readTileID[2]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[2]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_20_n_0\,
-      O => \o_readTileID[2]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[2]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[2]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[2]_INST_0_i_22_n_0\,
-      O => \o_readTileID[2]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(2),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0\: unisim.vcomponents.LUT6
@@ -1333,8 +1269,8 @@ begin
     );
 \o_readTileID[3]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[3]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[3]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(3),
+      I1 => \s_tileMapping[0,7]__55\(3),
       O => \o_readTileID[3]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1342,21 +1278,21 @@ begin
      port map (
       I0 => \o_readTileID[3]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_24_n_0\,
-      O => \o_readTileID[3]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[3]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_26_n_0\,
-      O => \o_readTileID[3]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[3]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_28_n_0\,
-      O => \o_readTileID[3]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -1452,8 +1388,8 @@ begin
     );
 \o_readTileID[3]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[3]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[3]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(3),
+      I1 => \s_tileMapping[0,5]__55\(3),
       O => \o_readTileID[3]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1576,15 +1512,15 @@ begin
     );
 \o_readTileID[3]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[3]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[3]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(3),
+      I1 => \s_tileMapping[0,3]__55\(3),
       O => \o_readTileID[3]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[3]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[3]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[3]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(3),
+      I1 => \s_tileMapping[0,1]__55\(3),
       O => \o_readTileID[3]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1592,35 +1528,35 @@ begin
      port map (
       I0 => \o_readTileID[3]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_14_n_0\,
-      O => \o_readTileID[3]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[3]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_16_n_0\,
-      O => \o_readTileID[3]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[3]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_18_n_0\,
-      O => \o_readTileID[3]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[3]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_20_n_0\,
-      O => \o_readTileID[3]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[3]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[3]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[3]_INST_0_i_22_n_0\,
-      O => \o_readTileID[3]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(3),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0\: unisim.vcomponents.LUT6
@@ -1638,8 +1574,8 @@ begin
     );
 \o_readTileID[4]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[4]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[4]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(4),
+      I1 => \s_tileMapping[0,7]__55\(4),
       O => \o_readTileID[4]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1647,21 +1583,21 @@ begin
      port map (
       I0 => \o_readTileID[4]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_24_n_0\,
-      O => \o_readTileID[4]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[4]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_26_n_0\,
-      O => \o_readTileID[4]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[4]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_28_n_0\,
-      O => \o_readTileID[4]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -1757,8 +1693,8 @@ begin
     );
 \o_readTileID[4]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[4]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[4]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(4),
+      I1 => \s_tileMapping[0,5]__55\(4),
       O => \o_readTileID[4]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1881,15 +1817,15 @@ begin
     );
 \o_readTileID[4]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[4]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[4]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(4),
+      I1 => \s_tileMapping[0,3]__55\(4),
       O => \o_readTileID[4]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[4]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[4]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[4]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(4),
+      I1 => \s_tileMapping[0,1]__55\(4),
       O => \o_readTileID[4]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1897,35 +1833,35 @@ begin
      port map (
       I0 => \o_readTileID[4]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_14_n_0\,
-      O => \o_readTileID[4]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[4]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_16_n_0\,
-      O => \o_readTileID[4]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[4]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_18_n_0\,
-      O => \o_readTileID[4]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[4]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_20_n_0\,
-      O => \o_readTileID[4]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[4]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[4]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[4]_INST_0_i_22_n_0\,
-      O => \o_readTileID[4]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(4),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0\: unisim.vcomponents.LUT6
@@ -1943,8 +1879,8 @@ begin
     );
 \o_readTileID[5]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[5]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[5]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(5),
+      I1 => \s_tileMapping[0,7]__55\(5),
       O => \o_readTileID[5]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -1952,21 +1888,21 @@ begin
      port map (
       I0 => \o_readTileID[5]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_24_n_0\,
-      O => \o_readTileID[5]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[5]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_26_n_0\,
-      O => \o_readTileID[5]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[5]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_28_n_0\,
-      O => \o_readTileID[5]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -2062,8 +1998,8 @@ begin
     );
 \o_readTileID[5]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[5]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[5]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(5),
+      I1 => \s_tileMapping[0,5]__55\(5),
       O => \o_readTileID[5]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2186,15 +2122,15 @@ begin
     );
 \o_readTileID[5]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[5]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[5]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(5),
+      I1 => \s_tileMapping[0,3]__55\(5),
       O => \o_readTileID[5]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[5]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[5]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[5]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(5),
+      I1 => \s_tileMapping[0,1]__55\(5),
       O => \o_readTileID[5]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2202,35 +2138,35 @@ begin
      port map (
       I0 => \o_readTileID[5]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_14_n_0\,
-      O => \o_readTileID[5]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[5]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_16_n_0\,
-      O => \o_readTileID[5]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[5]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_18_n_0\,
-      O => \o_readTileID[5]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[5]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_20_n_0\,
-      O => \o_readTileID[5]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[5]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[5]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[5]_INST_0_i_22_n_0\,
-      O => \o_readTileID[5]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(5),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0\: unisim.vcomponents.LUT6
@@ -2248,8 +2184,8 @@ begin
     );
 \o_readTileID[6]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[6]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[6]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(6),
+      I1 => \s_tileMapping[0,7]__55\(6),
       O => \o_readTileID[6]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2257,21 +2193,21 @@ begin
      port map (
       I0 => \o_readTileID[6]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_24_n_0\,
-      O => \o_readTileID[6]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[6]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_26_n_0\,
-      O => \o_readTileID[6]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[6]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_28_n_0\,
-      O => \o_readTileID[6]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -2367,8 +2303,8 @@ begin
     );
 \o_readTileID[6]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[6]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[6]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(6),
+      I1 => \s_tileMapping[0,5]__55\(6),
       O => \o_readTileID[6]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2491,15 +2427,15 @@ begin
     );
 \o_readTileID[6]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[6]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[6]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(6),
+      I1 => \s_tileMapping[0,3]__55\(6),
       O => \o_readTileID[6]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[6]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[6]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[6]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(6),
+      I1 => \s_tileMapping[0,1]__55\(6),
       O => \o_readTileID[6]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2507,35 +2443,35 @@ begin
      port map (
       I0 => \o_readTileID[6]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_14_n_0\,
-      O => \o_readTileID[6]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[6]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_16_n_0\,
-      O => \o_readTileID[6]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[6]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_18_n_0\,
-      O => \o_readTileID[6]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[6]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_20_n_0\,
-      O => \o_readTileID[6]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[6]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[6]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[6]_INST_0_i_22_n_0\,
-      O => \o_readTileID[6]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(6),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0\: unisim.vcomponents.LUT6
@@ -2553,8 +2489,8 @@ begin
     );
 \o_readTileID[7]_INST_0_i_1\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[7]_INST_0_i_5_n_0\,
-      I1 => \o_readTileID[7]_INST_0_i_6_n_0\,
+      I0 => \s_tileMapping[0,6]__55\(7),
+      I1 => \s_tileMapping[0,7]__55\(7),
       O => \o_readTileID[7]_INST_0_i_1_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2562,21 +2498,21 @@ begin
      port map (
       I0 => \o_readTileID[7]_INST_0_i_23_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_24_n_0\,
-      O => \o_readTileID[7]_INST_0_i_10_n_0\,
+      O => \s_tileMapping[0,3]__55\(7),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0_i_11\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[7]_INST_0_i_25_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_26_n_0\,
-      O => \o_readTileID[7]_INST_0_i_11_n_0\,
+      O => \s_tileMapping[0,0]__111\(7),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0_i_12\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[7]_INST_0_i_27_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_28_n_0\,
-      O => \o_readTileID[7]_INST_0_i_12_n_0\,
+      O => \s_tileMapping[0,1]__55\(7),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0_i_13\: unisim.vcomponents.LUT6
@@ -2672,8 +2608,8 @@ begin
     );
 \o_readTileID[7]_INST_0_i_2\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[7]_INST_0_i_7_n_0\,
-      I1 => \o_readTileID[7]_INST_0_i_8_n_0\,
+      I0 => \s_tileMapping[0,4]__55\(7),
+      I1 => \s_tileMapping[0,5]__55\(7),
       O => \o_readTileID[7]_INST_0_i_2_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2796,15 +2732,15 @@ begin
     );
 \o_readTileID[7]_INST_0_i_3\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[7]_INST_0_i_9_n_0\,
-      I1 => \o_readTileID[7]_INST_0_i_10_n_0\,
+      I0 => \s_tileMapping[0,2]__55\(7),
+      I1 => \s_tileMapping[0,3]__55\(7),
       O => \o_readTileID[7]_INST_0_i_3_n_0\,
       S => i_readGlobalPosY(0)
     );
 \o_readTileID[7]_INST_0_i_4\: unisim.vcomponents.MUXF8
      port map (
-      I0 => \o_readTileID[7]_INST_0_i_11_n_0\,
-      I1 => \o_readTileID[7]_INST_0_i_12_n_0\,
+      I0 => \s_tileMapping[0,0]__111\(7),
+      I1 => \s_tileMapping[0,1]__55\(7),
       O => \o_readTileID[7]_INST_0_i_4_n_0\,
       S => i_readGlobalPosY(0)
     );
@@ -2812,1035 +2748,976 @@ begin
      port map (
       I0 => \o_readTileID[7]_INST_0_i_13_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_14_n_0\,
-      O => \o_readTileID[7]_INST_0_i_5_n_0\,
+      O => \s_tileMapping[0,6]__55\(7),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0_i_6\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[7]_INST_0_i_15_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_16_n_0\,
-      O => \o_readTileID[7]_INST_0_i_6_n_0\,
+      O => \s_tileMapping[0,7]__55\(7),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0_i_7\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[7]_INST_0_i_17_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_18_n_0\,
-      O => \o_readTileID[7]_INST_0_i_7_n_0\,
+      O => \s_tileMapping[0,4]__55\(7),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0_i_8\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[7]_INST_0_i_19_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_20_n_0\,
-      O => \o_readTileID[7]_INST_0_i_8_n_0\,
+      O => \s_tileMapping[0,5]__55\(7),
       S => i_readGlobalPosX(2)
     );
 \o_readTileID[7]_INST_0_i_9\: unisim.vcomponents.MUXF7
      port map (
       I0 => \o_readTileID[7]_INST_0_i_21_n_0\,
       I1 => \o_readTileID[7]_INST_0_i_22_n_0\,
-      O => \o_readTileID[7]_INST_0_i_9_n_0\,
+      O => \s_tileMapping[0,2]__55\(7),
       S => i_readGlobalPosX(2)
     );
-\s_tileMapping[0,0][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[0,0][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00000020"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
+      I1 => i_reset,
       I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I3 => \s_tileMapping[0,0][7]_i_3_n_0\,
       O => \s_tileMapping[0,0][7]_i_1_n_0\
     );
 \s_tileMapping[0,0][7]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000000010"
+      INIT => X"0000000000000001"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
+      I0 => i_writeTilePosX(0),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(4),
+      I3 => i_writeTilePosX(3),
+      I4 => i_writeTilePosX(2),
+      I5 => i_writeTilePosX(1),
       O => \s_tileMapping[0,0][7]_i_2_n_0\
     );
-\s_tileMapping[0,0][7]_i_3\: unisim.vcomponents.LUT5
+\s_tileMapping[0,0][7]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000001"
+      INIT => X"0000000000000001"
     )
         port map (
-      I0 => i_readGlobalPosY(5),
-      I1 => i_readGlobalPosX(0),
-      I2 => i_readGlobalPosX(5),
-      I3 => i_readGlobalPosY(4),
-      I4 => i_readGlobalPosY(3),
+      I0 => i_writeTilePosY(2),
+      I1 => i_writeTilePosY(0),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
       O => \s_tileMapping[0,0][7]_i_3_n_0\
     );
-\s_tileMapping[0,1][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[0,1][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00000020"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[0,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I1 => i_reset,
+      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[0,1][7]_i_1_n_0\
     );
 \s_tileMapping[0,1][7]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000001000000000"
+      INIT => X"0000000000000004"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
+      I0 => i_writeTilePosY(2),
+      I1 => i_writeTilePosY(0),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
       O => \s_tileMapping[0,1][7]_i_2_n_0\
     );
-\s_tileMapping[0,2][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[0,2][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00000080"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
+      I1 => i_reset,
       I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I3 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[0,2][7]_i_1_n_0\
     );
-\s_tileMapping[0,3][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[0,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
-      O => \s_tileMapping[0,3][7]_i_1_n_0\
-    );
-\s_tileMapping[0,4][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00002000"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
-      O => \s_tileMapping[0,4][7]_i_1_n_0\
-    );
-\s_tileMapping[0,5][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00002000"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[0,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
-      O => \s_tileMapping[0,5][7]_i_1_n_0\
-    );
-\s_tileMapping[0,6][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00008000"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
-      O => \s_tileMapping[0,6][7]_i_1_n_0\
-    );
-\s_tileMapping[0,7][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00008000"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[0,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
-      O => \s_tileMapping[0,7][7]_i_1_n_0\
-    );
-\s_tileMapping[1,0][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000020"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
-      O => \s_tileMapping[1,0]\
-    );
-\s_tileMapping[1,0][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[0,2][7]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000000000010"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
+      I0 => i_writeTilePosY(2),
+      I1 => i_writeTilePosY(0),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
+      O => \s_tileMapping[0,2][7]_i_2_n_0\
+    );
+\s_tileMapping[0,3][7]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"2000"
+    )
+        port map (
+      I0 => i_we,
+      I1 => i_reset,
+      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,3][7]_i_2_n_0\,
+      O => \s_tileMapping[0,3][7]_i_1_n_0\
+    );
+\s_tileMapping[0,3][7]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000040"
+    )
+        port map (
+      I0 => i_writeTilePosY(2),
+      I1 => i_writeTilePosY(0),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
+      O => \s_tileMapping[0,3][7]_i_2_n_0\
+    );
+\s_tileMapping[0,4][7]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"2000"
+    )
+        port map (
+      I0 => i_we,
+      I1 => i_reset,
+      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,4][7]_i_2_n_0\,
+      O => \s_tileMapping[0,4][7]_i_1_n_0\
+    );
+\s_tileMapping[0,4][7]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000004"
+    )
+        port map (
+      I0 => i_writeTilePosY(0),
+      I1 => i_writeTilePosY(2),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
+      O => \s_tileMapping[0,4][7]_i_2_n_0\
+    );
+\s_tileMapping[0,5][7]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"2000"
+    )
+        port map (
+      I0 => i_we,
+      I1 => i_reset,
+      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,5][7]_i_2_n_0\,
+      O => \s_tileMapping[0,5][7]_i_1_n_0\
+    );
+\s_tileMapping[0,5][7]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000008"
+    )
+        port map (
+      I0 => i_writeTilePosY(2),
+      I1 => i_writeTilePosY(0),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
+      O => \s_tileMapping[0,5][7]_i_2_n_0\
+    );
+\s_tileMapping[0,6][7]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"2000"
+    )
+        port map (
+      I0 => i_we,
+      I1 => i_reset,
+      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,6][7]_i_2_n_0\,
+      O => \s_tileMapping[0,6][7]_i_1_n_0\
+    );
+\s_tileMapping[0,6][7]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000040"
+    )
+        port map (
+      I0 => i_writeTilePosY(0),
+      I1 => i_writeTilePosY(2),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
+      O => \s_tileMapping[0,6][7]_i_2_n_0\
+    );
+\s_tileMapping[0,7][7]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"2000"
+    )
+        port map (
+      I0 => i_we,
+      I1 => i_reset,
+      I2 => \s_tileMapping[0,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,7][7]_i_2_n_0\,
+      O => \s_tileMapping[0,7][7]_i_1_n_0\
+    );
+\s_tileMapping[0,7][7]_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000080"
+    )
+        port map (
+      I0 => i_writeTilePosY(2),
+      I1 => i_writeTilePosY(0),
+      I2 => i_writeTilePosY(1),
+      I3 => i_writeTilePosY(4),
+      I4 => i_writeTilePosY(3),
+      I5 => i_writeTilePosY(5),
+      O => \s_tileMapping[0,7][7]_i_2_n_0\
+    );
+\s_tileMapping[1,0][7]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000004000000000"
+    )
+        port map (
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,0][7]_i_3_n_0\,
+      O => \s_tileMapping[1,0]\
+    );
+\s_tileMapping[1,0][7]_i_2\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0004"
+    )
+        port map (
+      I0 => i_reset,
+      I1 => i_we,
+      I2 => i_writeTilePosX(3),
+      I3 => i_writeTilePosX(4),
       O => \s_tileMapping[1,0][7]_i_2_n_0\
     );
-\s_tileMapping[1,0][7]_i_3\: unisim.vcomponents.LUT5
+\s_tileMapping[1,1][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000010"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_readGlobalPosY(5),
-      I1 => i_readGlobalPosX(5),
-      I2 => i_readGlobalPosX(0),
-      I3 => i_readGlobalPosY(4),
-      I4 => i_readGlobalPosY(3),
-      O => \s_tileMapping[1,0][7]_i_3_n_0\
-    );
-\s_tileMapping[1,1][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000020"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[1,1]\
     );
-\s_tileMapping[1,1][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[1,2][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000001000000000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[1,1][7]_i_2_n_0\
-    );
-\s_tileMapping[1,2][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[1,2]\
     );
-\s_tileMapping[1,3][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[1,3][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000080"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,3][7]_i_2_n_0\,
       O => \s_tileMapping[1,3]\
     );
-\s_tileMapping[1,4][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[1,4][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,4][7]_i_2_n_0\,
       O => \s_tileMapping[1,4]\
     );
-\s_tileMapping[1,5][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[1,5][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,5][7]_i_2_n_0\,
       O => \s_tileMapping[1,5]\
     );
-\s_tileMapping[1,6][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[1,6][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,6][7]_i_2_n_0\,
       O => \s_tileMapping[1,6]\
     );
-\s_tileMapping[1,7][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[1,7][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[1,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,7][7]_i_2_n_0\,
       O => \s_tileMapping[1,7]\
     );
-\s_tileMapping[2,0][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[2,0][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000020"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,0][7]_i_3_n_0\,
       O => \s_tileMapping[2,0]\
     );
-\s_tileMapping[2,0][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[2,1][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000001000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[2,0][7]_i_2_n_0\
-    );
-\s_tileMapping[2,1][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000020"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[2,1]\
     );
-\s_tileMapping[2,1][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[2,2][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000100000000000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[2,1][7]_i_2_n_0\
-    );
-\s_tileMapping[2,2][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[2,2]\
     );
-\s_tileMapping[2,3][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[2,3][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000080"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,3][7]_i_2_n_0\,
       O => \s_tileMapping[2,3]\
     );
-\s_tileMapping[2,4][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[2,4][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,4][7]_i_2_n_0\,
       O => \s_tileMapping[2,4]\
     );
-\s_tileMapping[2,5][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[2,5][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,5][7]_i_2_n_0\,
       O => \s_tileMapping[2,5]\
     );
-\s_tileMapping[2,6][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[2,6][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,6][7]_i_2_n_0\,
       O => \s_tileMapping[2,6]\
     );
-\s_tileMapping[2,7][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[2,7][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000004000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[2,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,7][7]_i_2_n_0\,
       O => \s_tileMapping[2,7]\
     );
-\s_tileMapping[3,0][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[3,0][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000020"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,0][7]_i_3_n_0\,
       O => \s_tileMapping[3,0]\
     );
-\s_tileMapping[3,0][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[3,1][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000001000"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[3,0][7]_i_2_n_0\
-    );
-\s_tileMapping[3,1][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000020"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[3,1]\
     );
-\s_tileMapping[3,1][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[3,2][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000100000000000"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[3,1][7]_i_2_n_0\
-    );
-\s_tileMapping[3,2][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[3,2]\
     );
-\s_tileMapping[3,3][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[3,3][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000080"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,3][7]_i_2_n_0\,
       O => \s_tileMapping[3,3]\
     );
-\s_tileMapping[3,4][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[3,4][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,4][7]_i_2_n_0\,
       O => \s_tileMapping[3,4]\
     );
-\s_tileMapping[3,5][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[3,5][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,5][7]_i_2_n_0\,
       O => \s_tileMapping[3,5]\
     );
-\s_tileMapping[3,6][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[3,6][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,6][7]_i_2_n_0\,
       O => \s_tileMapping[3,6]\
     );
-\s_tileMapping[3,7][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[3,7][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"1000000000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[3,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(5),
+      I2 => i_writeTilePosX(0),
+      I3 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,7][7]_i_2_n_0\,
       O => \s_tileMapping[3,7]\
     );
-\s_tileMapping[4,0][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[4,0][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000020"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,0][7]_i_3_n_0\,
       O => \s_tileMapping[4,0]\
     );
-\s_tileMapping[4,0][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[4,1][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000000020"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[4,0][7]_i_2_n_0\
-    );
-\s_tileMapping[4,1][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000020"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[4,1]\
     );
-\s_tileMapping[4,1][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[4,2][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000002000000000"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[4,1][7]_i_2_n_0\
-    );
-\s_tileMapping[4,2][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[4,2]\
     );
-\s_tileMapping[4,3][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[4,3][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000080"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,3][7]_i_2_n_0\,
       O => \s_tileMapping[4,3]\
     );
-\s_tileMapping[4,4][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[4,4][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,4][7]_i_2_n_0\,
       O => \s_tileMapping[4,4]\
     );
-\s_tileMapping[4,5][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[4,5][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,5][7]_i_2_n_0\,
       O => \s_tileMapping[4,5]\
     );
-\s_tileMapping[4,6][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[4,6][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,6][7]_i_2_n_0\,
       O => \s_tileMapping[4,6]\
     );
-\s_tileMapping[4,7][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[4,7][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[4,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I1 => i_writeTilePosX(2),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(1),
+      I4 => i_writeTilePosX(0),
+      I5 => \s_tileMapping[0,7][7]_i_2_n_0\,
       O => \s_tileMapping[4,7]\
     );
-\s_tileMapping[5,0][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[5,0][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000020"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,0][7]_i_3_n_0\,
       O => \s_tileMapping[5,0]\
     );
-\s_tileMapping[5,0][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[5,1][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000000020"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[5,0][7]_i_2_n_0\
-    );
-\s_tileMapping[5,1][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000020"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[5,1]\
     );
-\s_tileMapping[5,1][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[5,2][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000002000000000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[5,1][7]_i_2_n_0\
-    );
-\s_tileMapping[5,2][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[5,2]\
     );
-\s_tileMapping[5,3][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[5,3][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000080"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,3][7]_i_2_n_0\,
       O => \s_tileMapping[5,3]\
     );
-\s_tileMapping[5,4][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[5,4][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,4][7]_i_2_n_0\,
       O => \s_tileMapping[5,4]\
     );
-\s_tileMapping[5,5][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[5,5][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,5][7]_i_2_n_0\,
       O => \s_tileMapping[5,5]\
     );
-\s_tileMapping[5,6][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[5,6][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,6][7]_i_2_n_0\,
       O => \s_tileMapping[5,6]\
     );
-\s_tileMapping[5,7][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[5,7][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[5,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I2 => i_writeTilePosX(0),
+      I3 => i_writeTilePosX(5),
+      I4 => i_writeTilePosX(1),
+      I5 => \s_tileMapping[0,7][7]_i_2_n_0\,
       O => \s_tileMapping[5,7]\
     );
-\s_tileMapping[6,0][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[6,0][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000020"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,0][7]_i_3_n_0\,
       O => \s_tileMapping[6,0]\
     );
-\s_tileMapping[6,0][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[6,1][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000002000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[6,0][7]_i_2_n_0\
-    );
-\s_tileMapping[6,1][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000020"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[6,1]\
     );
-\s_tileMapping[6,1][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[6,2][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000200000000000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[0,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[6,1][7]_i_2_n_0\
-    );
-\s_tileMapping[6,2][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
-    )
-        port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[6,2]\
     );
-\s_tileMapping[6,3][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[6,3][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00000080"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,3][7]_i_2_n_0\,
       O => \s_tileMapping[6,3]\
     );
-\s_tileMapping[6,4][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[6,4][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,4][7]_i_2_n_0\,
       O => \s_tileMapping[6,4]\
     );
-\s_tileMapping[6,5][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[6,5][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00002000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,5][7]_i_2_n_0\,
       O => \s_tileMapping[6,5]\
     );
-\s_tileMapping[6,6][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[6,6][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,6][7]_i_2_n_0\,
       O => \s_tileMapping[6,6]\
     );
-\s_tileMapping[6,7][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[6,7][7]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00008000"
+      INIT => X"0000008000000000"
     )
         port map (
-      I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[6,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I0 => i_writeTilePosX(2),
+      I1 => i_writeTilePosX(1),
+      I2 => \s_tileMapping[1,0][7]_i_2_n_0\,
+      I3 => i_writeTilePosX(0),
+      I4 => i_writeTilePosX(5),
+      I5 => \s_tileMapping[0,7][7]_i_2_n_0\,
       O => \s_tileMapping[6,7]\
     );
-\s_tileMapping[7,0][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[7,0][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00000020"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
+      I1 => i_reset,
       I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I3 => \s_tileMapping[0,0][7]_i_3_n_0\,
       O => \s_tileMapping[7,0]\
     );
 \s_tileMapping[7,0][7]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"0000000000002000"
+      INIT => X"0000000800000000"
     )
         port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
+      I0 => i_writeTilePosX(0),
+      I1 => i_writeTilePosX(1),
+      I2 => i_writeTilePosX(5),
+      I3 => i_writeTilePosX(3),
+      I4 => i_writeTilePosX(4),
+      I5 => i_writeTilePosX(2),
       O => \s_tileMapping[7,0][7]_i_2_n_0\
     );
-\s_tileMapping[7,1][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[7,1][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00000020"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[7,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I1 => i_reset,
+      I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,1][7]_i_2_n_0\,
       O => \s_tileMapping[7,1]\
     );
-\s_tileMapping[7,1][7]_i_2\: unisim.vcomponents.LUT6
+\s_tileMapping[7,2][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0000200000000000"
-    )
-        port map (
-      I0 => i_readGlobalPosX(2),
-      I1 => i_readGlobalPosX(3),
-      I2 => \s_tileMapping[1,0][7]_i_3_n_0\,
-      I3 => i_readGlobalPosX(1),
-      I4 => i_readGlobalPosX(4),
-      I5 => i_readGlobalPosY(0),
-      O => \s_tileMapping[7,1][7]_i_2_n_0\
-    );
-\s_tileMapping[7,2][7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"00000080"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
+      I1 => i_reset,
       I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I3 => \s_tileMapping[0,2][7]_i_2_n_0\,
       O => \s_tileMapping[7,2]\
     );
-\s_tileMapping[7,3][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[7,3][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00000080"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[7,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I1 => i_reset,
+      I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,3][7]_i_2_n_0\,
       O => \s_tileMapping[7,3]\
     );
-\s_tileMapping[7,4][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[7,4][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00002000"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
+      I1 => i_reset,
       I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I3 => \s_tileMapping[0,4][7]_i_2_n_0\,
       O => \s_tileMapping[7,4]\
     );
-\s_tileMapping[7,5][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[7,5][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00002000"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[7,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I1 => i_reset,
+      I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,5][7]_i_2_n_0\,
       O => \s_tileMapping[7,5]\
     );
-\s_tileMapping[7,6][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[7,6][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00008000"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
+      I1 => i_reset,
       I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I3 => \s_tileMapping[0,6][7]_i_2_n_0\,
       O => \s_tileMapping[7,6]\
     );
-\s_tileMapping[7,7][7]_i_1\: unisim.vcomponents.LUT5
+\s_tileMapping[7,7][7]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"00008000"
+      INIT => X"2000"
     )
         port map (
       I0 => i_we,
-      I1 => i_readGlobalPosY(1),
-      I2 => \s_tileMapping[7,1][7]_i_2_n_0\,
-      I3 => i_readGlobalPosY(2),
-      I4 => i_reset,
+      I1 => i_reset,
+      I2 => \s_tileMapping[7,0][7]_i_2_n_0\,
+      I3 => \s_tileMapping[0,7][7]_i_2_n_0\,
       O => \s_tileMapping[7,7]\
     );
 \s_tileMapping_reg[0,0][0]\: unisim.vcomponents.FDRE
@@ -7980,18 +7857,20 @@ architecture STRUCTURE of atelier4_BackgroundManager_0_0 is
   attribute x_interface_info of i_reset : signal is "xilinx.com:signal:reset:1.0 i_reset RST";
   attribute x_interface_parameter of i_reset : signal is "XIL_INTERFACENAME i_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 begin
-  \^i_readglobalposx\(9 downto 0) <= i_readGlobalPosX(9 downto 0);
-  \^i_readglobalposy\(9 downto 0) <= i_readGlobalPosY(9 downto 0);
+  \^i_readglobalposx\(6 downto 0) <= i_readGlobalPosX(6 downto 0);
+  \^i_readglobalposy\(6 downto 0) <= i_readGlobalPosY(6 downto 0);
   o_readPixelX(3 downto 0) <= \^i_readglobalposx\(3 downto 0);
   o_readPixelY(3 downto 0) <= \^i_readglobalposy\(3 downto 0);
 U0: entity work.atelier4_BackgroundManager_0_0_BackgroundManager
      port map (
       i_clk => i_clk,
-      i_readGlobalPosX(5 downto 0) => \^i_readglobalposx\(9 downto 4),
-      i_readGlobalPosY(5 downto 0) => \^i_readglobalposy\(9 downto 4),
+      i_readGlobalPosX(2 downto 0) => \^i_readglobalposx\(6 downto 4),
+      i_readGlobalPosY(2 downto 0) => \^i_readglobalposy\(6 downto 4),
       i_reset => i_reset,
       i_we => i_we,
       i_writeTileID(7 downto 0) => i_writeTileID(7 downto 0),
+      i_writeTilePosX(5 downto 0) => i_writeTilePosX(9 downto 4),
+      i_writeTilePosY(5 downto 0) => i_writeTilePosY(9 downto 4),
       o_readTileID(7 downto 0) => o_readTileID(7 downto 0)
     );
 end STRUCTURE;

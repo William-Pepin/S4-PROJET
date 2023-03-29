@@ -4847,3 +4847,1356 @@ con
 14:03:30 INFO  : Checking for BSP changes to sync application flags for project 'project'...
 14:05:08 INFO  : Checking for BSP changes to sync application flags for project 'project'...
 14:05:23 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:09:04 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:09:09 INFO  : Disconnected from the channel tcfchan#22.
+14:09:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:09 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:09:09 INFO  : 'jtag frequency' command is executed.
+14:09:09 INFO  : Context for 'APU' is selected.
+14:09:09 INFO  : System reset is completed.
+14:09:12 INFO  : 'after 3000' command is executed.
+14:09:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:09:14 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:09:14 INFO  : Context for 'APU' is selected.
+14:09:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:09:17 INFO  : 'configparams force-mem-access 1' command is executed.
+14:09:17 INFO  : Context for 'APU' is selected.
+14:09:17 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:09:18 INFO  : 'ps7_init' command is executed.
+14:09:18 INFO  : 'ps7_post_config' command is executed.
+14:09:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:18 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:09:18 INFO  : 'configparams force-mem-access 0' command is executed.
+14:09:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:09:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:18 INFO  : 'con' command is executed.
+14:09:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:09:18 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:17:13 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:17:18 INFO  : Disconnected from the channel tcfchan#23.
+14:17:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:19 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:17:19 INFO  : 'jtag frequency' command is executed.
+14:17:19 INFO  : Context for 'APU' is selected.
+14:17:19 INFO  : System reset is completed.
+14:17:22 INFO  : 'after 3000' command is executed.
+14:17:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:17:23 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:17:23 INFO  : Context for 'APU' is selected.
+14:17:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:17:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:17:27 INFO  : Context for 'APU' is selected.
+14:17:27 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:17:27 INFO  : 'ps7_init' command is executed.
+14:17:27 INFO  : 'ps7_post_config' command is executed.
+14:17:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:28 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:17:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:17:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:17:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:28 INFO  : 'con' command is executed.
+14:17:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:17:28 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:18:09 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:18:16 INFO  : Disconnected from the channel tcfchan#24.
+14:18:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:18:17 INFO  : 'jtag frequency' command is executed.
+14:18:17 INFO  : Context for 'APU' is selected.
+14:18:17 INFO  : System reset is completed.
+14:18:20 INFO  : 'after 3000' command is executed.
+14:18:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:18:21 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:18:21 INFO  : Context for 'APU' is selected.
+14:18:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:18:25 INFO  : 'configparams force-mem-access 1' command is executed.
+14:18:25 INFO  : Context for 'APU' is selected.
+14:18:25 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:18:25 INFO  : 'ps7_init' command is executed.
+14:18:25 INFO  : 'ps7_post_config' command is executed.
+14:18:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:26 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:26 INFO  : 'configparams force-mem-access 0' command is executed.
+14:18:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:18:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:26 INFO  : 'con' command is executed.
+14:18:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:18:26 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:19:17 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:19:21 INFO  : Disconnected from the channel tcfchan#25.
+14:19:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:19:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:19:22 INFO  : 'jtag frequency' command is executed.
+14:19:22 INFO  : Context for 'APU' is selected.
+14:19:22 INFO  : System reset is completed.
+14:19:25 INFO  : 'after 3000' command is executed.
+14:19:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:19:26 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:19:26 INFO  : Context for 'APU' is selected.
+14:19:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:19:29 INFO  : 'configparams force-mem-access 1' command is executed.
+14:19:29 INFO  : Context for 'APU' is selected.
+14:19:29 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:19:30 INFO  : 'ps7_init' command is executed.
+14:19:30 INFO  : 'ps7_post_config' command is executed.
+14:19:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:19:30 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:19:30 INFO  : 'configparams force-mem-access 0' command is executed.
+14:19:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:19:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:19:30 INFO  : 'con' command is executed.
+14:19:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:19:30 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:20:18 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:20:20 INFO  : Disconnected from the channel tcfchan#26.
+14:20:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:20:20 INFO  : 'jtag frequency' command is executed.
+14:20:20 INFO  : Context for 'APU' is selected.
+14:20:20 INFO  : System reset is completed.
+14:20:23 INFO  : 'after 3000' command is executed.
+14:20:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:20:24 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:20:24 INFO  : Context for 'APU' is selected.
+14:20:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:20:28 INFO  : 'configparams force-mem-access 1' command is executed.
+14:20:28 INFO  : Context for 'APU' is selected.
+14:20:28 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:20:28 INFO  : 'ps7_init' command is executed.
+14:20:28 INFO  : 'ps7_post_config' command is executed.
+14:20:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:29 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:20:29 INFO  : 'configparams force-mem-access 0' command is executed.
+14:20:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:20:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:29 INFO  : 'con' command is executed.
+14:20:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:20:29 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:21:01 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:21:06 INFO  : Disconnected from the channel tcfchan#27.
+14:21:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:21:06 INFO  : 'jtag frequency' command is executed.
+14:21:06 INFO  : Context for 'APU' is selected.
+14:21:06 INFO  : System reset is completed.
+14:21:09 INFO  : 'after 3000' command is executed.
+14:21:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:21:10 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:21:10 INFO  : Context for 'APU' is selected.
+14:21:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:21:14 INFO  : 'configparams force-mem-access 1' command is executed.
+14:21:14 INFO  : Context for 'APU' is selected.
+14:21:14 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:21:14 INFO  : 'ps7_init' command is executed.
+14:21:14 INFO  : 'ps7_post_config' command is executed.
+14:21:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:15 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:21:15 INFO  : 'configparams force-mem-access 0' command is executed.
+14:21:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:21:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:21:15 INFO  : 'con' command is executed.
+14:21:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:21:15 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:36:59 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:37:01 INFO  : Disconnected from the channel tcfchan#28.
+14:37:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:37:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:37:01 INFO  : 'jtag frequency' command is executed.
+14:37:01 INFO  : Context for 'APU' is selected.
+14:37:01 INFO  : System reset is completed.
+14:37:04 INFO  : 'after 3000' command is executed.
+14:37:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:37:05 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:37:05 INFO  : Context for 'APU' is selected.
+14:37:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:37:09 INFO  : 'configparams force-mem-access 1' command is executed.
+14:37:09 INFO  : Context for 'APU' is selected.
+14:37:09 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:37:09 INFO  : 'ps7_init' command is executed.
+14:37:09 INFO  : 'ps7_post_config' command is executed.
+14:37:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:10 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:37:10 INFO  : 'configparams force-mem-access 0' command is executed.
+14:37:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:37:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:10 INFO  : 'con' command is executed.
+14:37:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:37:10 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:37:37 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:37:39 INFO  : Disconnected from the channel tcfchan#29.
+14:37:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:37:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:37:39 INFO  : 'jtag frequency' command is executed.
+14:37:39 INFO  : Context for 'APU' is selected.
+14:37:39 INFO  : System reset is completed.
+14:37:42 INFO  : 'after 3000' command is executed.
+14:37:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:37:44 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:37:44 INFO  : Context for 'APU' is selected.
+14:37:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:37:47 INFO  : 'configparams force-mem-access 1' command is executed.
+14:37:47 INFO  : Context for 'APU' is selected.
+14:37:47 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:37:47 INFO  : 'ps7_init' command is executed.
+14:37:47 INFO  : 'ps7_post_config' command is executed.
+14:37:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:48 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:37:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:37:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:37:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:55 INFO  : 'con' command is executed.
+14:37:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:37:55 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:39:15 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+14:39:25 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+14:39:25 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+14:39:25 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:39:28 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:39:28 INFO  : The file 'C:\Users\wpepi\projet\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:39:28 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\wpepi\projet\project\_ide\bitstream' in project 'project'.
+14:39:28 INFO  : The file 'C:\Users\wpepi\projet\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:39:34 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\wpepi\projet\project\_ide\psinit' in project 'project'.
+14:40:06 INFO  : Disconnected from the channel tcfchan#30.
+14:40:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:40:07 INFO  : 'jtag frequency' command is executed.
+14:40:07 INFO  : Context for 'APU' is selected.
+14:40:07 INFO  : System reset is completed.
+14:40:10 INFO  : 'after 3000' command is executed.
+14:40:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:40:11 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:40:11 INFO  : Context for 'APU' is selected.
+14:40:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:40:11 INFO  : 'configparams force-mem-access 1' command is executed.
+14:40:11 INFO  : Context for 'APU' is selected.
+14:40:11 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:40:12 INFO  : 'ps7_init' command is executed.
+14:40:12 INFO  : 'ps7_post_config' command is executed.
+14:40:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:12 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:40:12 INFO  : 'configparams force-mem-access 0' command is executed.
+14:40:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:40:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:12 INFO  : 'con' command is executed.
+14:40:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:40:12 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:40:57 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+14:41:06 INFO  : Disconnected from the channel tcfchan#33.
+14:41:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:41:06 INFO  : 'jtag frequency' command is executed.
+14:41:06 INFO  : Context for 'APU' is selected.
+14:41:06 INFO  : System reset is completed.
+14:41:09 INFO  : 'after 3000' command is executed.
+14:41:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:41:10 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:41:10 INFO  : Context for 'APU' is selected.
+14:41:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:41:10 INFO  : 'configparams force-mem-access 1' command is executed.
+14:41:10 INFO  : Context for 'APU' is selected.
+14:41:10 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:41:11 INFO  : 'ps7_init' command is executed.
+14:41:11 INFO  : 'ps7_post_config' command is executed.
+14:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:11 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:41:11 INFO  : 'configparams force-mem-access 0' command is executed.
+14:41:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:41:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:11 INFO  : 'con' command is executed.
+14:41:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:41:11 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+14:55:59 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+14:56:08 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+14:56:08 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+14:56:19 ERROR : XSCT server calls should not be made from TCF thread.
+java.lang.RuntimeException: XSCT server calls should not be made from TCF thread.
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueAndWait(XSDBCommandManager.java:391)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:325)
+	at com.xilinx.sdk.hw.internal.HwPlatform.dispose(HwPlatform.java:1326)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.removeHwSpec(HwSpecFactory.java:92)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.validateGetFromCache(HwSpecFactory.java:78)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:48)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigUtil.createHwPlatform(SdsLaunchConfigUtil.java:57)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.iniHwPlatform(SdsLaunchConfigModel.java:179)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.getHwPlatform(BaseLaunchConfigModel.java:577)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readCrossTriggerModel(BaseLaunchConfigModel.java:173)
+	at com.xilinx.sdk.tcf.internal.debug.ui.common.BaseLaunchConfigModel.readAndSetAttributes(BaseLaunchConfigModel.java:156)
+	at com.xilinx.sdx.sdsoc.debug.ui.SdsLaunchConfigModel.newInstance(SdsLaunchConfigModel.java:104)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.createConfigModel(SdsTcfLaunchDelegate.java:85)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.generateReports(SdsTcfLaunchDelegate.java:634)
+	at com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate.onDisconnected(SdsTcfLaunchDelegate.java:608)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onDisconnected(TCFModelManager.java:79)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.onDisconnected(TCFLaunch.java:532)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$43.onChannelClosed(TCFLaunch.java:1643)
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:858)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+14:56:19 INFO  : Disconnected from the channel tcfchan#35.
+14:56:21 INFO  : The hardware specfication used by project 'project' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:56:21 INFO  : The file 'C:\Users\wpepi\projet\project\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:56:21 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\wpepi\projet\project\_ide\bitstream' in project 'project'.
+14:56:21 INFO  : The file 'C:\Users\wpepi\projet\project\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:56:26 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\wpepi\projet\project\_ide\psinit' in project 'project'.
+14:56:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+14:56:27 INFO  : 'jtag frequency' command is executed.
+14:56:27 INFO  : Context for 'APU' is selected.
+14:56:27 INFO  : System reset is completed.
+14:56:30 INFO  : 'after 3000' command is executed.
+14:56:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+14:56:31 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+14:56:31 INFO  : Context for 'APU' is selected.
+14:56:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:56:32 INFO  : 'configparams force-mem-access 1' command is executed.
+14:56:32 INFO  : Context for 'APU' is selected.
+14:56:32 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+14:56:32 INFO  : 'ps7_init' command is executed.
+14:56:32 INFO  : 'ps7_post_config' command is executed.
+14:56:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:56:32 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:56:32 INFO  : 'configparams force-mem-access 0' command is executed.
+14:56:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:56:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:56:33 INFO  : 'con' command is executed.
+14:56:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:56:33 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:01:07 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:01:12 INFO  : Disconnected from the channel tcfchan#37.
+15:01:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:01:12 INFO  : 'jtag frequency' command is executed.
+15:01:12 INFO  : Context for 'APU' is selected.
+15:01:13 INFO  : System reset is completed.
+15:01:16 INFO  : 'after 3000' command is executed.
+15:01:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:01:17 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:01:17 INFO  : Context for 'APU' is selected.
+15:01:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:01:17 INFO  : 'configparams force-mem-access 1' command is executed.
+15:01:17 INFO  : Context for 'APU' is selected.
+15:01:17 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:01:17 INFO  : 'ps7_init' command is executed.
+15:01:17 INFO  : 'ps7_post_config' command is executed.
+15:01:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:18 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:01:18 INFO  : 'configparams force-mem-access 0' command is executed.
+15:01:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:01:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:18 INFO  : 'con' command is executed.
+15:01:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:01:18 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:02:44 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:02:46 INFO  : Disconnected from the channel tcfchan#38.
+15:02:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:02:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:02:46 INFO  : 'jtag frequency' command is executed.
+15:02:46 INFO  : Context for 'APU' is selected.
+15:02:46 INFO  : System reset is completed.
+15:02:49 INFO  : 'after 3000' command is executed.
+15:02:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:02:50 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:02:50 INFO  : Context for 'APU' is selected.
+15:02:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:02:50 INFO  : 'configparams force-mem-access 1' command is executed.
+15:02:50 INFO  : Context for 'APU' is selected.
+15:02:50 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:02:51 INFO  : 'ps7_init' command is executed.
+15:02:51 INFO  : 'ps7_post_config' command is executed.
+15:02:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:51 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:02:51 INFO  : 'configparams force-mem-access 0' command is executed.
+15:02:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:02:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:51 INFO  : 'con' command is executed.
+15:02:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:02:51 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:04:07 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:04:10 INFO  : Disconnected from the channel tcfchan#39.
+15:04:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:04:10 INFO  : 'jtag frequency' command is executed.
+15:04:10 INFO  : Context for 'APU' is selected.
+15:04:10 INFO  : System reset is completed.
+15:04:13 INFO  : 'after 3000' command is executed.
+15:04:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:04:15 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:04:15 INFO  : Context for 'APU' is selected.
+15:04:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:04:15 INFO  : 'configparams force-mem-access 1' command is executed.
+15:04:15 INFO  : Context for 'APU' is selected.
+15:04:15 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:04:15 INFO  : 'ps7_init' command is executed.
+15:04:15 INFO  : 'ps7_post_config' command is executed.
+15:04:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:15 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:04:16 INFO  : 'configparams force-mem-access 0' command is executed.
+15:04:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:04:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:16 INFO  : 'con' command is executed.
+15:04:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:04:16 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:06:22 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:06:23 INFO  : Disconnected from the channel tcfchan#40.
+15:06:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:06:23 INFO  : 'jtag frequency' command is executed.
+15:06:23 INFO  : Context for 'APU' is selected.
+15:06:23 INFO  : System reset is completed.
+15:06:26 INFO  : 'after 3000' command is executed.
+15:06:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:06:27 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:06:28 INFO  : Context for 'APU' is selected.
+15:06:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:06:28 INFO  : 'configparams force-mem-access 1' command is executed.
+15:06:28 INFO  : Context for 'APU' is selected.
+15:06:28 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:06:28 INFO  : 'ps7_init' command is executed.
+15:06:28 INFO  : 'ps7_post_config' command is executed.
+15:06:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:06:28 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:06:29 INFO  : 'configparams force-mem-access 0' command is executed.
+15:06:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:06:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:06:29 INFO  : 'con' command is executed.
+15:06:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:06:29 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:07:14 INFO  : Disconnected from the channel tcfchan#41.
+15:07:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:15 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:07:15 INFO  : 'jtag frequency' command is executed.
+15:07:15 INFO  : Context for 'APU' is selected.
+15:07:15 INFO  : System reset is completed.
+15:07:16 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:07:18 INFO  : 'after 3000' command is executed.
+15:07:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:07:19 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:07:19 INFO  : Context for 'APU' is selected.
+15:07:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:07:19 INFO  : 'configparams force-mem-access 1' command is executed.
+15:07:19 INFO  : Context for 'APU' is selected.
+15:07:19 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:07:19 INFO  : 'ps7_init' command is executed.
+15:07:19 INFO  : 'ps7_post_config' command is executed.
+15:07:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:20 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:07:20 INFO  : 'configparams force-mem-access 0' command is executed.
+15:07:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:07:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:20 INFO  : 'con' command is executed.
+15:07:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:07:20 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:07:25 INFO  : Disconnected from the channel tcfchan#42.
+15:07:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:07:25 INFO  : 'jtag frequency' command is executed.
+15:07:25 INFO  : Context for 'APU' is selected.
+15:07:25 INFO  : System reset is completed.
+15:07:28 INFO  : 'after 3000' command is executed.
+15:07:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:07:30 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:07:30 INFO  : Context for 'APU' is selected.
+15:07:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:07:30 INFO  : 'configparams force-mem-access 1' command is executed.
+15:07:30 INFO  : Context for 'APU' is selected.
+15:07:30 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:07:30 INFO  : 'ps7_init' command is executed.
+15:07:30 INFO  : 'ps7_post_config' command is executed.
+15:07:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:31 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:07:31 INFO  : 'configparams force-mem-access 0' command is executed.
+15:07:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:07:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:31 INFO  : 'con' command is executed.
+15:07:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:07:31 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:08:10 INFO  : Disconnected from the channel tcfchan#43.
+15:08:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:08:10 INFO  : 'jtag frequency' command is executed.
+15:08:10 INFO  : Context for 'APU' is selected.
+15:08:10 INFO  : System reset is completed.
+15:08:14 INFO  : 'after 3000' command is executed.
+15:08:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:08:15 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:08:15 INFO  : Context for 'APU' is selected.
+15:08:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:08:15 INFO  : 'configparams force-mem-access 1' command is executed.
+15:08:15 INFO  : Context for 'APU' is selected.
+15:08:15 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:08:15 INFO  : 'ps7_init' command is executed.
+15:08:15 INFO  : 'ps7_post_config' command is executed.
+15:08:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:16 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:08:16 INFO  : 'configparams force-mem-access 0' command is executed.
+15:08:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:16 INFO  : 'con' command is executed.
+15:08:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:08:16 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:08:23 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:08:26 INFO  : Disconnected from the channel tcfchan#44.
+15:08:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:08:26 INFO  : 'jtag frequency' command is executed.
+15:08:26 INFO  : Context for 'APU' is selected.
+15:08:27 INFO  : System reset is completed.
+15:08:30 INFO  : 'after 3000' command is executed.
+15:08:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:08:31 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:08:31 INFO  : Context for 'APU' is selected.
+15:08:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:08:31 INFO  : 'configparams force-mem-access 1' command is executed.
+15:08:31 INFO  : Context for 'APU' is selected.
+15:08:31 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:08:31 INFO  : 'ps7_init' command is executed.
+15:08:31 INFO  : 'ps7_post_config' command is executed.
+15:08:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:32 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:08:32 INFO  : 'configparams force-mem-access 0' command is executed.
+15:08:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:08:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:32 INFO  : 'con' command is executed.
+15:08:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:08:32 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:09:45 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:09:48 INFO  : Disconnected from the channel tcfchan#45.
+15:09:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:09:49 INFO  : 'jtag frequency' command is executed.
+15:09:49 INFO  : Context for 'APU' is selected.
+15:09:49 INFO  : System reset is completed.
+15:09:52 INFO  : 'after 3000' command is executed.
+15:09:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:09:53 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:09:53 INFO  : Context for 'APU' is selected.
+15:09:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:09:53 INFO  : 'configparams force-mem-access 1' command is executed.
+15:09:53 INFO  : Context for 'APU' is selected.
+15:09:53 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:09:53 INFO  : 'ps7_init' command is executed.
+15:09:53 INFO  : 'ps7_post_config' command is executed.
+15:09:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:09:54 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:09:54 INFO  : 'configparams force-mem-access 0' command is executed.
+15:09:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:09:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:09:54 INFO  : 'con' command is executed.
+15:09:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:09:54 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:09:58 INFO  : Disconnected from the channel tcfchan#46.
+15:09:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:09:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:09:58 INFO  : 'jtag frequency' command is executed.
+15:09:58 INFO  : Context for 'APU' is selected.
+15:09:58 INFO  : System reset is completed.
+15:10:01 INFO  : 'after 3000' command is executed.
+15:10:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:10:03 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:10:03 INFO  : Context for 'APU' is selected.
+15:10:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:10:03 INFO  : 'configparams force-mem-access 1' command is executed.
+15:10:03 INFO  : Context for 'APU' is selected.
+15:10:03 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:10:03 INFO  : 'ps7_init' command is executed.
+15:10:03 INFO  : 'ps7_post_config' command is executed.
+15:10:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:04 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:10:04 INFO  : 'configparams force-mem-access 0' command is executed.
+15:10:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:10:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:10:04 INFO  : 'con' command is executed.
+15:10:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:10:04 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:11:28 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:13:27 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:13:35 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:13:37 INFO  : Disconnected from the channel tcfchan#47.
+15:13:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:13:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:13:37 INFO  : 'jtag frequency' command is executed.
+15:13:37 INFO  : Context for 'APU' is selected.
+15:13:37 INFO  : System reset is completed.
+15:13:40 INFO  : 'after 3000' command is executed.
+15:13:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:13:41 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:13:41 INFO  : Context for 'APU' is selected.
+15:13:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:13:41 INFO  : 'configparams force-mem-access 1' command is executed.
+15:13:41 INFO  : Context for 'APU' is selected.
+15:13:41 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:13:42 INFO  : 'ps7_init' command is executed.
+15:13:42 INFO  : 'ps7_post_config' command is executed.
+15:13:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:42 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:13:42 INFO  : 'configparams force-mem-access 0' command is executed.
+15:13:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:13:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:42 INFO  : 'con' command is executed.
+15:13:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:13:42 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:14:07 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:14:09 INFO  : Disconnected from the channel tcfchan#48.
+15:14:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:14:10 INFO  : 'jtag frequency' command is executed.
+15:14:10 INFO  : Context for 'APU' is selected.
+15:14:10 INFO  : System reset is completed.
+15:14:13 INFO  : 'after 3000' command is executed.
+15:14:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:14:14 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:14:14 INFO  : Context for 'APU' is selected.
+15:14:14 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:14:14 INFO  : 'configparams force-mem-access 1' command is executed.
+15:14:14 INFO  : Context for 'APU' is selected.
+15:14:14 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:14:14 INFO  : 'ps7_init' command is executed.
+15:14:14 INFO  : 'ps7_post_config' command is executed.
+15:14:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:14:15 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:14:15 INFO  : 'configparams force-mem-access 0' command is executed.
+15:14:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:14:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:14:15 INFO  : 'con' command is executed.
+15:14:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:14:15 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:16:11 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:16:18 INFO  : Disconnected from the channel tcfchan#49.
+15:16:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:16:18 INFO  : 'jtag frequency' command is executed.
+15:16:18 INFO  : Context for 'APU' is selected.
+15:16:18 INFO  : System reset is completed.
+15:16:21 INFO  : 'after 3000' command is executed.
+15:16:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:16:22 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:16:22 INFO  : Context for 'APU' is selected.
+15:16:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:16:22 INFO  : 'configparams force-mem-access 1' command is executed.
+15:16:22 INFO  : Context for 'APU' is selected.
+15:16:22 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:16:23 INFO  : 'ps7_init' command is executed.
+15:16:23 INFO  : 'ps7_post_config' command is executed.
+15:16:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:23 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:16:23 INFO  : 'configparams force-mem-access 0' command is executed.
+15:16:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:16:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:23 INFO  : 'con' command is executed.
+15:16:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:16:23 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:20:46 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:20:48 INFO  : Disconnected from the channel tcfchan#50.
+15:20:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:20:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:20:49 INFO  : 'jtag frequency' command is executed.
+15:20:49 INFO  : Context for 'APU' is selected.
+15:20:49 INFO  : System reset is completed.
+15:20:52 INFO  : 'after 3000' command is executed.
+15:20:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:20:53 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:20:53 INFO  : Context for 'APU' is selected.
+15:20:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:20:53 INFO  : 'configparams force-mem-access 1' command is executed.
+15:20:53 INFO  : Context for 'APU' is selected.
+15:20:53 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:20:53 INFO  : 'ps7_init' command is executed.
+15:20:53 INFO  : 'ps7_post_config' command is executed.
+15:20:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:20:54 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:20:54 INFO  : 'configparams force-mem-access 0' command is executed.
+15:20:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:20:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:20:54 INFO  : 'con' command is executed.
+15:20:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:20:54 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:21:29 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:21:34 INFO  : Disconnected from the channel tcfchan#51.
+15:21:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:34 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:21:34 INFO  : 'jtag frequency' command is executed.
+15:21:34 INFO  : Context for 'APU' is selected.
+15:21:34 INFO  : System reset is completed.
+15:21:37 INFO  : 'after 3000' command is executed.
+15:21:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:21:39 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:21:39 INFO  : Context for 'APU' is selected.
+15:21:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:21:39 INFO  : 'configparams force-mem-access 1' command is executed.
+15:21:39 INFO  : Context for 'APU' is selected.
+15:21:39 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:21:39 INFO  : 'ps7_init' command is executed.
+15:21:39 INFO  : 'ps7_post_config' command is executed.
+15:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:40 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:21:40 INFO  : 'configparams force-mem-access 0' command is executed.
+15:21:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:21:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:40 INFO  : 'con' command is executed.
+15:21:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:21:40 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:22:41 INFO  : Checking for BSP changes to sync application flags for project 'project'...
+15:22:46 INFO  : Disconnected from the channel tcfchan#52.
+15:22:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:22:46 INFO  : 'jtag frequency' command is executed.
+15:22:46 INFO  : Context for 'APU' is selected.
+15:22:47 INFO  : System reset is completed.
+15:22:50 INFO  : 'after 3000' command is executed.
+15:22:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:22:51 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:22:51 INFO  : Context for 'APU' is selected.
+15:22:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:22:51 INFO  : 'configparams force-mem-access 1' command is executed.
+15:22:51 INFO  : Context for 'APU' is selected.
+15:22:51 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:22:51 INFO  : 'ps7_init' command is executed.
+15:22:51 INFO  : 'ps7_post_config' command is executed.
+15:22:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:22:52 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:22:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:22:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:22:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:22:52 INFO  : 'con' command is executed.
+15:22:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:22:52 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:23:29 INFO  : Disconnected from the channel tcfchan#53.
+15:23:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E42A' is selected.
+15:23:29 INFO  : 'jtag frequency' command is executed.
+15:23:29 INFO  : Context for 'APU' is selected.
+15:23:29 INFO  : System reset is completed.
+15:23:32 INFO  : 'after 3000' command is executed.
+15:23:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}' command is executed.
+15:23:34 INFO  : Device configured successfully with "C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit"
+15:23:34 INFO  : Context for 'APU' is selected.
+15:23:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+15:23:34 INFO  : 'configparams force-mem-access 1' command is executed.
+15:23:34 INFO  : Context for 'APU' is selected.
+15:23:34 INFO  : Sourcing of 'C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl' is done.
+15:23:34 INFO  : 'ps7_init' command is executed.
+15:23:34 INFO  : 'ps7_post_config' command is executed.
+15:23:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:35 INFO  : The application 'C:/Users/wpepi/projet/project/Debug/project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:23:35 INFO  : 'configparams force-mem-access 0' command is executed.
+15:23:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E42A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E42A-13722093-0"}
+fpga -file C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wpepi/projet/project/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wpepi/projet/project/Debug/project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:23:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:35 INFO  : 'con' command is executed.
+15:23:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:23:35 INFO  : Launch script is exported to file 'C:\Users\wpepi\projet\project_system\_ide\scripts\systemdebugger_project_system_standalone.tcl'
+15:28:48 INFO  : Projects exported to 'C:\Users\wpepi\vitis_export_archive.ide_iter_2.zip'

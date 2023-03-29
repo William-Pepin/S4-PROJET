@@ -89,8 +89,154 @@
   "../../../bd/atelier4/ip/atelier4_rgb2dvi_0_0/sim/atelier4_rgb2dvi_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_0/atelier4_smartconnect_0_0_sim_netlist.v" \
-  "c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_smartconnect_0_1/atelier4_smartconnect_0_1_sim_netlist.v" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/sim/bd_de31.v" \
+-endlib
+-makelib xcelium_lib/xlconstant_v1_1_7 \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_de31_one_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_de31_psr0_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_de31_psr_aclk_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_de31_psr_aclk1_0.vhd" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/25b7/hdl/sc_util_v1_0_vl_rfs.sv" \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/c012/hdl/sc_switchboard_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_de31_arinsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_de31_rinsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_de31_awinsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_de31_winsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_de31_binsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_de31_aroutsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_de31_routsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_de31_awoutsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_de31_woutsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_de31_boutsw_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/896c/hdl/sc_node_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_de31_arni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_de31_rni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_de31_awni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_de31_wni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_de31_bni_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ea34/hdl/sc_mmu_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_de31_s00mmu_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4fd2/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_de31_s00tr_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8047/hdl/sc_si_converter_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_de31_s00sic_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/b89e/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_de31_s00a2s_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_de31_sarn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_de31_srn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_de31_sawn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_de31_swn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_de31_sbn_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/7005/hdl/sc_sc2axi_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_de31_m00s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_de31_m00arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_de31_m00rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_de31_m00awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_de31_m00wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_de31_m00bn_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/7bd7/hdl/sc_exit_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_de31_m00e_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_de31_m01s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_36/sim/bd_de31_m01arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_de31_m01rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_de31_m01awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_39/sim/bd_de31_m01wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_40/sim/bd_de31_m01bn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_41/sim/bd_de31_m01e_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_42/sim/bd_de31_m02s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_43/sim/bd_de31_m02arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_44/sim/bd_de31_m02rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_45/sim/bd_de31_m02awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_46/sim/bd_de31_m02wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_47/sim/bd_de31_m02bn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_48/sim/bd_de31_m02e_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_49/sim/bd_de31_m03s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_50/sim/bd_de31_m03arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_51/sim/bd_de31_m03rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_52/sim/bd_de31_m03awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_53/sim/bd_de31_m03wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_54/sim/bd_de31_m03bn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/bd_0/ip/ip_55/sim/bd_de31_m03e_0.sv" \
+-endlib
+-makelib xcelium_lib/axi_register_slice_v2_1_22 \
+  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_0/sim/atelier4_smartconnect_0_0.v" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/sim/bd_1ef0.v" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_0/sim/bd_1ef0_one_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_1/sim/bd_1ef0_psr0_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_2/sim/bd_1ef0_psr_aclk_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_3/sim/bd_1ef0_psr_aclk1_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_4/sim/bd_1ef0_arsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_5/sim/bd_1ef0_rsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_6/sim/bd_1ef0_awsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_7/sim/bd_1ef0_wsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_8/sim/bd_1ef0_bsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_9/sim/bd_1ef0_s00mmu_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_10/sim/bd_1ef0_s00tr_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_11/sim/bd_1ef0_s00sic_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_12/sim/bd_1ef0_s00a2s_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_13/sim/bd_1ef0_sarn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_14/sim/bd_1ef0_srn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_15/sim/bd_1ef0_s01mmu_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_16/sim/bd_1ef0_s01tr_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_17/sim/bd_1ef0_s01sic_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_18/sim/bd_1ef0_s01a2s_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_19/sim/bd_1ef0_sawn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_20/sim/bd_1ef0_swn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_21/sim/bd_1ef0_sbn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_22/sim/bd_1ef0_m00s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_23/sim/bd_1ef0_m00arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_24/sim/bd_1ef0_m00rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_25/sim/bd_1ef0_m00awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_26/sim/bd_1ef0_m00wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_27/sim/bd_1ef0_m00bn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/bd_0/ip/ip_28/sim/bd_1ef0_m00e_0.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_smartconnect_0_1/sim/atelier4_smartconnect_0_1.v" \
 -endlib
 -makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
   "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -106,7 +252,61 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/sim/atelier4_v_axi4s_vid_out_0_0.v" \
-  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_0/bd_0837_smartconnect_0_0_sim_netlist.v" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/sim/bd_0cc7.v" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_0/sim/bd_0cc7_one_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/sim/bd_0cc7_psr_aclk_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_2/sim/bd_0cc7_arinsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_3/sim/bd_0cc7_rinsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_4/sim/bd_0cc7_awinsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_5/sim/bd_0cc7_winsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_6/sim/bd_0cc7_binsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_7/sim/bd_0cc7_aroutsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_8/sim/bd_0cc7_routsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_9/sim/bd_0cc7_awoutsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_10/sim/bd_0cc7_woutsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_11/sim/bd_0cc7_boutsw_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_12/sim/bd_0cc7_arni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_13/sim/bd_0cc7_rni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_14/sim/bd_0cc7_awni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_15/sim/bd_0cc7_wni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_16/sim/bd_0cc7_bni_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_17/sim/bd_0cc7_s00mmu_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_18/sim/bd_0cc7_s00tr_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_19/sim/bd_0cc7_s00sic_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_20/sim/bd_0cc7_s00a2s_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_21/sim/bd_0cc7_sarn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_22/sim/bd_0cc7_srn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_23/sim/bd_0cc7_sawn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_24/sim/bd_0cc7_swn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_25/sim/bd_0cc7_sbn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_26/sim/bd_0cc7_m00s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_27/sim/bd_0cc7_m00arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_28/sim/bd_0cc7_m00rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_29/sim/bd_0cc7_m00awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_30/sim/bd_0cc7_m00wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_31/sim/bd_0cc7_m00bn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_32/sim/bd_0cc7_m00e_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_33/sim/bd_0cc7_m01s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_34/sim/bd_0cc7_m01arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_35/sim/bd_0cc7_m01rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_36/sim/bd_0cc7_m01awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_37/sim/bd_0cc7_m01wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_38/sim/bd_0cc7_m01bn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_39/sim/bd_0cc7_m01e_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_40/sim/bd_0cc7_m02s2a_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_41/sim/bd_0cc7_m02arn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_42/sim/bd_0cc7_m02rn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_43/sim/bd_0cc7_m02awn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_44/sim/bd_0cc7_m02wn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_45/sim/bd_0cc7_m02bn_0.sv" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_46/sim/bd_0cc7_m02e_0.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_0/sim/bd_0837_smartconnect_0_0.v" \
   "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/hdl/verilog/bd_0837_vsc_0_AXIvideo2MultiPixStream.v" \
   "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/hdl/verilog/bd_0837_vsc_0_Block_split4_proc.v" \
   "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/hdl/verilog/bd_0837_vsc_0_CTRL_s_axi.v" \
@@ -239,7 +439,10 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_8/sim/bd_0837_xlslice_0_0.v" \
   "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_9/sim/bd_0837_xlslice_1_0.v" \
-  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/atelier4_v_proc_ss_0_0_sim_netlist.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/sim/bd_0837.vhd" \
+  "../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/sim/atelier4_v_proc_ss_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/v_tc_v6_2_1 \
   "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/cd2e/hdl/v_tc_v6_2_vh_rfs.vhd" \
@@ -253,9 +456,6 @@
   "../../../bd/atelier4/ipshared/0125/hdl/InstructionRegister_v1_0.vhd" \
   "../../../bd/atelier4/ip/atelier4_InstructionRegister_0_1/sim/atelier4_InstructionRegister_0_1.vhd" \
 -endlib
--makelib xcelium_lib/xlconstant_v1_1_7 \
-  "../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" \
--endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/atelier4/ip/atelier4_xlconstant_4_0/sim/atelier4_xlconstant_4_0.v" \
   "../../../bd/atelier4/ip/atelier4_xlslice_0_0/sim/atelier4_xlslice_0_0.v" \
@@ -263,15 +463,15 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/atelier4/ip/atelier4_colorRegister_0_0/sim/atelier4_colorRegister_0_0.vhd" \
-  "../../../bd/atelier4/ip/atelier4_BackgroundManager_0_0/sim/atelier4_BackgroundManager_0_0.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/atelier4/ip/atelier4_xlslice_2_0/sim/atelier4_xlslice_2_0.v" \
-  "../../../bd/atelier4/ip/atelier4_xlslice_2_1/sim/atelier4_xlslice_2_1.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
   "../../../bd/atelier4/ip/atelier4_InstructionDecoder_0_0/sim/atelier4_InstructionDecoder_0_0.vhd" \
   "../../../bd/atelier4/ip/atelier4_TileBufferBackground_0_0/sim/atelier4_TileBufferBackground_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_xlconstant_0_0/sim/atelier4_xlconstant_0_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_BackgroundManager_0_0/sim/atelier4_BackgroundManager_0_0.vhd" \
+  "../../../bd/atelier4/sim/atelier4.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

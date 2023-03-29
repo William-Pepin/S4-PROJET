@@ -1135,22 +1135,6 @@ proc create_root_design { parentCell } {
    CONFIG.DOUT_WIDTH {28} \
  ] $xlslice_1
 
-  # Create instance: xlslice_2, and set properties
-  set xlslice_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2 ]
-  set_property -dict [ list \
-   CONFIG.DIN_FROM {9} \
-   CONFIG.DIN_WIDTH {12} \
-   CONFIG.DOUT_WIDTH {10} \
- ] $xlslice_2
-
-  # Create instance: xlslice_3, and set properties
-  set xlslice_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_3 ]
-  set_property -dict [ list \
-   CONFIG.DIN_FROM {9} \
-   CONFIG.DIN_WIDTH {12} \
-   CONFIG.DOUT_WIDTH {10} \
- ] $xlslice_3
-
   # Create interface connections
   connect_bd_intf_net -intf_net axi_vdma_0_M_AXIS_MM2S [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_proc_ss_0/s_axis]
   connect_bd_intf_net -intf_net axi_vdma_0_M_AXI_MM2S [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S] [get_bd_intf_pins smartconnect_1/S00_AXI]
@@ -1189,8 +1173,8 @@ proc create_root_design { parentCell } {
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins BackgroundManager_0/i_clk] [get_bd_pins InstructionRegister_0/s00_axi_aclk] [get_bd_pins TileBufferBackground_0/i_clk] [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins colorRegister_0/i_clk] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins smartconnect_0/aclk1] [get_bd_pins smartconnect_1/aclk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_proc_ss_0/aclk_axis] [get_bd_pins v_proc_ss_0/aclk_ctrl] [get_bd_pins v_tc_0/clk]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked] [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken]
   connect_bd_net -net colorRegister_0_o_readColorValue [get_bd_pins colorRegister_0/o_readColorValue] [get_bd_pins pixelDataToVideoStre_0/i_dataPixel]
-  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_x [get_bd_pins pixelDataToVideoStre_0/o_pixel_x] [get_bd_pins xlslice_2/Din]
-  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_y [get_bd_pins pixelDataToVideoStre_0/o_pixel_y] [get_bd_pins xlslice_3/Din]
+  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_x [get_bd_pins BackgroundManager_0/i_readGlobalPosX] [get_bd_pins pixelDataToVideoStre_0/o_pixel_x]
+  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_y [get_bd_pins BackgroundManager_0/i_readGlobalPosY] [get_bd_pins pixelDataToVideoStre_0/o_pixel_y]
   connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins InstructionRegister_0/s00_axi_aresetn] [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins pixelDataToVideoStre_0/i_aresetn] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_proc_ss_0/aresetn_ctrl] [get_bd_pins v_tc_0/resetn]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins smartconnect_0/aresetn] [get_bd_pins smartconnect_1/aresetn]
   connect_bd_net -net reset_0_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset] [get_bd_pins proc_sys_reset_0/ext_reset_in]
@@ -1200,8 +1184,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net xlconstant_6_dout [get_bd_pins BackgroundManager_0/i_reset] [get_bd_pins TileBufferBackground_0/i_reset] [get_bd_pins colorRegister_0/i_reset] [get_bd_pins xlconstant_6/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins InstructionDecoder_0/i_opcode] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins InstructionDecoder_0/i_instruction_data] [get_bd_pins xlslice_1/Dout]
-  connect_bd_net -net xlslice_2_Dout [get_bd_pins BackgroundManager_0/i_readGlobalPosX] [get_bd_pins xlslice_2/Dout]
-  connect_bd_net -net xlslice_3_Dout [get_bd_pins BackgroundManager_0/i_readGlobalPosY] [get_bd_pins xlslice_3/Dout]
 
   # Create address segments
   assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space [get_bd_addr_spaces axi_vdma_0/Data_MM2S] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] -force

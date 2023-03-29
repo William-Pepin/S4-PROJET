@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1679435470">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1680115753">
   <File Type="BITSTR-BMM" Name="atelier4_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="atelier4_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="atelier4_wrapper_timing_summary_init.rpt"/>
@@ -85,14 +85,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Downloads/BackgroundManager.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/BackgroundManager.vhd"/>
-        <Attr Name="ImportTime" Val="1679419115"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/InstructionDecoder.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -103,6 +95,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/TileBufferBackground.vhd"/>
         <Attr Name="ImportTime" Val="1679419119"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/BackgroundManager.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/BackgroundManager.vhd"/>
+        <Attr Name="ImportTime" Val="1679419115"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

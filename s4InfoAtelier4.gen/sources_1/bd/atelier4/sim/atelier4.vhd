@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Tue Mar 21 17:50:37 2023
+--Date        : Wed Mar 29 14:48:40 2023
 --Host        : William_PC running 64-bit major release  (build 9200)
 --Command     : generate_target atelier4.bd
 --Design      : atelier4
@@ -42,7 +42,7 @@ entity atelier4 is
     sys_clk : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of atelier4 : entity is "atelier4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=atelier4,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=22,numReposBlks=22,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,""da_ps7_cnt""=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of atelier4 : entity is "atelier4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=atelier4,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=20,numReposBlks=20,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,""""da_ps7_cnt""""=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of atelier4 : entity is "atelier4.hwdef";
 end atelier4;
@@ -649,18 +649,6 @@ architecture STRUCTURE of atelier4 is
     o_readColorValue : out STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   end component atelier4_colorRegister_0_0;
-  component atelier4_xlslice_2_0 is
-  port (
-    Din : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    Dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
-  );
-  end component atelier4_xlslice_2_0;
-  component atelier4_xlslice_2_1 is
-  port (
-    Din : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    Dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
-  );
-  end component atelier4_xlslice_2_1;
   component atelier4_InstructionDecoder_0_0 is
   port (
     i_opcode : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -964,8 +952,6 @@ architecture STRUCTURE of atelier4 is
   signal xlconstant_6_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal xlslice_1_Dout : STD_LOGIC_VECTOR ( 27 downto 0 );
-  signal xlslice_2_Dout : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal xlslice_3_Dout : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal NLW_axi_vdma_0_mm2s_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_vdma_0_s2mm_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_vdma_0_mm2s_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -1045,8 +1031,8 @@ begin
 BackgroundManager_0: component atelier4_BackgroundManager_0_0
      port map (
       i_clk => clk_wiz_0_clk_out1,
-      i_readGlobalPosX(9 downto 0) => xlslice_2_Dout(9 downto 0),
-      i_readGlobalPosY(9 downto 0) => xlslice_3_Dout(9 downto 0),
+      i_readGlobalPosX(9 downto 0) => pixelDataToVideoStre_0_o_pixel_x(9 downto 0),
+      i_readGlobalPosY(9 downto 0) => pixelDataToVideoStre_0_o_pixel_y(9 downto 0),
       i_reset => xlconstant_6_dout(0),
       i_we => InstructionDecoder_0_o_bcgWriteEn,
       i_writeTileID(7 downto 0) => InstructionDecoder_0_o_tileId(7 downto 0),
@@ -1674,15 +1660,5 @@ xlslice_1: component atelier4_xlslice_0_1
      port map (
       Din(31 downto 0) => InstructionRegister_0_o_Instruction(31 downto 0),
       Dout(27 downto 0) => xlslice_1_Dout(27 downto 0)
-    );
-xlslice_2: component atelier4_xlslice_2_0
-     port map (
-      Din(11 downto 0) => pixelDataToVideoStre_0_o_pixel_x(11 downto 0),
-      Dout(9 downto 0) => xlslice_2_Dout(9 downto 0)
-    );
-xlslice_3: component atelier4_xlslice_2_1
-     port map (
-      Din(11 downto 0) => pixelDataToVideoStre_0_o_pixel_y(11 downto 0),
-      Dout(9 downto 0) => xlslice_3_Dout(9 downto 0)
     );
 end STRUCTURE;

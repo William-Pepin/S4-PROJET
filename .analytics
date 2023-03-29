@@ -192,3 +192,31 @@ timestamp=[2023-03-29 14:03:31], mode=BUILD, duration=0:00:00.402, duration_ms=4
 timestamp=[2023-03-29 14:05:08], mode=BUILD, duration=0:00:00.361, duration_ms=361, data={name=project, configuration=Debug, clean_build=false}
 timestamp=[2023-03-29 14:05:24], mode=BUILD, duration=0:00:00.419, duration_ms=419, data={name=project, configuration=Debug, clean_build=false}
 timestamp=[2023-03-29 14:09:05], mode=BUILD, duration=0:00:01.033, duration_ms=1033, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:17:14], mode=BUILD, duration=0:00:00.801, duration_ms=801, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:18:09], mode=BUILD, duration=0:00:00.802, duration_ms=802, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:19:18], mode=BUILD, duration=0:00:00.809, duration_ms=809, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:20:18], mode=BUILD, duration=0:00:00.821, duration_ms=821, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:21:02], mode=BUILD, duration=0:00:00.809, duration_ms=809, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:37:00], mode=BUILD, duration=0:00:01.460, duration_ms=1460, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:37:38], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:39:25], mode=PLATFORM_GENERATION, duration=0:00:02.539, duration_ms=2539, data={name=atelier4_wrapper}
+timestamp=[2023-03-29 14:39:27], mode=BUILD, duration=0:00:00.295, duration_ms=295, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:39:39], mode=BUILD, duration=0:00:05.473, duration_ms=5473, data={name=project_system, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:40:57], mode=BUILD, duration=0:00:00.299, duration_ms=299, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:41:02], mode=BUILD, duration=0:00:05.040, duration_ms=5040, data={name=project_system, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 14:56:08], mode=PLATFORM_GENERATION, duration=0:00:02.137, duration_ms=2137, data={name=atelier4_wrapper}
+timestamp=[2023-03-29 15:01:08], mode=BUILD, duration=0:00:00.990, duration_ms=990, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:02:45], mode=BUILD, duration=0:00:00.874, duration_ms=874, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:04:08], mode=BUILD, duration=0:00:00.808, duration_ms=808, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:06:22], mode=BUILD, duration=0:00:00.810, duration_ms=810, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:07:18], mode=BUILD, duration=0:00:00.741, duration_ms=741, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:08:24], mode=BUILD, duration=0:00:00.748, duration_ms=748, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:09:46], mode=BUILD, duration=0:00:00.830, duration_ms=830, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:11:29], mode=BUILD, duration=0:00:00.796, duration_ms=796, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:13:27], mode=BUILD, duration=0:00:00.419, duration_ms=419, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:13:36], mode=BUILD, duration=0:00:00.806, duration_ms=806, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:14:08], mode=BUILD, duration=0:00:00.803, duration_ms=803, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:16:12], mode=BUILD, duration=0:00:00.732, duration_ms=732, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:20:47], mode=BUILD, duration=0:00:00.808, duration_ms=808, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:21:29], mode=BUILD, duration=0:00:00.298, duration_ms=298, data={name=project, configuration=Debug, clean_build=false}
+timestamp=[2023-03-29 15:22:42], mode=BUILD, duration=0:00:00.842, duration_ms=842, data={name=project, configuration=Debug, clean_build=false}

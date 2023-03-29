@@ -1,14 +1,9 @@
-14:09:04 **** Incremental Build of configuration Debug for project project ****
+15:22:41 **** Incremental Build of configuration Debug for project project ****
 make all 
 C:/Xilinx/Vitis/2020.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 C:/Xilinx/Vitis/2020.2/gnuwin/bin/make --no-print-directory main-build
-'Building file: ../src/api.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/api.d" -MT"src/api.o" -o "src/api.o" "../src/api.c"
-'Finished building: ../src/api.c'
-' '
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
@@ -22,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size project.elf  |tee "project.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 173964	   1472	 160848	 336284	  5219c	project.elf
+ 173772	   1472	 160848	 336092	  520dc	project.elf
 'Finished building: project.elf.size'
 ' '
 
-14:09:05 Build Finished (took 1s.26ms)
+15:22:42 Build Finished (took 838ms)
 

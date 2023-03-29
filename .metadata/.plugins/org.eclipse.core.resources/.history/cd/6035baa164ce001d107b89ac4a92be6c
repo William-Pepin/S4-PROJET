@@ -1,0 +1,78 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "instructionRegister.h"
+#include "api.h"
+#include "xparameters.h"
+
+int main()
+{
+	configureScaler();
+    configureVdma();
+
+
+
+	setColorByPaletteId(0, 0x0);
+	usleep(100);
+	setColorByPaletteId(1, 0x444444);
+	usleep(100);
+	setColorByPaletteId(2, 0x888888);
+	usleep(100);
+	setColorByPaletteId(3, 0xCCCCCC);
+	usleep(100);
+	setColorByPaletteId(4, 0x0);
+	usleep(100);
+	setColorByPaletteId(5, 0x0);
+	usleep(100);
+	setColorByPaletteId(6, 0x0);
+	usleep(100);
+	setColorByPaletteId(7, 0x0);
+	usleep(100);
+	setColorByPaletteId(8, 0x0);
+	usleep(100);
+	setColorByPaletteId(9, 0x0);
+	usleep(100);
+	setColorByPaletteId(10, 0x0);
+	usleep(100);
+	setColorByPaletteId(11, 0x0);
+	usleep(100);
+	setColorByPaletteId(12, 0x0);
+	usleep(100);
+	setColorByPaletteId(13, 0x0);
+	usleep(100);
+	setColorByPaletteId(14, 0x0);
+	usleep(100);
+	setColorByPaletteId(15, 0x0);
+	usleep(100);
+
+
+    for(int i = 0 ; i < 4; i++)
+    {
+    	for(int x = 0 ; x < 8; x+=2)
+    	{
+    		for(int y = 0 ; y < 8; y+=2)
+    		{
+    			setPaletteIdForTileId2(i, i, x, y);
+    			setPaletteIdForTileId2(i, i, x, y);
+    			usleep(100);
+    		}
+    	}
+
+    }
+
+    for(int x = 0 ; x < 8; x++)
+    {
+    	for(int y = 0; y < 8; y++)
+    	{
+    		setTileCoordBackground(x % 4, x, y);
+    		usleep(100);
+    	}
+    }
+
+    while(1)
+    {
+    	sleep(1);
+    }
+    return 0;
+}

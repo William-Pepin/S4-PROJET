@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Mar 21 17:57:11 2023
+| Date         : Wed Mar 29 14:54:25 2023
 | Host         : William_PC running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file atelier4_wrapper_clock_utilization_routed.rpt
 | Design       : atelier4_wrapper
@@ -54,7 +54,7 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-------------------------------+--------------------------------------------------------------------------+-------------------------------------------------------------------+
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 4 |       17169 |               0 |       13.468 | clk_out1_atelier4_clk_wiz_0_0 | atelier4_i/clk_wiz_0/inst/clkout1_buf/O                                  | atelier4_i/clk_wiz_0/inst/clk_out1                                |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 4 |        2148 |               0 |       20.000 | clk_fpga_0                    | atelier4_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O | atelier4_i/processing_system7_0/inst/FCLK_CLK0                    |
-| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |                 3 |          43 |               0 |              |                               | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG_inst/O                   | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG                   |
+| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |                 2 |          43 |               0 |              |                               | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG_inst/O                   | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG                   |
 | g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 1 |           8 |               0 |       13.468 | PixelClkIO                    | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk_BUFG_inst/O  | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk_BUFG  |
 | g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 1 |           8 |               0 |        2.694 | SerialClkIO                   | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk_BUFG_inst/O | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk_BUFG |
 | g5        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 1 |           1 |               0 |       40.000 | clkfbout_atelier4_clk_wiz_0_0 | atelier4_i/clk_wiz_0/inst/clkf_buf/O                                     | atelier4_i/clk_wiz_0/inst/clkfbout_buf_atelier4_clk_wiz_0_0       |
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-----------+---------------------+------------+-----------------+--------------+-------------+-----------------+---------------------+-------------------------------+------------------------------------------------------------------------------------+--------------------------------------------------------------+
 | src0      | g0        | MMCME2_ADV/CLKOUT0  | None       | MMCME2_ADV_X0Y1 | X1Y1         |           1 |               0 |              13.468 | clk_out1_atelier4_clk_wiz_0_0 | atelier4_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0                                    | atelier4_i/clk_wiz_0/inst/clk_out1_atelier4_clk_wiz_0_0      |
 | src1      | g1        | PS7/FCLKCLK[0]      | PS7_X0Y0   | PS7_X0Y0        | X0Y1         |           1 |               0 |              20.000 | clk_fpga_0                    | atelier4_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]                              | atelier4_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]  |
-| src2      | g2        | LUT4/O              | None       | SLICE_X21Y45    | X0Y0         |           1 |               0 |                     |                               | atelier4_i/InstructionDecoder_0/U0//i_/O                                           | atelier4_i/InstructionDecoder_0/U0//i__n_0                   |
+| src2      | g2        | LUT4/O              | None       | SLICE_X22Y45    | X1Y0         |           1 |               0 |                     |                               | atelier4_i/InstructionDecoder_0/U0//i_/O                                           | atelier4_i/InstructionDecoder_0/U0//i__n_0                   |
 | src3      | g3        | PLLE2_ADV/CLKOUT1   | None       | PLLE2_ADV_X0Y0  | X1Y0         |           1 |               0 |              13.468 | PixelClkIO                    | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/GenPLL.DVI_ClkGenerator/CLKOUT1 | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk  |
 | src4      | g4        | PLLE2_ADV/CLKOUT0   | None       | PLLE2_ADV_X0Y0  | X1Y0         |           1 |               0 |               2.694 | SerialClkIO                   | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/GenPLL.DVI_ClkGenerator/CLKOUT0 | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk |
 | src5      | g5        | MMCME2_ADV/CLKFBOUT | None       | MMCME2_ADV_X0Y1 | X1Y1         |           1 |               0 |              40.000 | clkfbout_atelier4_clk_wiz_0_0 | atelier4_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT                                   | atelier4_i/clk_wiz_0/inst/clkfbout_atelier4_clk_wiz_0_0      |
@@ -88,10 +88,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 5207 |  1100 | 1744 |   400 |    0 |    20 |    5 |    10 |   12 |    20 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 5343 |  1100 | 1862 |   350 |    5 |    40 |    8 |    20 |    6 |    20 |
-| X0Y1              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3697 |  1100 | 1382 |   400 |    0 |    20 |    2 |    10 |    6 |    20 |
-| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 3989 |  1100 | 1455 |   350 |    1 |    40 |    2 |    20 |   12 |    20 |
+| X0Y0              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 5191 |  1100 | 1720 |   400 |    3 |    20 |    3 |    10 |   14 |    20 |
+| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 5388 |  1100 | 2002 |   350 |    3 |    40 |   10 |    20 |    4 |    20 |
+| X0Y1              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3645 |  1100 | 1386 |   400 |    0 |    20 |    0 |    10 |   10 |    20 |
+| X1Y1              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 4012 |  1100 | 1480 |   350 |    1 |    40 |    4 |    20 |    8 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -104,7 +104,7 @@ All Modules
 |    | X0 | X1 |
 +----+----+----+
 | Y1 |  3 |  5 |
-| Y0 |  3 |  3 |
+| Y0 |  3 |  2 |
 +----+----+----+
 
 
@@ -125,8 +125,8 @@ All Modules
 +----+-------+-------+-----------------------+
 |    | X0    | X1    | HORIZONTAL PROG DELAY |
 +----+-------+-------+-----------------------+
-| Y1 |  3637 |  4169 |                     0 |
-| Y0 |  3612 |  5430 |                     0 |
+| Y1 |  3551 |  4207 |                     0 |
+| Y0 |  3372 |  5718 |                     0 |
 +----+-------+-------+-----------------------+
 
 
@@ -144,12 +144,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-------+------+-----------------------+
-|    | X0    | X1   | HORIZONTAL PROG DELAY |
-+----+-------+------+-----------------------+
-| Y1 |   135 |    8 |                     0 |
-| Y0 |  1768 |  219 |                     0 |
-+----+-------+------+-----------------------+
++----+-------+-----+-----------------------+
+|    | X0    | X1  | HORIZONTAL PROG DELAY |
++----+-------+-----+-----------------------+
+| Y1 |   160 |  12 |                     0 |
+| Y0 |  1950 |   8 |                     0 |
++----+-------+-----+-----------------------+
 
 
 8. Device Cell Placement Summary for Global Clock g2
@@ -169,8 +169,8 @@ All Modules
 +----+-----+----+-----------------------+
 |    | X0  | X1 | HORIZONTAL PROG DELAY |
 +----+-----+----+-----------------------+
-| Y1 |  10 |  0 |                     0 |
-| Y0 |  25 |  8 |                     0 |
+| Y1 |  11 |  0 |                     0 |
+| Y0 |  32 |  0 |                     0 |
 +----+-----+----+-----------------------+
 
 
@@ -246,9 +246,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3612 |               0 | 3464 |    130 |    5 |  12 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1              |
-| g1        | n/a   | BUFG/O          | None       |        1768 |               0 | 1743 |     25 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0  |
-| g2        | n/a   | BUFG/O          | None       |          25 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG |
+| g0        | n/a   | BUFG/O          | None       |        3372 |               0 | 3266 |     83 |    6 |  14 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1              |
+| g1        | n/a   | BUFG/O          | None       |        1950 |               0 | 1925 |     25 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0  |
+| g2        | n/a   | BUFG/O          | None       |          32 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -258,13 +258,12 @@ All Modules
 13. Clock Region Cell Placement per Global Clock: Region X1Y0
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                             |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        5430 |               0 | 5124 |    277 |   13 |   6 |  0 |    0 |   1 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1              |
-| g1        | n/a   | BUFG/O          | None       |         219 |               0 |  219 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0  |
-| g2        | n/a   | BUFG/O          | None       |           8 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        5718 |               0 | 5380 |    314 |   13 |   4 |  0 |    0 |   1 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1             |
+| g1        | n/a   | BUFG/O          | None       |           8 |               0 |    8 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0 |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -276,9 +275,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                             |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3637 |               0 | 3565 |     64 |    2 |   6 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1              |
-| g1        | n/a   | BUFG/O          | None       |         135 |               0 |  132 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0  |
-| g2        | n/a   | BUFG/O          | None       |          10 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG |
+| g0        | n/a   | BUFG/O          | None       |        3551 |               0 | 3488 |     53 |    0 |  10 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1              |
+| g1        | n/a   | BUFG/O          | None       |         160 |               0 |  157 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0  |
+| g2        | n/a   | BUFG/O          | None       |          11 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -291,8 +290,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                               |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        4169 |               0 | 3981 |    171 |    3 |  12 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1                                |
-| g1        | n/a   | BUFG/O          | None       |           8 |               0 |    8 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0                    |
+| g0        | n/a   | BUFG/O          | None       |        4207 |               0 | 4000 |    192 |    5 |   8 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1                                |
+| g1        | n/a   | BUFG/O          | None       |          12 |               0 |   12 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0                    |
 | g3        | n/a   | BUFG/O          | None       |           8 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk_BUFG  |
 | g4        | n/a   | BUFG/O          | None       |           8 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk_BUFG |
 | g5        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clkfbout_buf_atelier4_clk_wiz_0_0       |
@@ -348,5 +347,5 @@ resize_pblock [get_pblocks {CLKAG_atelier4_i/clk_wiz_0/inst/clk_out1}] -add {CLO
 #startgroup
 create_pblock {CLKAG_atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_atelier4_i/InstructionDecoder_0/U0//i__n_0_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
 #endgroup

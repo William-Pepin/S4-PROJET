@@ -1,10 +1,10 @@
-13:29:16 **** Build of configuration Debug for project project_system ****
+14:40:57 **** Incremental Build of configuration Debug for project project_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 54581 C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/wpepi/projet/project_system/Debug/system.bif
+generate_system_bif.bat 49815 C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/wpepi/projet/project_system/Debug/system.bif
 sdcard_gen --xpfm C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm --sys_config atelier4_wrapper --bif C:/Users/wpepi/projet/project_system/Debug/system.bif --bitstream C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit --elf C:/Users/wpepi/projet/project/Debug/project.elf,ps7_cortexa9_0
 creating BOOT.BIN using C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit
 Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Users/wpepi/projet/project_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-13:29:29 Build Finished (took 12s.926ms)
+14:41:02 Build Finished (took 5s.40ms)
 
