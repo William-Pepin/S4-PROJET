@@ -50,3 +50,15 @@ platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
 platform generate -domains 
 platform config -updatehw {C:/Users/wpepi/projet/atelier4_wrapper.xsa}
 platform generate -domains 
+platform generate
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/Vivado/s4InfoAtelier4_test-antoine.xpr/atelier4_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform config -updatehw {C:/Vivado/S4-PROJET/atelier4_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform generate
+platform write
+platform generate

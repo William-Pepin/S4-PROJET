@@ -1,0 +1,31 @@
+#include "Actor.h"
+
+#include <stdio.h>
+
+// Constructor
+void Actor_init(Actor *a) {
+  // Initialize all data elements to 0
+  for (int i = 0; i < 8; i++) {
+	  for (int j = 0; j < 2; j++) {
+	      a->actorData[i][j] = 0;
+	    }
+  }
+  return;
+}
+
+// Setter function to set a specific data element
+void Actor_setTile(Actor *a, int actorIndex, int tileIndex, short tileId) {
+	if (actorIndex >= 0 && actorIndex < 8 && tileIndex >= 0 && tileIndex < 2) {
+	    a->actorData[actorIndex][tileIndex] = tileId;
+	}
+	return;
+}
+
+// Getter function to get a specific data element
+short Actor_getTile(Actor *a, int actorIndex, int tileIndex) {
+	if (actorIndex >= 0 && actorIndex < 8 && tileIndex >= 0 && tileIndex < 2) {
+			return a->actorData[actorIndex][tileIndex];
+		} else {
+			return 0;
+	}
+}

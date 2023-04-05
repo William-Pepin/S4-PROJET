@@ -1,0 +1,14 @@
+#include "TileManager.h"
+#include <stdio.h>
+#include "Tile.h"
+
+struct Tile tiles[5];
+
+// Constructor
+void GameTile_init() {
+	for(short i; i < 5; i++) {
+		Tile_init(&tiles[i], i);
+	}
+}
+
+

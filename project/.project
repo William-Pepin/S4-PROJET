@@ -3,7 +3,6 @@
 	<name>project</name>
 	<comment>Created by Vitis v2020.2</comment>
 	<projects>
-		<project>atelier4_wrapper</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

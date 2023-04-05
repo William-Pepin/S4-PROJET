@@ -1,0 +1,7 @@
+#ifndef TILEMANAGER_H
+#define TILEMANAGER_H
+
+// Constructor
+void GameTile_init();
+
+#endif /* TILEMANAGER_H */

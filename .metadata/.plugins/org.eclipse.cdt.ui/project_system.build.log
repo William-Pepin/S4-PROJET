@@ -1,10 +1,10 @@
-15:05:43 **** Incremental Build of configuration Debug for project project_system ****
+13:32:33 **** Incremental Build of configuration Debug for project project_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 58515 C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/wpepi/projet/project_system/Debug/system.bif
-sdcard_gen --xpfm C:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm --sys_config atelier4_wrapper --bif C:/Users/wpepi/projet/project_system/Debug/system.bif --bitstream C:/Users/wpepi/projet/project/_ide/bitstream/atelier4_wrapper.bit --elf C:/Users/wpepi/projet/project/Debug/project.elf,ps7_cortexa9_0
-ELF does not exist: C:/Users/wpepi/projet/project/Debug/project.elf
-make: *** [makefile:39: package] Error 1
+generate_system_bif.bat 53142 C:/Vivado/S4-PROJET/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Vivado/S4-PROJET/project_system/Debug/system.bif
+sdcard_gen --xpfm C:/Vivado/S4-PROJET/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm --sys_config atelier4_wrapper --bif C:/Vivado/S4-PROJET/project_system/Debug/system.bif --bitstream C:/Vivado/S4-PROJET/project/_ide/bitstream/atelier4_wrapper.bit --elf C:/Vivado/S4-PROJET/project/Debug/project.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Vivado/S4-PROJET/project/_ide/bitstream/atelier4_wrapper.bit
+Running C:/Xilinx/Vitis/2020.2/bin/bootgen  -image C:/Vivado/S4-PROJET/project_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-15:05:45 Build Finished (took 2s.174ms)
+13:32:41 Build Finished (took 7s.891ms)
 

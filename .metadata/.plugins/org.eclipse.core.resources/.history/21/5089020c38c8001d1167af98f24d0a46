@@ -1,0 +1,14 @@
+#ifndef ACTOR_H
+#define ACTOR_H
+
+typedef struct Actor {
+  short actorData[8][2];
+} Actor;
+
+// Setter function to set a specific data element
+void Actor_setTile(Tile *t, int actorIndex, int tileIndex, short value);
+
+// Getter function to get a specific data element
+short Actor_getTile(Tile *t, int actorIndex, int tileIndex, short value);
+
+#endif /* ACTOR_H */

@@ -1,0 +1,18 @@
+#ifndef TILE_H
+#define TILE_H
+
+// Define the Tile struct
+struct {
+  short pixel[16][16];
+} Tile;
+
+// Constructor
+void Tile_init(Tile *t);
+
+// Setter function to set a specific data element
+void Tile_setPixel(Tile *t, int x, int y, short value);
+
+// Getter function to get a specific data element
+short Tile_getPixel(Tile *t, int x, int y);
+
+#endif

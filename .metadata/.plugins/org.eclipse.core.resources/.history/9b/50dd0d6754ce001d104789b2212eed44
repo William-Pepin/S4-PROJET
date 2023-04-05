@@ -1,0 +1,7 @@
+#ifndef GAME_H
+#define GAME_H
+
+// Init Game tile
+void GameTile_init(struct Tile tiles[]);
+
+#endif

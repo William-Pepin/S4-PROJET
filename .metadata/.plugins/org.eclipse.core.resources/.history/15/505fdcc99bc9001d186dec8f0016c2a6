@@ -1,0 +1,11 @@
+#include "TileManager.h"
+#include <stdio.h>
+#include "Tile.h"
+
+// Constructor
+void GameTile_init() {
+	struct Tile tile;
+	struct Tile *tileObj;
+
+	tile->
+}

@@ -1,0 +1,26 @@
+#include "Tile.h"
+#include <stdio.h>
+
+// Constructor
+void Tile_init(Tile *t) {
+  // Initialize all data elements to 0
+  for (int i = 0; i < 256; i++) {
+    t->pixel[i] = 0;
+  }
+}
+
+// Setter function to set a specific data element
+void Tile_setPixel(Tile *t, int index, short value) {
+  if (index >= 0 && index < 256) {
+    t->pixel[index] = value;
+  }
+}
+
+// Getter function to get a specific data element
+short Tile_getPixel(Tile *t, int index) {
+  if (index >= 0 && index < 256) {
+    return t->pixel[index];
+  } else {
+    return 0;
+  }
+}

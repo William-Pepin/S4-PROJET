@@ -1,0 +1,32 @@
+#ifndef ACTOR_H
+#define ACTOR_H
+
+typedef struct Actor {
+  short actorData[8];
+  short activeTile;
+  short x;
+  short y;
+} Actor;
+
+// Constructor
+void Actor_init(Actor *a);
+
+// Setter function to set a specific data element
+void Actor_setTile(Actor *a, int actorIndex, int tileIndex, short tileId);
+
+// Getter function to get a specific data element
+short Actor_getTile(Actor *a, int actorIndex, int tileIndex);
+
+// Getter function that returns the active tile of the actor
+short Actor_getActiveTile(Actor *a);
+
+// Setter function that set the coordinates of the actor
+void Actor_setCoord(Actor *a, short x, short y);
+
+// Getter function that returns X coordinate
+short Actor_getXCoordinate(Actor *a);
+
+// Getter function that returns Y coordinate
+short Actor_getYCoordinate(Actor *a);
+
+#endif /* ACTOR_H */

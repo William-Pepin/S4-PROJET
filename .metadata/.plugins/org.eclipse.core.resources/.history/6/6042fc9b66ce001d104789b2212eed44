@@ -1,0 +1,67 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "instructionRegister.h"
+#include "api.h"
+#include "xparameters.h"
+#include "Game.h"
+
+struct ColorPalette colorPalette;
+struct Tile tiles[18];
+
+struct Background background;
+struct Actor dinausor;
+struct Actor cactus;
+
+void initColorPalette() {
+	ColorPalette_init(&colorPalette);
+	for (int i = 0; i < 16; i++) {
+		setColorByPaletteId(i, ColorPalette_getColor(&colorPalette, i));
+		//usleep(100);
+	}
+}
+
+void initTile() {
+	GameTile_init(tiles);
+	setPaletteIdForTileId(0, &tiles[17]);
+	setPaletteIdForTileId(1, &tiles[16]);
+	setPaletteIdForTileId(2, &tiles[1]);
+
+//	for(int i = 0; i < 18; i ++) {
+//		setPaletteIdForTileId(i, &tiles[i]);
+//	}
+}
+
+void initBackground() {
+	Background_init(&background, 1);
+}
+
+void initActor() {
+	// Init actor
+	Actor_init(&dinausor);
+	Actor_init(&cactus);
+
+	// Set new tile and coordinates for dinausor
+	Actor_setTile(&dinausor, 0, 16);
+	Actor_setCoord(&dinausor, 0, 0);
+
+	// Set new tile and coordinates for cactus
+	Actor_setTile(&cactus, 0, 17);
+	Actor_setCoord(&cactus, 0, 0);
+}
+
+int main()
+{
+	configureScaler();
+	configureVdma();
+
+	initColorPalette();
+	initTile();
+
+	while(1) {
+		sleep(10);
+	}
+
+	return 0;
+}

@@ -1,0 +1,35 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "instructionRegister.h"
+#include "api.h"
+#include "xparameters.h"
+#include "Game.h"
+
+int main()
+{
+	struct ColorPalette colorPalette;
+	struct Background background;
+	struct Tile tiles[18];
+	struct Actor dinausor;
+	struct Actor cactus;
+
+	ColorPalette_init(&colorPalette);
+	GameTile_init(tiles);
+	Background_init(&background, 1);
+
+	// Init actor
+	Actor_init(&dinausor);
+	Actor_init(&cactus);
+
+	// Set new tile and coordinates for dinausor
+	Actor_setTile(&dinausor, 0, 16);
+	Actor_setCoord(&dinausor, 0, 0);
+
+	// Set new tile and coordinates for cactus
+	Actor_setTile(&cactus, 0, 17);
+	Actor_setCoord(&cactus, 0, 0);
+
+	return 0;
+}

@@ -1,0 +1,24 @@
+#include "Tile.h"
+#include "Actor.h"
+#include "Background.h"
+#include "../api.h"
+
+// Constructor
+void GameTile_init(Tile *tiles) {
+	for(short i; i < 15; i++) {
+		Tile_init(&tiles[i], i);
+	}
+}
+
+void BackgroundTile_init() {
+
+}
+
+int main()
+{
+	struct Tile tiles[15];
+	struct Actor actor[2];
+	struct Background background;
+
+	GameTile_init(&tiles);
+}

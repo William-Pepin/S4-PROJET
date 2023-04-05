@@ -1,0 +1,39 @@
+#include "ColorPalette.h"
+#include <stdio.h>
+
+
+// Constructor
+void ColorPalette_init(struct ColorPalette *c) {
+    c->color[0] = 0;            // Vide pour transparent
+    c->color[1] = 0;//16777215;     // Blanc
+    c->color[2] = 0;            // Noir
+    c->color[3] = 0;        // Vert
+    c->color[4] = 0;         // Vert fonce
+    c->color[5] = 0;        // Cyan
+    c->color[6] = 0;     // Rouge
+    c->color[7] = 0;          // Bleu
+    c->color[8] = 0;          // Bleu fonce
+    c->color[9] = 0;//16711935;     // Magenta
+    c->color[10] = 0;     // Mauve
+    c->color[11] = 0;    // Rose
+    c->color[12] = 0;    // Brun
+    c->color[13] = 0;     // Gris
+    c->color[14] = 0;    // Orange
+    c->color[15] = 0;    // Jaune
+}
+
+// Setter function to set a specific data element
+void ColorPalette_setColor(struct ColorPalette *c, short id, int color) {
+    if (id >= 0 && id < 16) {
+        c->color[id] = color;
+    }
+}
+
+// Getter function to get a specific data element
+int ColorPalette_getColor(struct ColorPalette *c, short id) {
+    if (id >= 0 && id < 16) {
+		return c->color[id];
+	} else {
+		return 0;
+	}
+}

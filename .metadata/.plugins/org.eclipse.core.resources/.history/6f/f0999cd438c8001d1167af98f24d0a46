@@ -1,0 +1,14 @@
+#ifndef BACKGROUND_H
+#define BACKGROUND_H
+
+typedef struct Background {
+  short tileId[32][32];
+} Background;
+
+// Setter function to set a specific data element
+void Actor_setTile(Tile *t, int index, short value);
+
+// Getter function to get a specific data element
+short Actor_getTile(Tile *t, int index);
+
+#endif /* BACKGROUND_H */
