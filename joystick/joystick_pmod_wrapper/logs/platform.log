@@ -1,0 +1,1781 @@
+TRACE::2023-03-29.13:41:50::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:50::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:50::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:52::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:41:52::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:41:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-03-29.13:41:54::SCWPlatform::Opened new HwDB with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2023-03-29.13:41:54::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper"
+		}]
+}
+TRACE::2023-03-29.13:41:54::SCWPlatform::Boot application domains not present, creating them
+TRACE::2023-03-29.13:41:54::SCWDomain::checking for install qemu data   : 
+TRACE::2023-03-29.13:41:54::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-03-29.13:41:54::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:41:54::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2023-03-29.13:41:54::SCWPlatform::Generating the sources  .
+TRACE::2023-03-29.13:41:54::SCWBDomain::Generating boot domain sources.
+TRACE::2023-03-29.13:41:54::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:41:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:41:54::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:41:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:41:54::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:41:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-03-29.13:41:54::SCWMssOS::No sw design opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:41:54::SCWMssOS::mss does not exists at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:41:54::SCWMssOS::Creating sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:41:54::SCWMssOS::Adding the swdes entry, created swdb C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:41:54::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:41:54::SCWMssOS::Writing mss at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:41:54::SCWMssOS::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2023-03-29.13:41:54::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2023-03-29.13:41:54::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2023-03-29.13:41:54::SCWBDomain::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2023-03-29.13:42:05::SCWPlatform::Generating sources Done.
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss||
+
+KEYINFO::2023-03-29.13:42:05::SCWMssOS::Could not open the swdb for C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+KEYINFO::2023-03-29.13:42:05::SCWMssOS::Could not open the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss is not found
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::Cleared the swdb table entry
+TRACE::2023-03-29.13:42:05::SCWMssOS::No sw design opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::mss exists loading the mss file  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::Opened the sw design from mss  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::Adding the swdes entry C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2023-03-29.13:42:05::SCWMssOS::updating the scw layer about changes
+TRACE::2023-03-29.13:42:05::SCWMssOS::Opened the sw design.  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:05::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"988846a82e97f5a3803bb51ff338a716",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-03-29.13:42:05::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:05::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"988846a82e97f5a3803bb51ff338a716",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-03-29.13:42:05::SCWDomain::checking for install qemu data   : 
+TRACE::2023-03-29.13:42:05::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-03-29.13:42:05::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:05::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:05::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:05::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:05::SCWMssOS::No sw design opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::mss does not exists at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:05::SCWMssOS::Creating sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:06::SCWMssOS::Adding the swdes entry, created swdb C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss with des name C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:06::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:06::SCWMssOS::Writing mss at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:06::SCWMssOS::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp
+TRACE::2023-03-29.13:42:06::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2023-03-29.13:42:06::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2023-03-29.13:42:06::SCWMssOS::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp
+TRACE::2023-03-29.13:42:06::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Running validate of swdbs.
+KEYINFO::2023-03-29.13:42:08::SCWMssOS::Could not open the swdb for C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+KEYINFO::2023-03-29.13:42:08::SCWMssOS::Could not open the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss is not found
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Cleared the swdb table entry
+TRACE::2023-03-29.13:42:08::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2023-03-29.13:42:08::SCWMssOS::Writing the mss file completed C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper",
+			"sysActiveDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"sysDefaultDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"988846a82e97f5a3803bb51ff338a716",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDispName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDesc":	"freertos10_xilinx_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"27f20b696c0526f7d6936c13b3ed32b5",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-03-29.13:42:08::SCWPlatform::Started generating the artifacts platform joystick_pmod_wrapper
+TRACE::2023-03-29.13:42:08::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-03-29.13:42:08::SCWPlatform::Started generating the artifacts for system configuration joystick_pmod_wrapper
+LOG::2023-03-29.13:42:08::SCWSystem::Checking the domain zynq_fsbl
+LOG::2023-03-29.13:42:08::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2023-03-29.13:42:08::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-03-29.13:42:08::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2023-03-29.13:42:08::SCWSystem::Checking the domain freertos10_xilinx_ps7_cortexa9_0
+LOG::2023-03-29.13:42:08::SCWSystem::Not a boot domain 
+LOG::2023-03-29.13:42:08::SCWSystem::Started Processing the domain freertos10_xilinx_ps7_cortexa9_0
+TRACE::2023-03-29.13:42:08::SCWDomain::Generating domain artifcats
+TRACE::2023-03-29.13:42:08::SCWMssOS::Generating standalone artifcats
+TRACE::2023-03-29.13:42:08::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/export/joystick_pmod_wrapper/sw/joystick_pmod_wrapper/qemu/
+TRACE::2023-03-29.13:42:08::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/export/joystick_pmod_wrapper/sw/joystick_pmod_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu/
+TRACE::2023-03-29.13:42:08::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp
+TRACE::2023-03-29.13:42:08::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-03-29.13:42:08::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-03-29.13:42:08::SCWDomain::Skipping the build for domain :  freertos10_xilinx_ps7_cortexa9_0
+TRACE::2023-03-29.13:42:08::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-03-29.13:42:08::SCWMssOS::Copying to export directory.
+TRACE::2023-03-29.13:42:08::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-03-29.13:42:08::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2023-03-29.13:42:08::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2023-03-29.13:42:08::SCWSystem::Completed Processing the domain freertos10_xilinx_ps7_cortexa9_0
+LOG::2023-03-29.13:42:08::SCWSystem::Completed Processing the sysconfig joystick_pmod_wrapper
+LOG::2023-03-29.13:42:08::SCWPlatform::Completed generating the artifacts for system configuration joystick_pmod_wrapper
+TRACE::2023-03-29.13:42:08::SCWPlatform::Started preparing the platform 
+TRACE::2023-03-29.13:42:08::SCWSystem::Writing the bif file for system config joystick_pmod_wrapper
+TRACE::2023-03-29.13:42:08::SCWSystem::dir created 
+TRACE::2023-03-29.13:42:08::SCWSystem::Writing the bif 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Started writing the spfm file 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Completed generating the platform
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper",
+			"sysActiveDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"sysDefaultDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"988846a82e97f5a3803bb51ff338a716",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDispName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDesc":	"freertos10_xilinx_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"27f20b696c0526f7d6936c13b3ed32b5",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-03-29.13:42:08::SCWPlatform::updated the xpfm file.
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper",
+			"sysActiveDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"sysDefaultDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"988846a82e97f5a3803bb51ff338a716",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDispName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDesc":	"freertos10_xilinx_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"27f20b696c0526f7d6936c13b3ed32b5",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper",
+			"sysActiveDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"sysDefaultDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"988846a82e97f5a3803bb51ff338a716",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDispName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDesc":	"freertos10_xilinx_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"27f20b696c0526f7d6936c13b3ed32b5",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-03-29.13:42:08::SCWPlatform::Started generating the artifacts platform joystick_pmod_wrapper
+TRACE::2023-03-29.13:42:08::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-03-29.13:42:08::SCWPlatform::Started generating the artifacts for system configuration joystick_pmod_wrapper
+LOG::2023-03-29.13:42:08::SCWSystem::Started Processing the domain freertos10_xilinx_ps7_cortexa9_0
+TRACE::2023-03-29.13:42:08::SCWDomain::Generating domain artifcats
+TRACE::2023-03-29.13:42:08::SCWMssOS::Generating standalone artifcats
+TRACE::2023-03-29.13:42:08::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/export/joystick_pmod_wrapper/sw/joystick_pmod_wrapper/qemu/
+TRACE::2023-03-29.13:42:08::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/export/joystick_pmod_wrapper/sw/joystick_pmod_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu/
+TRACE::2023-03-29.13:42:08::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp
+TRACE::2023-03-29.13:42:08::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-03-29.13:42:08::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-03-29.13:42:08::SCWDomain::Building the domain as part of full build :  freertos10_xilinx_ps7_cortexa9_0
+TRACE::2023-03-29.13:42:08::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-03-29.13:42:08::SCWMssOS::Copying to export directory.
+TRACE::2023-03-29.13:42:08::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-03-29.13:42:08::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2023-03-29.13:42:08::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2023-03-29.13:42:08::SCWSystem::Completed Processing the domain freertos10_xilinx_ps7_cortexa9_0
+LOG::2023-03-29.13:42:08::SCWSystem::Completed Processing the sysconfig joystick_pmod_wrapper
+LOG::2023-03-29.13:42:08::SCWPlatform::Completed generating the artifacts for system configuration joystick_pmod_wrapper
+TRACE::2023-03-29.13:42:08::SCWPlatform::Started preparing the platform 
+TRACE::2023-03-29.13:42:08::SCWSystem::Writing the bif file for system config joystick_pmod_wrapper
+TRACE::2023-03-29.13:42:08::SCWSystem::dir created 
+TRACE::2023-03-29.13:42:08::SCWSystem::Writing the bif 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Started writing the spfm file 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-03-29.13:42:08::SCWPlatform::Completed generating the platform
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Saving the mss changes C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-03-29.13:42:08::SCWMssOS::Commit changes completed.
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:42:08::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:42:08::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:42:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:42:08::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:42:08::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:42:08::SCWWriter::formatted JSON is {
+	"platformName":	"joystick_pmod_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"joystick_pmod_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/joystick_pmod_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"joystick_pmod_wrapper",
+	"systems":	[{
+			"systemName":	"joystick_pmod_wrapper",
+			"systemDesc":	"joystick_pmod_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"joystick_pmod_wrapper",
+			"sysActiveDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"sysDefaultDom":	"freertos10_xilinx_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"988846a82e97f5a3803bb51ff338a716",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDispName":	"freertos10_xilinx_ps7_cortexa9_0",
+					"domainDesc":	"freertos10_xilinx_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"27f20b696c0526f7d6936c13b3ed32b5",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-03-29.13:42:08::SCWPlatform::updated the xpfm file.
+LOG::2023-03-29.13:43:18::SCWPlatform::Started generating the artifacts platform joystick_pmod_wrapper
+TRACE::2023-03-29.13:43:18::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-03-29.13:43:18::SCWPlatform::Started generating the artifacts for system configuration joystick_pmod_wrapper
+LOG::2023-03-29.13:43:18::SCWSystem::Checking the domain zynq_fsbl
+LOG::2023-03-29.13:43:18::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2023-03-29.13:43:18::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-03-29.13:43:18::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2023-03-29.13:43:18::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:18::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:18::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:18::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:43:18::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:43:18::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:43:18::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:43:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:43:18::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:43:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:43:18::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2023-03-29.13:43:18::SCWBDomain::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2023-03-29.13:43:18::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-03-29.13:43:18::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-03-29.13:43:18::SCWBDomain::System Command Ran  C:&  cd  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl& make -C  zynq_fsbl_bsp & make 
+TRACE::2023-03-29.13:43:18::SCWBDomain::make: Entering directory 'C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fs
+TRACE::2023-03-29.13:43:18::SCWBDomain::bl_bsp'
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::make --no-print-directory seq_libs
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2023-03-29.13:43:18::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2023-03-29.13:43:18::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2023-03-29.13:43:18::SCWBDomain::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2023-03-29.13:43:18::SCWBDomain::d -nostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:18::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:18::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2023-03-29.13:43:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:18::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:18::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:19::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:19::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-03-29.13:43:19::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-03-29.13:43:19::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:19::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:19::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2023-03-29.13:43:19::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2023-03-29.13:43:19::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-03-29.13:43:19::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-03-29.13:43:19::SCWBDomain::ostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:19::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:19::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:19::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:19::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-03-29.13:43:19::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-03-29.13:43:19::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:19::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:19::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:19::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:19::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_3/src"
+
+TRACE::2023-03-29.13:43:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-03-29.13:43:19::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-03-29.13:43:19::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-03-29.13:43:20::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-03-29.13:43:20::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:20::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:20::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:20::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:20::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_4/src"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:20::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:20::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:20::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:20::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:20::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:20::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:20::SCWBDomain::"Compiling PmodXXXX..."
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::make: Leaving directory 'C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsb
+TRACE::2023-03-29.13:43:22::SCWBDomain::l_bsp'
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cort
+TRACE::2023-03-29.13:43:22::SCWBDomain::exa9_0/include -I.
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_
+TRACE::2023-03-29.13:43:22::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2023-03-29.13:43:22::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c image_mover.c -o image_mover.o -Izynq
+TRACE::2023-03-29.13:43:22::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2023-03-29.13:43:22::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_f
+TRACE::2023-03-29.13:43:22::SCWBDomain::sbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c main.c -o main.o -Izynq_fsbl_bsp/ps7_
+TRACE::2023-03-29.13:43:22::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:22::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2023-03-29.13:43:22::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:23::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_
+TRACE::2023-03-29.13:43:23::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:23::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c ps7_init.c -o ps7_init.o -Izynq_fsbl_
+TRACE::2023-03-29.13:43:23::SCWBDomain::bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:23::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_
+TRACE::2023-03-29.13:43:23::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:23::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c fsbl_handoff.S -o fsbl_handoff.o -Izy
+TRACE::2023-03-29.13:43:23::SCWBDomain::nq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2023-03-29.13:43:23::SCWBDomain::arm-none-eabi-gcc -o fsbl.elf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o  pcap
+TRACE::2023-03-29.13:43:23::SCWBDomain::.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-03-29.13:43:23::SCWBDomain::Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgc
+TRACE::2023-03-29.13:43:23::SCWBDomain::c,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                     -Wl,--gc-sections -Lz
+TRACE::2023-03-29.13:43:23::SCWBDomain::ynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+ERROR::2023-03-29.13:43:23::SCWBDomain::Failed to build the  zynq_fsbl application.
+LOG::2023-03-29.13:43:23::SCWSystem::Checking the domain freertos10_xilinx_ps7_cortexa9_0
+LOG::2023-03-29.13:43:23::SCWSystem::Not a boot domain 
+LOG::2023-03-29.13:43:23::SCWSystem::Started Processing the domain freertos10_xilinx_ps7_cortexa9_0
+TRACE::2023-03-29.13:43:23::SCWDomain::Generating domain artifcats
+TRACE::2023-03-29.13:43:23::SCWMssOS::Generating standalone artifcats
+TRACE::2023-03-29.13:43:23::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/export/joystick_pmod_wrapper/sw/joystick_pmod_wrapper/qemu/
+TRACE::2023-03-29.13:43:23::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/export/joystick_pmod_wrapper/sw/joystick_pmod_wrapper/freertos10_xilinx_ps7_cortexa9_0/qemu/
+TRACE::2023-03-29.13:43:23::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-03-29.13:43:23::SCWPlatform::Trying to open the hw design at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:23::SCWPlatform::DSA given C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:23::SCWPlatform::DSA absoulate path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:23::SCWPlatform::DSA directory C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw
+TRACE::2023-03-29.13:43:23::SCWPlatform:: Platform Path C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/hw/joystick_pmod_wrapper.xsa
+TRACE::2023-03-29.13:43:23::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2023-03-29.13:43:23::SCWPlatform::Trying to set the existing hwdb with name joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:43:23::SCWPlatform::Opened existing hwdb joystick_pmod_wrapper_1
+TRACE::2023-03-29.13:43:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-29.13:43:23::SCWMssOS::Checking the sw design at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:43:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::Sw design exists and opened at  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:43:23::SCWMssOS::Completed writing the mss file at C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp
+TRACE::2023-03-29.13:43:23::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-03-29.13:43:23::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-03-29.13:43:23::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-03-29.13:43:23::SCWDomain::Building the domain as part of full build :  freertos10_xilinx_ps7_cortexa9_0
+TRACE::2023-03-29.13:43:23::SCWMssOS::doing bsp build ... 
+TRACE::2023-03-29.13:43:23::SCWMssOS::System Command Ran  C: & cd  C:/Users/Raphael/Documents/Sherb/S4/PROJET/S4-PROJET/joystick/joystick_pmod_wrapper/ps7_cortexa9_0/freertos10_xilinx_ps7_cortexa9_0/bsp & make 
+TRACE::2023-03-29.13:43:23::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2023-03-29.13:43:23::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2023-03-29.13:43:23::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2023-03-29.13:43:23::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2023-03-29.13:43:23::SCWMssOS::d -nostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:23::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:23::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:23::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:23::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_7/src"
+
+TRACE::2023-03-29.13:43:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:23::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:23::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_12/src"
+
+TRACE::2023-03-29.13:43:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_12/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-03-29.13:43:24::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-03-29.13:43:24::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:24::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_7/src"
+
+TRACE::2023-03-29.13:43:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-no
+TRACE::2023-03-29.13:43:24::SCWMssOS::ne-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi
+TRACE::2023-03-29.13:43:24::SCWMssOS::=hard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:24::SCWMssOS::"includes"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_8/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:25::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:25::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_7/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2023-03-29.13:43:25::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2023-03-29.13:43:25::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2023-03-29.13:43:25::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2023-03-29.13:43:25::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_8/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:25::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:25::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_3/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:25::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:25::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-03-29.13:43:25::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-03-29.13:43:25::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_3/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:25::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:25::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_10/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:25::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:25::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_10/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-03-29.13:43:25::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-03-29.13:43:25::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_6/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-03-29.13:43:25::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-03-29.13:43:25::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_5/src"
+
+TRACE::2023-03-29.13:43:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:25::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:25::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src"
+
+TRACE::2023-03-29.13:43:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/PmodJSTK2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-03-29.13:43:26::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-03-29.13:43:26::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2023-03-29.13:43:26::SCWMssOS::"Compiling PmodXXXX..."
+
+ERROR::2023-03-29.13:43:26::SCWMssOS::Failed to build  the bsp sources for domain - freertos10_xilinx_ps7_cortexa9_0
+ERROR::2023-03-29.13:43:26::SCWSystem::Error in Processing the domain freertos10_xilinx_ps7_cortexa9_0

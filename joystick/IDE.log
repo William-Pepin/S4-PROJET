@@ -1,0 +1,21 @@
+13:19:38 INFO  : Registering command handlers for Vitis TCF services
+13:19:38 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Raphael\Documents\Sherb\S4\PROJET\S4-PROJET\joystick\temp_xsdb_launch_script.tcl
+13:19:42 INFO  : XSCT server has started successfully.
+13:19:42 INFO  : plnx-install-location is set to ''
+13:19:43 INFO  : Platform repository initialization has completed.
+13:19:47 INFO  : Successfully done setting XSCT server connection channel  
+13:19:47 INFO  : Successfully done query RDI_DATADIR 
+13:19:47 INFO  : Successfully done setting workspace for the tool. 
+13:40:37 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Raphael\Documents\Sherb\S4\PROJET\S4-PROJET\joystick\temp_xsdb_launch_script.tcl
+13:40:39 INFO  : Registering command handlers for Vitis TCF services
+13:40:40 INFO  : XSCT server has started successfully.
+13:40:40 INFO  : plnx-install-location is set to ''
+13:40:40 INFO  : Successfully done setting XSCT server connection channel  
+13:40:41 INFO  : Successfully done setting workspace for the tool. 
+13:40:41 INFO  : Successfully done query RDI_DATADIR 
+13:40:42 INFO  : Platform repository initialization has completed.
+13:42:08 INFO  : Result from executing command 'getProjects': joystick_pmod_wrapper
+13:42:08 INFO  : Result from executing command 'getPlatforms': 
+13:42:08 WARN  : An unexpected exception occurred in the module 'platform project logging'
+13:42:08 INFO  : Platform 'joystick_pmod_wrapper' is added to custom repositories.
+13:42:18 INFO  : Platform 'joystick_pmod_wrapper' is added to custom repositories.
