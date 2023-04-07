@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Wed Mar 29 14:45:03 2023
+--Date        : Fri Apr  7 12:44:52 2023
 --Host        : William_PC running 64-bit major release  (build 9200)
 --Command     : generate_target atelier4.bd
 --Design      : atelier4
@@ -42,7 +42,7 @@ entity atelier4 is
     sys_clk : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of atelier4 : entity is "atelier4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=atelier4,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=20,numReposBlks=20,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,""""da_ps7_cnt""""=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of atelier4 : entity is "atelier4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=atelier4,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=25,numReposBlks=25,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,""""""""""""""""""da_ps7_cnt""""""""""""""""""=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of atelier4 : entity is "atelier4.hwdef";
 end atelier4;
@@ -649,41 +649,24 @@ architecture STRUCTURE of atelier4 is
     o_readColorValue : out STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   end component atelier4_colorRegister_0_0;
-  component atelier4_InstructionDecoder_0_0 is
-  port (
-    i_opcode : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    i_instruction_data : in STD_LOGIC_VECTOR ( 27 downto 0 );
-    o_colorData : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    o_colorSel : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    o_colorWriteEN : out STD_LOGIC;
-    o_tileId : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    o_paletteId : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    o_x : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    o_y : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    o_bufferWriteEn : out STD_LOGIC;
-    o_bcgWriteEn : out STD_LOGIC
-  );
-  end component atelier4_InstructionDecoder_0_0;
-  component atelier4_TileBufferBackground_0_0 is
-  port (
-    i_readTileID : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    i_readPosX : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    i_readPosY : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    o_readColorCode : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    i_writeTileID : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    i_writePosX : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    i_writePosY : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    i_writeColorCode : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    i_we : in STD_LOGIC;
-    i_clk : in STD_LOGIC;
-    i_reset : in STD_LOGIC
-  );
-  end component atelier4_TileBufferBackground_0_0;
   component atelier4_xlconstant_0_0 is
   port (
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component atelier4_xlconstant_0_0;
+  component atelier4_OffsetManager_0_0 is
+  port (
+    i_readGlobalPosX : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    i_readGlobalPosY : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    i_offsetPosX : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    i_offsetPosY : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    i_we : in STD_LOGIC;
+    i_clk : in STD_LOGIC;
+    i_reset : in STD_LOGIC;
+    o_x : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    o_y : out STD_LOGIC_VECTOR ( 9 downto 0 )
+  );
+  end component atelier4_OffsetManager_0_0;
   component atelier4_BackgroundManager_0_0 is
   port (
     i_readGlobalPosX : in STD_LOGIC_VECTOR ( 9 downto 0 );
@@ -699,21 +682,111 @@ architecture STRUCTURE of atelier4 is
     i_clk : in STD_LOGIC
   );
   end component atelier4_BackgroundManager_0_0;
+  component atelier4_TileBufferActor_0_0 is
+  port (
+    i_readActorID : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    i_readTileID : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    i_readPosX : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_readPosY : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    o_readColorCode : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_writeActorID : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    i_writeTileID : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    i_writePosX : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_writePosY : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_writeColorCode : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_we : in STD_LOGIC;
+    i_clk : in STD_LOGIC;
+    i_reset : in STD_LOGIC
+  );
+  end component atelier4_TileBufferActor_0_0;
+  component atelier4_TileBufferBackground_0_0 is
+  port (
+    i_readTileID : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    i_readPosX : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_readPosY : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    o_readColorCode : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_writeTileID : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    i_writePosX : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_writePosY : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_writeColorCode : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_we : in STD_LOGIC;
+    i_clk : in STD_LOGIC;
+    i_reset : in STD_LOGIC
+  );
+  end component atelier4_TileBufferBackground_0_0;
+  component atelier4_InstructionDecoder_0_0 is
+  port (
+    i_opcode : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_instruction_data : in STD_LOGIC_VECTOR ( 27 downto 0 );
+    o_colorData : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    o_colorSel : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    o_colorWriteEN : out STD_LOGIC;
+    o_tileId : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    o_paletteId : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    o_x : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    o_y : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    o_bufferWriteEn : out STD_LOGIC;
+    o_offsetWriteEn : out STD_LOGIC;
+    o_bcgWriteEn : out STD_LOGIC;
+    o_actorId : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    o_actorTileId : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    o_actorBufferWriteEn : out STD_LOGIC;
+    o_actorCurrentTileWriteEn : out STD_LOGIC
+  );
+  end component atelier4_InstructionDecoder_0_0;
+  component atelier4_ZIndexController_0_0 is
+  port (
+    i_actorColorValue : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    i_backgroundColorValue : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    o_readColorValue : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component atelier4_ZIndexController_0_0;
+  component atelier4_xlconstant_1_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component atelier4_xlconstant_1_0;
+  component atelier4_ActorManager_1_0 is
+  port (
+    i_clk : in STD_LOGIC;
+    i_write_ActorID : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    i_write_TileID : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    i_write_PosX : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    i_write_PosY : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    i_write_enable : in STD_LOGIC;
+    i_read_GlobalPosX : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    i_read_GlobalPosY : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    o_read_TileID : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    o_read_PosPixelX : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    o_read_PosPixelY : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    o_read_ActorId : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    o_read_ActorHit : out STD_LOGIC
+  );
+  end component atelier4_ActorManager_1_0;
   signal BackgroundManager_0_o_readPixelX : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BackgroundManager_0_o_readPixelY : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal BackgroundManager_0_o_readTileID : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal InstructionDecoder_0_o_actorBufferWriteEn : STD_LOGIC;
+  signal InstructionDecoder_0_o_actorCurrentTileWriteEn : STD_LOGIC;
   signal InstructionDecoder_0_o_bcgWriteEn : STD_LOGIC;
   signal InstructionDecoder_0_o_bufferWriteEn : STD_LOGIC;
   signal InstructionDecoder_0_o_colorData : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal InstructionDecoder_0_o_colorSel : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal InstructionDecoder_0_o_colorWriteEN : STD_LOGIC;
+  signal InstructionDecoder_0_o_offsetWriteEn : STD_LOGIC;
   signal InstructionDecoder_0_o_paletteId : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal InstructionDecoder_0_o_tileId : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal InstructionDecoder_0_o_x : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal InstructionDecoder_0_o_y : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal InstructionRegister_0_o_Instruction : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Net : STD_LOGIC;
+  signal Net1 : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal Net2 : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal OffsetManager_0_o_x : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal OffsetManager_0_o_y : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal TileBufferActor_0_o_readColorCode : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal TileBufferBackground_0_o_readColorCode : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal ZIndexController_0_o_readColorValue : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_vdma_0_M_AXIS_MM2S_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal axi_vdma_0_M_AXIS_MM2S_TKEEP : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal axi_vdma_0_M_AXIS_MM2S_TLAST : STD_LOGIC;
@@ -758,7 +831,7 @@ architecture STRUCTURE of atelier4 is
   signal pixelDataToVideoStre_0_M00_AXIS_TREADY : STD_LOGIC;
   signal pixelDataToVideoStre_0_M00_AXIS_TUSER : STD_LOGIC;
   signal pixelDataToVideoStre_0_M00_AXIS_TVALID : STD_LOGIC;
-  signal pixelDataToVideoStre_0_o_blank : STD_LOGIC;
+  signal pixelDataToVideoStre_0_o_pixel_x : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal pixelDataToVideoStre_0_o_pixel_y : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal proc_sys_reset_0_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
@@ -949,16 +1022,22 @@ architecture STRUCTURE of atelier4 is
   signal v_tc_0_vtiming_out_VBLANK : STD_LOGIC;
   signal v_tc_0_vtiming_out_VSYNC : STD_LOGIC;
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal xlconstant_6_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal xlslice_1_Dout : STD_LOGIC_VECTOR ( 27 downto 0 );
+  signal NLW_ActorManager_1_o_read_ActorHit_UNCONNECTED : STD_LOGIC;
+  signal NLW_ActorManager_1_o_read_ActorId_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_ActorManager_1_o_read_PosPixelX_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_ActorManager_1_o_read_PosPixelY_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_ActorManager_1_o_read_TileID_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_vdma_0_mm2s_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_vdma_0_s2mm_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_vdma_0_mm2s_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_axi_vdma_0_s2mm_frame_ptr_out_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal NLW_pixelDataToVideoStre_0_o_blank_UNCONNECTED : STD_LOGIC;
   signal NLW_pixelDataToVideoStre_0_o_stall_UNCONNECTED : STD_LOGIC;
   signal NLW_pixelDataToVideoStre_0_o_frame_cnt_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal NLW_pixelDataToVideoStre_0_o_pixel_x_UNCONNECTED : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal NLW_proc_sys_reset_0_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_proc_sys_reset_0_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_proc_sys_reset_0_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1028,20 +1107,27 @@ begin
   hdmi_out_data_n(2 downto 0) <= rgb2dvi_0_TMDS_DATA_N(2 downto 0);
   hdmi_out_data_p(2 downto 0) <= rgb2dvi_0_TMDS_DATA_P(2 downto 0);
   reset_0_1 <= reset_rtl;
+ActorManager_1: component atelier4_ActorManager_1_0
+     port map (
+      i_clk => clk_wiz_0_clk_out1,
+      i_read_GlobalPosX(9 downto 0) => pixelDataToVideoStre_0_o_pixel_x(9 downto 0),
+      i_read_GlobalPosY(9 downto 0) => pixelDataToVideoStre_0_o_pixel_y(9 downto 0),
+      i_write_ActorID(2 downto 0) => Net1(2 downto 0),
+      i_write_PosX(9 downto 0) => InstructionDecoder_0_o_x(9 downto 0),
+      i_write_PosY(9 downto 0) => InstructionDecoder_0_o_y(9 downto 0),
+      i_write_TileID(2 downto 0) => Net2(2 downto 0),
+      i_write_enable => InstructionDecoder_0_o_actorCurrentTileWriteEn,
+      o_read_ActorHit => NLW_ActorManager_1_o_read_ActorHit_UNCONNECTED,
+      o_read_ActorId(2 downto 0) => NLW_ActorManager_1_o_read_ActorId_UNCONNECTED(2 downto 0),
+      o_read_PosPixelX(3 downto 0) => NLW_ActorManager_1_o_read_PosPixelX_UNCONNECTED(3 downto 0),
+      o_read_PosPixelY(3 downto 0) => NLW_ActorManager_1_o_read_PosPixelY_UNCONNECTED(3 downto 0),
+      o_read_TileID(2 downto 0) => NLW_ActorManager_1_o_read_TileID_UNCONNECTED(2 downto 0)
+    );
 BackgroundManager_0: component atelier4_BackgroundManager_0_0
      port map (
       i_clk => clk_wiz_0_clk_out1,
-      i_readGlobalPosX(9) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(8) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(7) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(6) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(5) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(4) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(3) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(2) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(1) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosX(0) => pixelDataToVideoStre_0_o_blank,
-      i_readGlobalPosY(9 downto 0) => pixelDataToVideoStre_0_o_pixel_y(9 downto 0),
+      i_readGlobalPosX(9 downto 0) => OffsetManager_0_o_x(9 downto 0),
+      i_readGlobalPosY(9 downto 0) => OffsetManager_0_o_y(9 downto 0),
       i_reset => xlconstant_6_dout(0),
       i_we => InstructionDecoder_0_o_bcgWriteEn,
       i_writeTileID(7 downto 0) => InstructionDecoder_0_o_tileId(7 downto 0),
@@ -1055,11 +1141,16 @@ InstructionDecoder_0: component atelier4_InstructionDecoder_0_0
      port map (
       i_instruction_data(27 downto 0) => xlslice_1_Dout(27 downto 0),
       i_opcode(3 downto 0) => xlslice_0_Dout(3 downto 0),
+      o_actorBufferWriteEn => InstructionDecoder_0_o_actorBufferWriteEn,
+      o_actorCurrentTileWriteEn => InstructionDecoder_0_o_actorCurrentTileWriteEn,
+      o_actorId(2 downto 0) => Net1(2 downto 0),
+      o_actorTileId(2 downto 0) => Net2(2 downto 0),
       o_bcgWriteEn => InstructionDecoder_0_o_bcgWriteEn,
       o_bufferWriteEn => InstructionDecoder_0_o_bufferWriteEn,
       o_colorData(23 downto 0) => InstructionDecoder_0_o_colorData(23 downto 0),
       o_colorSel(3 downto 0) => InstructionDecoder_0_o_colorSel(3 downto 0),
       o_colorWriteEN => InstructionDecoder_0_o_colorWriteEN,
+      o_offsetWriteEn => InstructionDecoder_0_o_offsetWriteEn,
       o_paletteId(3 downto 0) => InstructionDecoder_0_o_paletteId(3 downto 0),
       o_tileId(7 downto 0) => InstructionDecoder_0_o_tileId(7 downto 0),
       o_x(9 downto 0) => InstructionDecoder_0_o_x(9 downto 0),
@@ -1090,6 +1181,34 @@ InstructionRegister_0: component atelier4_InstructionRegister_0_1
       s00_axi_wstrb(3 downto 0) => smartconnect_0_M03_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => smartconnect_0_M03_AXI_WVALID
     );
+OffsetManager_0: component atelier4_OffsetManager_0_0
+     port map (
+      i_clk => clk_wiz_0_clk_out1,
+      i_offsetPosX(9 downto 0) => InstructionDecoder_0_o_x(9 downto 0),
+      i_offsetPosY(9 downto 0) => InstructionDecoder_0_o_y(9 downto 0),
+      i_readGlobalPosX(9 downto 0) => pixelDataToVideoStre_0_o_pixel_x(9 downto 0),
+      i_readGlobalPosY(9 downto 0) => pixelDataToVideoStre_0_o_pixel_y(9 downto 0),
+      i_reset => xlconstant_6_dout(0),
+      i_we => InstructionDecoder_0_o_offsetWriteEn,
+      o_x(9 downto 0) => OffsetManager_0_o_x(9 downto 0),
+      o_y(9 downto 0) => OffsetManager_0_o_y(9 downto 0)
+    );
+TileBufferActor_0: component atelier4_TileBufferActor_0_0
+     port map (
+      i_clk => clk_wiz_0_clk_out1,
+      i_readActorID(2 downto 0) => xlconstant_1_dout(2 downto 0),
+      i_readPosX(3 downto 0) => xlconstant_1_dout(3 downto 0),
+      i_readPosY(3 downto 0) => xlconstant_1_dout(3 downto 0),
+      i_readTileID(2 downto 0) => xlconstant_1_dout(2 downto 0),
+      i_reset => xlconstant_6_dout(0),
+      i_we => InstructionDecoder_0_o_actorBufferWriteEn,
+      i_writeActorID(2 downto 0) => Net1(2 downto 0),
+      i_writeColorCode(3 downto 0) => InstructionDecoder_0_o_paletteId(3 downto 0),
+      i_writePosX(3 downto 0) => InstructionDecoder_0_o_x(3 downto 0),
+      i_writePosY(3 downto 0) => InstructionDecoder_0_o_y(3 downto 0),
+      i_writeTileID(2 downto 0) => Net2(2 downto 0),
+      o_readColorCode(3 downto 0) => TileBufferActor_0_o_readColorCode(3 downto 0)
+    );
 TileBufferBackground_0: component atelier4_TileBufferBackground_0_0
      port map (
       i_clk => clk_wiz_0_clk_out1,
@@ -1103,6 +1222,12 @@ TileBufferBackground_0: component atelier4_TileBufferBackground_0_0
       i_writePosY(3 downto 0) => InstructionDecoder_0_o_y(3 downto 0),
       i_writeTileID(7 downto 0) => InstructionDecoder_0_o_tileId(7 downto 0),
       o_readColorCode(3 downto 0) => TileBufferBackground_0_o_readColorCode(3 downto 0)
+    );
+ZIndexController_0: component atelier4_ZIndexController_0_0
+     port map (
+      i_actorColorValue(3 downto 0) => TileBufferActor_0_o_readColorCode(3 downto 0),
+      i_backgroundColorValue(3 downto 0) => TileBufferBackground_0_o_readColorCode(3 downto 0),
+      o_readColorValue(3 downto 0) => ZIndexController_0_o_readColorValue(3 downto 0)
     );
 axi_vdma_0: component atelier4_axi_vdma_0_0
      port map (
@@ -1184,7 +1309,7 @@ clk_wiz_0: component atelier4_clk_wiz_0_0
 colorRegister_0: component atelier4_colorRegister_0_0
      port map (
       i_clk => clk_wiz_0_clk_out1,
-      i_readColorCode(3 downto 0) => TileBufferBackground_0_o_readColorCode(3 downto 0),
+      i_readColorCode(3 downto 0) => ZIndexController_0_o_readColorValue(3 downto 0),
       i_reset => xlconstant_6_dout(0),
       i_we => InstructionDecoder_0_o_colorWriteEN,
       i_writeColorCode(3 downto 0) => InstructionDecoder_0_o_colorSel(3 downto 0),
@@ -1201,9 +1326,9 @@ pixelDataToVideoStre_0: component atelier4_pixelDataToVideoStre_0_3
       m00_axis_tready => pixelDataToVideoStre_0_M00_AXIS_TREADY,
       m00_axis_tuser => pixelDataToVideoStre_0_M00_AXIS_TUSER,
       m00_axis_tvalid => pixelDataToVideoStre_0_M00_AXIS_TVALID,
-      o_blank => pixelDataToVideoStre_0_o_blank,
+      o_blank => NLW_pixelDataToVideoStre_0_o_blank_UNCONNECTED,
       o_frame_cnt(31 downto 0) => NLW_pixelDataToVideoStre_0_o_frame_cnt_UNCONNECTED(31 downto 0),
-      o_pixel_x(11 downto 0) => NLW_pixelDataToVideoStre_0_o_pixel_x_UNCONNECTED(11 downto 0),
+      o_pixel_x(11 downto 0) => pixelDataToVideoStre_0_o_pixel_x(11 downto 0),
       o_pixel_y(11 downto 0) => pixelDataToVideoStre_0_o_pixel_y(11 downto 0),
       o_stall => NLW_pixelDataToVideoStre_0_o_stall_UNCONNECTED,
       s00_axi_aclk => clk_wiz_0_clk_out1,
@@ -1650,13 +1775,15 @@ v_tc_0: component atelier4_v_tc_0_0
       vblank_out => v_tc_0_vtiming_out_VBLANK,
       vsync_out => v_tc_0_vtiming_out_VSYNC
     );
--- A changer eventuellement...
-  xlconstant_0: component atelier4_xlconstant_0_0
+xlconstant_0: component atelier4_xlconstant_0_0
      port map (
       dout(0) => xlconstant_0_dout(0)
     );
--- a changer eventuellement ....l
-  xlconstant_6: component atelier4_xlconstant_4_0
+xlconstant_1: component atelier4_xlconstant_1_0
+     port map (
+      dout(3 downto 0) => xlconstant_1_dout(3 downto 0)
+    );
+xlconstant_6: component atelier4_xlconstant_4_0
      port map (
       dout(0) => xlconstant_6_dout(0)
     );

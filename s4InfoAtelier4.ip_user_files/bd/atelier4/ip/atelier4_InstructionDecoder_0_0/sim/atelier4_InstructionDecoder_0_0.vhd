@@ -65,7 +65,12 @@ ENTITY atelier4_InstructionDecoder_0_0 IS
     o_x : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
     o_y : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
     o_bufferWriteEn : OUT STD_LOGIC;
-    o_bcgWriteEn : OUT STD_LOGIC
+    o_offsetWriteEn : OUT STD_LOGIC;
+    o_bcgWriteEn : OUT STD_LOGIC;
+    o_actorId : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    o_actorTileId : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    o_actorBufferWriteEn : OUT STD_LOGIC;
+    o_actorCurrentTileWriteEn : OUT STD_LOGIC
   );
 END atelier4_InstructionDecoder_0_0;
 
@@ -84,7 +89,12 @@ ARCHITECTURE atelier4_InstructionDecoder_0_0_arch OF atelier4_InstructionDecoder
       o_x : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
       o_y : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
       o_bufferWriteEn : OUT STD_LOGIC;
-      o_bcgWriteEn : OUT STD_LOGIC
+      o_offsetWriteEn : OUT STD_LOGIC;
+      o_bcgWriteEn : OUT STD_LOGIC;
+      o_actorId : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      o_actorTileId : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      o_actorBufferWriteEn : OUT STD_LOGIC;
+      o_actorCurrentTileWriteEn : OUT STD_LOGIC
     );
   END COMPONENT InstructionDecoder;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
@@ -102,6 +112,11 @@ BEGIN
       o_x => o_x,
       o_y => o_y,
       o_bufferWriteEn => o_bufferWriteEn,
-      o_bcgWriteEn => o_bcgWriteEn
+      o_offsetWriteEn => o_offsetWriteEn,
+      o_bcgWriteEn => o_bcgWriteEn,
+      o_actorId => o_actorId,
+      o_actorTileId => o_actorTileId,
+      o_actorBufferWriteEn => o_actorBufferWriteEn,
+      o_actorCurrentTileWriteEn => o_actorCurrentTileWriteEn
     );
 END atelier4_InstructionDecoder_0_0_arch;

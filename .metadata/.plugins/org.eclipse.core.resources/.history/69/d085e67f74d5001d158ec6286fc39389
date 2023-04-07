@@ -1,0 +1,159 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "sleep.h"
+#include "instructionRegister.h"
+#include "api.h"
+#include "xparameters.h"
+#include "stdio.h"
+#include "time.h"
+
+int main()
+{
+	configureScaler();
+    configureVdma();
+
+
+
+	setColorByPaletteId(0, 0x111111);
+	setColorByPaletteId(1, 0x555555);
+	setColorByPaletteId(2, 0x999999);
+	setColorByPaletteId(3, 0xEEEEEE);
+
+	setColorByPaletteId(4, 0xFF0000);
+	setColorByPaletteId(5, 0xFF8000);
+	setColorByPaletteId(6, 0xFFFF00);
+	setColorByPaletteId(7, 0x00FF00);
+	setColorByPaletteId(8, 0xFFFFFF);
+	setColorByPaletteId(9, 0x0000FF);
+	setColorByPaletteId(10, 0x8000FF);
+
+	setColorByPaletteId(11, 0xFF0000);
+	setColorByPaletteId(12, 0x444);
+	setColorByPaletteId(13, 0x888);
+	setColorByPaletteId(14, 0xCCC);
+	setColorByPaletteId(15, 0xFFF);
+
+
+    {
+    	for(int x = 0 ; x < 16; x++)
+    	{
+    		for(int y = 0 ; y < 16; y++)
+    		{
+    			setPaletteIdForTileId2(0, 0, x, y);
+    			if(x==15)
+    			{
+    				setPaletteIdForTileId2(0, 1, x, y);
+    			}
+
+    		}
+    	}
+
+    }
+
+    for(int x = 0 ; x < 2; x++)
+    {
+    	for(int y = 0; y < 2; y++)
+    	{
+    		setTileCoordBackground(0, x, y);
+    	}
+    }
+
+    for(int x = 0 ; x < 16; x++)
+    {
+    	for(int y = 0; y < 16; y++)
+    	{
+        	//setPaletteIdForTileIdActor(0x00,12,x,y);
+        	setPaletteIdForTileIdActor(0x10,x,x,y);
+        	setPaletteIdForTileIdActor(0x20,x,x,y);
+        	setPaletteIdForTileIdActor(0x30,x,x,y);
+        	setPaletteIdForTileIdActor(0x40,y,x,y);
+        	setPaletteIdForTileIdActor(0x41,x,x,y);
+        	if(x > 3 && x < 7)
+        	{
+            	setPaletteIdForTileIdActor(0x10,0,x,y);
+            	setPaletteIdForTileIdActor(0x20,0,x,y);
+            	setPaletteIdForTileIdActor(0x30,0,x,y);
+            	setPaletteIdForTileIdActor(0x40,0,x,y);
+            	setPaletteIdForTileIdActor(0x41,0,x,y);
+        	}
+
+    	}
+    }
+
+
+    //setActorCoord(0, 0, 0, 0);
+	setActorCoord(1, 0, 16, 0);
+	setActorCoord(2, 0, 64, 64);
+	setActorCoord(3, 0, 20, 60);
+	setActorCoord(4, 1, 600, 200);
+	int x = 0;
+	int y = 0;
+	int negative = 1;
+	int shouldChange = 0;
+	int posX_1 = 100;
+	int posY_1 = 0;
+	int posX_2 = 64;
+	int posY_2 = 300;
+	int posX_3 = 640;
+	int posY_3 = 200;
+	int posX_4 = 600;
+	int posY_4 = 100;
+
+
+
+
+    const double FRAME_TIME = 1.0 / 60.0; // 60 frames per second
+    double lastTime = 0;
+    double currentTime = 0;
+    double deltaTime = 0;
+    double accumulator = 0;
+
+    while (1) {
+        lastTime = (double)clock() / CLOCKS_PER_SEC; // get current time in seconds
+
+
+
+    	setViewPortCoord(x,y);
+
+    	    	if(negative == 1)
+    	    	{
+    	        	setActorCoord(1, 0, posX_1--, posY_1);
+    	        	setActorCoord(2, 0, posX_2--, posY_2);
+    	        	setActorCoord(3, 0, posX_3--, posY_3--);
+    	        	setActorCoord(4, 0, posX_4, posY_4--);
+    	    	}
+    	    	else
+    	    	{
+    	    					setActorCoord(1, 0, posX_1++, posY_1);
+    	    		        	setActorCoord(2, 1, posX_2++, posY_2);
+    	    		        	setActorCoord(3, 0, posX_3++, posY_3++);
+    	    		        	setActorCoord(4, 1, posX_4, posY_4++);
+    	    	}
+    	    	if(shouldChange == 100)
+    	    	{
+    	    		shouldChange = 0;
+    	    		negative = 0 - negative;
+
+    	    	}
+    	    	shouldChange++;
+    	    	y++;
+    	    	x++;
+    	    	if(x == 1024)
+    	    	{
+    	    		x = 0;
+    	    	}
+    	    	if(y == 1024)
+    	    	{
+    	    		y = 0;
+    	    	}
+
+    	 deltaTime = ((double)clock() / CLOCKS_PER_SEC)-lastTime;
+
+    }
+
+
+
+    return 0;
+}
+

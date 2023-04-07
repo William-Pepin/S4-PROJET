@@ -47,9 +47,16 @@ entity InstructionDecoder is
         o_x                  : out STD_LOGIC_VECTOR(9 downto 0);
         o_y                  : out STD_LOGIC_VECTOR(9 downto 0);
         o_bufferWriteEn      : out STD_LOGIC;
+        o_offsetWriteEn      : out STD_LOGIC;
         
         -- backgroundManager  
-        o_bcgWriteEn         : out STD_LOGIC
+        o_bcgWriteEn         : out STD_LOGIC;
+        
+        -- actor
+        o_actorId                   : out STD_LOGIC_VECTOR(2 downto 0);
+        o_actorTileId               : out STD_LOGIC_VECTOR(2 downto 0);
+        o_actorBufferWriteEn        : out STD_LOGIC;
+        o_actorCurrentTileWriteEn   : out STD_LOGIC
    );
 end InstructionDecoder;
 
@@ -72,6 +79,11 @@ begin
                     o_y                 <= "0000000000";
                     o_bufferWriteEn     <= '0';
                     o_bcgWriteEn        <= '0';
+                    o_offsetWriteEn     <= '0';
+                    o_actorId                   <= "000";
+                    o_actorTileId               <= "000";
+                    o_actorBufferWriteEn        <= '0';
+                    o_actorCurrentTileWriteEn   <= '0';
                 
                 -- Modifier une tuile
                 when "0010" =>
@@ -84,6 +96,11 @@ begin
                     o_y(3 downto 0)     <= i_instruction_data(11 downto 8);
                     o_bufferWriteEn     <= '1';
                     o_bcgWriteEn        <= '0';
+                    o_offsetWriteEn     <= '0';
+                    o_actorId                   <= "000";
+                    o_actorTileId               <= "000";
+                    o_actorBufferWriteEn        <= '0';
+                    o_actorCurrentTileWriteEn   <= '0';
                     
                 when "0011" =>
                     o_colorSel          <= "0000";
@@ -95,9 +112,60 @@ begin
                     o_y(9 downto 4)     <= i_instruction_data(13 downto 8);
                     o_bufferWriteEn     <= '0';
                     o_bcgWriteEn        <= '1';
+                    o_offsetWriteEn     <= '0';
+                    o_actorId                   <= "000";
+                    o_actorTileId               <= "000";
+                    o_actorBufferWriteEn        <= '0';
+                    o_actorCurrentTileWriteEn   <= '0';
                 
                 when "0100" =>
-                                        
+                    o_colorSel          <= "0000";
+                    o_colorData         <= "000000000000000000000000";
+                    o_colorWriteEn      <= '0';
+                    o_tileId            <= "00000000";    
+                    o_paletteId         <= "0000";
+                    o_bufferWriteEn     <= '0';
+                    o_bcgWriteEn        <= '0';
+                    o_offsetWriteEn     <= '0';
+                    o_actorId                   <= i_instruction_data(27 downto 25);
+                    o_actorTileId               <= i_instruction_data(22 downto 20);
+                    o_x                         <= i_instruction_data(19 downto 10);
+                    o_y                         <= i_instruction_data(9 downto 0);
+                    o_actorBufferWriteEn        <= '0';
+                    o_actorCurrentTileWriteEn   <= '1';
+                    
+                when "0101" =>
+                    o_colorSel          <= "0000";
+                    o_colorData         <= "000000000000000000000000";
+                    o_colorWriteEn      <= '0';
+                    o_tileId            <= "00000000";             
+                    o_paletteId         <= i_instruction_data(19 downto 16);                    
+                    o_x(3 downto 0)     <= i_instruction_data(15 downto 12);                   
+                    o_y(3 downto 0)     <= i_instruction_data(11 downto 8);
+                    o_bufferWriteEn     <= '0';
+                    o_bcgWriteEn        <= '0';
+                    o_offsetWriteEn     <= '0';
+                    o_actorId                   <= i_instruction_data(26 downto 24);
+                    o_actorTileId               <= i_instruction_data(22 downto 20);
+                    o_actorBufferWriteEn        <= '1';
+                    o_actorCurrentTileWriteEn   <= '0';
+                
+                when "0110" =>
+                    o_x                 <= i_instruction_data(27 downto 18);
+                    o_y                 <= i_instruction_data(17 downto 8);
+                    o_offsetWriteEn     <= '1';
+                    o_colorSel          <= "0000";
+                    o_colorData         <= "000000000000000000000000";
+                    o_colorWriteEn      <= '0';
+                    o_tileId            <= "00000000";    
+                    o_paletteId         <= "0000";
+                    o_bufferWriteEn     <= '0';
+                    o_bcgWriteEn        <= '0';
+                    o_actorId                   <= "000";
+                    o_actorTileId               <= "000";
+                    o_actorBufferWriteEn        <= '0';
+                    o_actorCurrentTileWriteEn   <= '0';
+                                    
                 when others =>
                     o_colorSel          <= "0000";
                     o_colorData         <= "000000000000000000000000";
@@ -108,7 +176,13 @@ begin
                     o_y                 <= "0000000000";
                     o_bufferWriteEn     <= '0';
                     o_bcgWriteEn        <= '0';
+                    o_offsetWriteEn     <= '0';
+                    o_actorId                   <= "000";
+                    o_actorTileId               <= "000";
+                    o_actorBufferWriteEn        <= '0';
+                    o_actorCurrentTileWriteEn   <= '0';
                     
+                 
                     
                     
                     

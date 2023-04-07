@@ -34,12 +34,12 @@ USE ieee.numeric_std.ALL;
 
 entity TileBufferActor is
     Port ( i_readActorID : in STD_LOGIC_VECTOR (2 downto 0);
-           i_readTileID : in STD_LOGIC_VECTOR (4 downto 0);
+           i_readTileID : in STD_LOGIC_VECTOR (2 downto 0);
            i_readPosX : in STD_LOGIC_VECTOR (3 downto 0);
            i_readPosY : in STD_LOGIC_VECTOR (3 downto 0);
            o_readColorCode : out STD_LOGIC_VECTOR (3 downto 0);
            i_writeActorID : in STD_LOGIC_VECTOR (2 downto 0);
-           i_writeTileID : in STD_LOGIC_VECTOR (4 downto 0);
+           i_writeTileID : in STD_LOGIC_VECTOR (2 downto 0);
            i_writePosX : in STD_LOGIC_VECTOR (3 downto 0);
            i_writePosY : in STD_LOGIC_VECTOR (3 downto 0);
            i_writeColorCode : in STD_LOGIC_VECTOR (3 downto 0);
@@ -49,23 +49,50 @@ entity TileBufferActor is
 end TileBufferActor;
 
 architecture Behavioral of TileBufferActor is
-type t_actorTiles is array (0 to 7, 0 to 31, 0 to 15, 0 to 15) of std_logic_vector(3 downto 0);
+component Tile is
+    Port ( i_read_X : in STD_LOGIC_VECTOR (3 downto 0);
+           i_read_Y : in STD_LOGIC_VECTOR (3 downto 0);
+           i_write_select : in STD_LOGIC;
+           o_read_colorCode : out STD_LOGIC_VECTOR (3 downto 0);
+           i_write_X : in STD_LOGIC_VECTOR (3 downto 0);
+           i_write_Y : in STD_LOGIC_VECTOR (3 downto 0);
+           i_write_enable : in STD_LOGIC;
+           i_write_colorCode : in STD_LOGIC_VECTOR (3 downto 0);
+           i_clk : in STD_LOGIC);
+end component;
 
-signal s_actorTiles : t_actorTiles; 
+type t_outputs is array(0 to 63) of std_logic_vector (3 downto 0);
+
+signal writeIds: std_logic_vector(63 downto 0);
+signal outputs: t_outputs;
+signal s_readTileID: std_logic_vector(5 downto 0);
+signal s_writeTileID: std_logic_vector(5 downto 0);
+
 begin
+s_writeTileID <= i_writeActorID & i_writeTileID;
+s_readTileID <= i_readActorID & i_readTileID;
+o_readColorCode <= outputs(to_integer(unsigned(s_readTileID)));
 
-o_readColorCode <= s_actorTiles(to_integer(unsigned(i_readActorID)),to_integer(unsigned(i_readTileID)), to_integer(unsigned(i_readPosX)),to_integer(unsigned(i_readPosY)));
-
---Process d'update des registres
-    process(i_clk, i_reset)      
+--Process d'update de la selection d'ecriture
+    process(i_writeTileID)      
     begin     
-        if(rising_edge(i_clk)) then     
-            if(i_reset ='1') then         
-                 
-             elsif(i_we = '1') then  
-                s_actorTiles(to_integer(unsigned(i_writeActorID)),to_integer(unsigned(i_writeTileID)), to_integer(unsigned(i_writePosX)),to_integer(unsigned(i_writePosY)))<=i_writeColorCode;
-             end if;     
-         end if;     
-    end process;    
+        writeIds <= (others => '0');
+        writeIds(to_integer(unsigned(s_writeTileID))) <= '1';
+    end process; 
+
+
+    genTile: FOR i IN 0 TO 63 GENERATE
+     uut: Tile Port Map (
+        i_read_X => i_readPosX,
+        i_read_Y => i_readPosY,
+        i_write_select => writeIds(i),
+        o_read_colorCode => outputs(i),
+        i_write_X => i_writePosX,
+        i_write_Y => i_writePosY,
+        i_write_enable => i_we,
+        i_write_colorCode => i_writecolorCode,
+        i_clk => i_clk
+     );
+    END GENERATE genTile;   
 
 end Behavioral;

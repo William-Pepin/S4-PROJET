@@ -463,14 +463,23 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/atelier4/ip/atelier4_colorRegister_0_0/sim/atelier4_colorRegister_0_0.vhd" \
-  "../../../bd/atelier4/ip/atelier4_InstructionDecoder_0_0/sim/atelier4_InstructionDecoder_0_0.vhd" \
-  "../../../bd/atelier4/ip/atelier4_TileBufferBackground_0_0/sim/atelier4_TileBufferBackground_0_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/atelier4/ip/atelier4_xlconstant_0_0/sim/atelier4_xlconstant_0_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_OffsetManager_0_0/sim/atelier4_OffsetManager_0_0.vhd" \
   "../../../bd/atelier4/ip/atelier4_BackgroundManager_0_0/sim/atelier4_BackgroundManager_0_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_TileBufferActor_0_0/sim/atelier4_TileBufferActor_0_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_TileBufferBackground_0_0/sim/atelier4_TileBufferBackground_0_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_InstructionDecoder_0_0/sim/atelier4_InstructionDecoder_0_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_ActorManager_1_0/sim/atelier4_ActorManager_1_0.vhd" \
+  "../../../bd/atelier4/ip/atelier4_ZIndexController_0_0/sim/atelier4_ZIndexController_0_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/atelier4/ip/atelier4_xlconstant_1_0/sim/atelier4_xlconstant_1_0.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
   "../../../bd/atelier4/sim/atelier4.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

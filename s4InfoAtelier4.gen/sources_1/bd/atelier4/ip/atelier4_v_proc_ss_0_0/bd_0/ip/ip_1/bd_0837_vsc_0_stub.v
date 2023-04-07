@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Mon Jan 23 16:40:44 2023
+// Date        : Mon Jan 23 16:40:42 2023
 // Host        : DESKTOP-STNSRIB running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/bd_0837_vsc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top bd_0837_vsc_0 -prefix
+//               bd_0837_vsc_0_ bd_0837_vsc_0_stub.v
 // Design      : bd_0837_vsc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

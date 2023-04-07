@@ -534,14 +534,23 @@ vlog -work xil_defaultlib  -incr "+incdir+../../../../s4InfoAtelier4.gen/sources
 
 vcom -work xil_defaultlib  -93 \
 "../../../bd/atelier4/ip/atelier4_colorRegister_0_0/sim/atelier4_colorRegister_0_0.vhd" \
-"../../../bd/atelier4/ip/atelier4_InstructionDecoder_0_0/sim/atelier4_InstructionDecoder_0_0.vhd" \
-"../../../bd/atelier4/ip/atelier4_TileBufferBackground_0_0/sim/atelier4_TileBufferBackground_0_0.vhd" \
 
 vlog -work xil_defaultlib  -incr "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/7860/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d0f7" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ec67/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/34f8/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/25b7/hdl/verilog" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/896c/hdl/verilog" "+incdir+../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/hdl/verilog" "+incdir+../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/hdl/verilog" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8713/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/hdl/verilog" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/atelier4/ip/atelier4_xlconstant_0_0/sim/atelier4_xlconstant_0_0.v" \
 
 vcom -work xil_defaultlib  -93 \
+"../../../bd/atelier4/ip/atelier4_OffsetManager_0_0/sim/atelier4_OffsetManager_0_0.vhd" \
 "../../../bd/atelier4/ip/atelier4_BackgroundManager_0_0/sim/atelier4_BackgroundManager_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_TileBufferActor_0_0/sim/atelier4_TileBufferActor_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_TileBufferBackground_0_0/sim/atelier4_TileBufferBackground_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_InstructionDecoder_0_0/sim/atelier4_InstructionDecoder_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_ActorManager_1_0/sim/atelier4_ActorManager_1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_ZIndexController_0_0/sim/atelier4_ZIndexController_0_0.vhd" \
+
+vlog -work xil_defaultlib  -incr "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/7860/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/d0f7" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ec67/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/34f8/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/25b7/hdl/verilog" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/896c/hdl/verilog" "+incdir+../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/hdl/verilog" "+incdir+../../../bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/hdl/verilog" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8713/hdl" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/hdl/verilog" "+incdir+../../../../s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../bd/atelier4/ip/atelier4_xlconstant_1_0/sim/atelier4_xlconstant_1_0.v" \
+
+vcom -work xil_defaultlib  -93 \
 "../../../bd/atelier4/sim/atelier4.vhd" \
 
 vlog -work xil_defaultlib \

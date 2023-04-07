@@ -28,9 +28,13 @@ vhdl xil_defaultlib  \
 "../../../bd/atelier4/ipshared/0125/hdl/InstructionRegister_v1_0.vhd" \
 "../../../bd/atelier4/ip/atelier4_InstructionRegister_0_1/sim/atelier4_InstructionRegister_0_1.vhd" \
 "../../../bd/atelier4/ip/atelier4_colorRegister_0_0/sim/atelier4_colorRegister_0_0.vhd" \
-"../../../bd/atelier4/ip/atelier4_InstructionDecoder_0_0/sim/atelier4_InstructionDecoder_0_0.vhd" \
-"../../../bd/atelier4/ip/atelier4_TileBufferBackground_0_0/sim/atelier4_TileBufferBackground_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_OffsetManager_0_0/sim/atelier4_OffsetManager_0_0.vhd" \
 "../../../bd/atelier4/ip/atelier4_BackgroundManager_0_0/sim/atelier4_BackgroundManager_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_TileBufferActor_0_0/sim/atelier4_TileBufferActor_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_TileBufferBackground_0_0/sim/atelier4_TileBufferBackground_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_InstructionDecoder_0_0/sim/atelier4_InstructionDecoder_0_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_ActorManager_1_0/sim/atelier4_ActorManager_1_0.vhd" \
+"../../../bd/atelier4/ip/atelier4_ZIndexController_0_0/sim/atelier4_ZIndexController_0_0.vhd" \
 "../../../bd/atelier4/sim/atelier4.vhd" \
 
 nosort

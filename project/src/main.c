@@ -5,6 +5,8 @@
 #include "instructionRegister.h"
 #include "api.h"
 #include "xparameters.h"
+#include "stdio.h"
+#include "time.h"
 
 int main()
 {
@@ -18,6 +20,14 @@ int main()
 	setColorByPaletteId(2, 0x999999);
 	setColorByPaletteId(3, 0xEEEEEE);
 
+	setColorByPaletteId(4, 0xFF0000);
+	setColorByPaletteId(5, 0xFF8000);
+	setColorByPaletteId(6, 0xFFFF00);
+	setColorByPaletteId(7, 0x00FF00);
+	setColorByPaletteId(8, 0xFFFFFF);
+	setColorByPaletteId(9, 0x0000FF);
+	setColorByPaletteId(10, 0x8000FF);
+
 	setColorByPaletteId(11, 0xFF0000);
 	setColorByPaletteId(12, 0x444);
 	setColorByPaletteId(13, 0x888);
@@ -25,41 +35,108 @@ int main()
 	setColorByPaletteId(15, 0xFFF);
 
 
-    for(int i = 0 ; i < 4; i++)
     {
     	for(int x = 0 ; x < 16; x++)
     	{
     		for(int y = 0 ; y < 16; y++)
     		{
-    			setPaletteIdForTileId2(i, i, x, y);
-    			if(y >= 8)
+    			setPaletteIdForTileId2(0, 0, x, y);
+    			if(x==15)
     			{
-        			setPaletteIdForTileId2(i, i+12, x, y);
+    				setPaletteIdForTileId2(0, 1, x, y);
     			}
-    			if(x == 15)
-    			{
-    				setPaletteIdForTileId2(i, 11, x, y);
-    			}
-    			if(y == 15)
-    			{
-    				setPaletteIdForTileId2(i, 11, x, y);
-    			}
+
     		}
     	}
 
     }
 
-    for(int x = 0 ; x < 8; x++)
+    for(int x = 0 ; x < 2; x++)
     {
-    	for(int y = 0; y < 8; y++)
+    	for(int y = 0; y < 2; y++)
     	{
-    		setTileCoordBackground(x % 4, x, y);
+    		setTileCoordBackground(0, x, y);
     	}
     }
 
-    while(1)
+    for(int x = 0 ; x < 16; x++)
     {
-    	sleep(1);
+    	for(int y = 0; y < 16; y++)
+    	{
+        	//setPaletteIdForTileIdActor(0x00,12,x,y);
+        	setPaletteIdForTileIdActor(0x10,x,x,y);
+        	setPaletteIdForTileIdActor(0x20,x,x,y);
+        	setPaletteIdForTileIdActor(0x30,x,x,y);
+        	setPaletteIdForTileIdActor(0x40,y,x,y);
+        	setPaletteIdForTileIdActor(0x41,x,x,y);
+        	if(x > 3 && x < 7)
+        	{
+            	setPaletteIdForTileIdActor(0x10,0,x,y);
+            	setPaletteIdForTileIdActor(0x20,0,x,y);
+            	setPaletteIdForTileIdActor(0x30,0,x,y);
+            	setPaletteIdForTileIdActor(0x40,0,x,y);
+            	setPaletteIdForTileIdActor(0x41,0,x,y);
+        	}
+
+    	}
+    }
+
+
+    //setActorCoord(0, 0, 0, 0);
+	setActorCoord(1, 0, 16, 0);
+	setActorCoord(2, 0, 64, 64);
+	setActorCoord(3, 0, 20, 60);
+	setActorCoord(4, 1, 600, 200);
+	int x = 0;
+	int y = 0;
+	int negative = 1;
+	int shouldChange = 0;
+	int posX_1 = 100;
+	int posY_1 = 0;
+	int posX_2 = 64;
+	int posY_2 = 300;
+	int posX_3 = 640;
+	int posY_3 = 200;
+	int posX_4 = 600;
+	int posY_4 = 100;
+
+
+    while (1) {
+    	setViewPortCoord(x,y);
+
+    	    	if(negative == 1)
+    	    	{
+    	        	setActorCoord(1, 0, posX_1--, posY_1);
+    	        	setActorCoord(2, 0, posX_2--, posY_2);
+    	        	setActorCoord(3, 0, posX_3--, posY_3--);
+    	        	setActorCoord(4, 0, posX_4, posY_4--);
+    	    	}
+    	    	else
+    	    	{
+    	    					setActorCoord(1, 0, posX_1++, posY_1);
+    	    		        	setActorCoord(2, 1, posX_2++, posY_2);
+    	    		        	setActorCoord(3, 0, posX_3++, posY_3++);
+    	    		        	setActorCoord(4, 1, posX_4, posY_4++);
+    	    	}
+    	    	if(shouldChange == 100)
+    	    	{
+    	    		shouldChange = 0;
+    	    		negative = 0 - negative;
+
+    	    	}
+    	    	shouldChange++;
+    	    	y++;
+    	    	x++;
+    	    	if(x == 1024)
+    	    	{
+    	    		x = 0;
+    	    	}
+    	    	if(y == 1024)
+    	    	{
+    	    		y = 0;
+    	    	}
+    	    	usleep(16670);
     }
     return 0;
 }
+

@@ -1,0 +1,446 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  6 11:21:16 2023
+# Process ID: 18656
+# Current directory: C:/Users/wpepi/projet/s4InfoAtelier4.runs/atelier4_TileBufferActor_0_0_synth_1
+# Command line: vivado.exe -log atelier4_TileBufferActor_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_TileBufferActor_0_0.tcl
+# Log file: C:/Users/wpepi/projet/s4InfoAtelier4.runs/atelier4_TileBufferActor_0_0_synth_1/atelier4_TileBufferActor_0_0.vds
+# Journal file: C:/Users/wpepi/projet/s4InfoAtelier4.runs/atelier4_TileBufferActor_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source atelier4_TileBufferActor_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wpepi/ip_repo/InstructionRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wpepi/ip_repo/myColorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wpepi/projet/s4InfoAtelier4.ipdefs/mycolorRegister_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wpepi/projet/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wpepi/projet/s4InfoAtelier4.ipdefs/rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/wpepi/projet/s4InfoAtelier4.ipdefs/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top atelier4_TileBufferActor_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'atelier4_TileBufferActor_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 36512
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1117.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'atelier4_TileBufferActor_0_0' [c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_TileBufferActor_0_0/synth/atelier4_TileBufferActor_0_0.vhd:74]
+INFO: [Synth 8-3491] module 'TileBufferActor' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:35' bound to instance 'U0' of component 'TileBufferActor' [c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_TileBufferActor_0_0/synth/atelier4_TileBufferActor_0_0.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'TileBufferActor' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:51]
+WARNING: [Synth 8-614] signal 's_writeTileID' is read in the process but is not in the sensitivity list [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:77]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:47]
+WARNING: [Synth 8-614] signal 'i_write_enable' is read in the process but is not in the sensitivity list [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:65]
+WARNING: [Synth 8-614] signal 'i_write_select' is read in the process but is not in the sensitivity list [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'Tile' (1#1) [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:47]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-3491] module 'Tile' declared at 'C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd:35' bound to instance 'uut' of component 'Tile' [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'TileBufferActor' (2#1) [C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferActor.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_TileBufferActor_0_0' (3#1) [c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_TileBufferActor_0_0/synth/atelier4_TileBufferActor_0_0.vhd:74]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1120.625 ; gain = 3.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1120.625 ; gain = 3.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1120.625 ; gain = 3.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1120.625 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1218.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1218.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1218.457 ; gain = 101.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1218.457 ; gain = 101.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1218.457 ; gain = 101.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1218.457 ; gain = 101.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit	(256 X 4 bit)          RAMs := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1218.457 ; gain = 101.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-----------------------------+-----------------------------+-----------+----------------------+--------------------------+
+|Module Name                  | RTL Object                  | Inference | Size (Depth x Width) | Primitives               | 
++-----------------------------+-----------------------------+-----------+----------------------+--------------------------+
+|atelier4_TileBufferActor_0_0 | U0/genTile[0].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[1].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[2].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[3].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[4].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[5].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[6].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[7].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[8].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[9].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[10].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[11].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[12].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[13].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[14].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[15].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[16].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[17].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[18].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[19].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[20].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[21].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[22].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[23].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[24].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[25].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[26].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[27].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[28].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[29].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[30].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[31].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[32].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[33].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[34].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[35].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[36].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[37].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[38].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[39].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[40].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[41].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[42].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[43].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[44].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[45].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[46].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[47].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[48].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[49].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[50].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[51].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[52].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[53].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[54].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[55].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[56].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[57].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[58].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[59].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[60].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[61].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[62].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[63].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
++-----------------------------+-----------------------------+-----------+----------------------+--------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1218.457 ; gain = 101.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1218.457 ; gain = 101.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-----------------------------+-----------------------------+-----------+----------------------+--------------------------+
+|Module Name                  | RTL Object                  | Inference | Size (Depth x Width) | Primitives               | 
++-----------------------------+-----------------------------+-----------+----------------------+--------------------------+
+|atelier4_TileBufferActor_0_0 | U0/genTile[0].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[1].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[2].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[3].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[4].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[5].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[6].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[7].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[8].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[9].uut/tile_reg  | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[10].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[11].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[12].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[13].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[14].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[15].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[16].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[17].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[18].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[19].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[20].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[21].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[22].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[23].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[24].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[25].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[26].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[27].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[28].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[29].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[30].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[31].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[32].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[33].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[34].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[35].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[36].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[37].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[38].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[39].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[40].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[41].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[42].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[43].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[44].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[45].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[46].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[47].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[48].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[49].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[50].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[51].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[52].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[53].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[54].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[55].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[56].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[57].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[58].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[59].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[60].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[61].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[62].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
+|atelier4_TileBufferActor_0_0 | U0/genTile[63].uut/tile_reg | Implied   | 256 x 4              | RAM64X1D x 4	RAM64M x 4	 | 
++-----------------------------+-----------------------------+-----------+----------------------+--------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1236.562 ; gain = 119.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT2     |     2|
+|2     |LUT3     |    16|
+|3     |LUT5     |   128|
+|4     |LUT6     |   400|
+|5     |MUXF7    |   136|
+|6     |MUXF8    |    68|
+|7     |RAM64M   |   256|
+|8     |RAM64X1D |   256|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1245.449 ; gain = 30.250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1245.449 ; gain = 128.082
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1256.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 716 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1269.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 256 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 256 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1269.473 ; gain = 152.105
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wpepi/projet/s4InfoAtelier4.runs/atelier4_TileBufferActor_0_0_synth_1/atelier4_TileBufferActor_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 65 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wpepi/projet/s4InfoAtelier4.runs/atelier4_TileBufferActor_0_0_synth_1/atelier4_TileBufferActor_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file atelier4_TileBufferActor_0_0_utilization_synth.rpt -pb atelier4_TileBufferActor_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  6 11:21:55 2023...

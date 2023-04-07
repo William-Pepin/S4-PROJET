@@ -27,10 +27,14 @@
       "xlslice_0": "",
       "xlslice_1": "",
       "colorRegister_0": "",
-      "InstructionDecoder_0": "",
-      "TileBufferBackground_0": "",
       "xlconstant_0": "",
-      "BackgroundManager_0": ""
+      "OffsetManager_0": "",
+      "TileBufferActor_0": "",
+      "TileBufferBackground_0": "",
+      "InstructionDecoder_0": "",
+      "ZIndexController_0": "",
+      "BackgroundManager_0": "",
+      "ActorManager_1": ""
     },
     "interface_ports": {
       "hdmi_out": {
@@ -236,14 +240,32 @@
           "CLKOUT1_REQUESTED_OUT_FREQ": {
             "value": "74.25"
           },
+          "CLKOUT2_JITTER": {
+            "value": "219.371"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "105.461"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "10.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "false"
+          },
           "MMCM_CLKFBOUT_MULT_F": {
             "value": "37.125"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
             "value": "12.500"
           },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "1"
+          },
           "MMCM_DIVCLK_DIVIDE": {
             "value": "4"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "1"
           }
         }
       },
@@ -735,6 +757,9 @@
           },
           "PCW_INCLUDE_ACP_TRANS_CHECK": {
             "value": "0"
+          },
+          "PCW_IRQ_F2P_MODE": {
+            "value": "DIRECT"
           },
           "PCW_MIO_0_IOTYPE": {
             "value": "LVCMOS 3.3V"
@@ -1497,6 +1522,15 @@
           },
           "PCW_S_AXI_HP0_ID_WIDTH": {
             "value": "6"
+          },
+          "PCW_S_AXI_HP1_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
           },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
@@ -2268,7 +2302,12 @@
         "vlnv": "xilinx.com:ip:v_axi4s_vid_out:4.0",
         "xci_name": "atelier4_v_axi4s_vid_out_0_0",
         "xci_path": "ip\\atelier4_v_axi4s_vid_out_0_0\\atelier4_v_axi4s_vid_out_0_0.xci",
-        "inst_hier_path": "v_axi4s_vid_out_0"
+        "inst_hier_path": "v_axi4s_vid_out_0",
+        "parameters": {
+          "C_S_AXIS_VIDEO_FORMAT": {
+            "value": "2"
+          }
+        }
       },
       "v_proc_ss_0": {
         "vlnv": "xilinx.com:ip:v_proc_ss:2.3",
@@ -2512,65 +2551,179 @@
           }
         }
       },
-      "InstructionDecoder_0": {
-        "vlnv": "xilinx.com:module_ref:InstructionDecoder:1.0",
-        "xci_name": "atelier4_InstructionDecoder_0_0",
-        "xci_path": "ip\\atelier4_InstructionDecoder_0_0\\atelier4_InstructionDecoder_0_0.xci",
-        "inst_hier_path": "InstructionDecoder_0",
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "atelier4_xlconstant_0_0",
+        "xci_path": "ip\\atelier4_xlconstant_0_0\\atelier4_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "OffsetManager_0": {
+        "vlnv": "xilinx.com:module_ref:OffsetManager:1.0",
+        "xci_name": "atelier4_OffsetManager_0_0",
+        "xci_path": "ip\\atelier4_OffsetManager_0_0\\atelier4_OffsetManager_0_0.xci",
+        "inst_hier_path": "OffsetManager_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "InstructionDecoder",
+          "ref_name": "OffsetManager",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "i_opcode": {
+          "i_readGlobalPosX": {
             "direction": "I",
-            "left": "3",
+            "left": "9",
             "right": "0"
           },
-          "i_instruction_data": {
+          "i_readGlobalPosY": {
             "direction": "I",
-            "left": "27",
+            "left": "9",
             "right": "0"
           },
-          "o_colorData": {
-            "direction": "O",
-            "left": "23",
+          "i_offsetPosX": {
+            "direction": "I",
+            "left": "9",
             "right": "0"
           },
-          "o_colorSel": {
-            "direction": "O",
-            "left": "3",
+          "i_offsetPosY": {
+            "direction": "I",
+            "left": "9",
             "right": "0"
           },
-          "o_colorWriteEN": {
-            "direction": "O"
+          "i_we": {
+            "direction": "I"
           },
-          "o_tileId": {
-            "direction": "O",
-            "left": "7",
-            "right": "0"
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "74250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
           },
-          "o_paletteId": {
-            "direction": "O",
-            "left": "3",
-            "right": "0"
+          "i_reset": {
+            "type": "rst",
+            "direction": "I"
           },
           "o_x": {
             "direction": "O",
             "left": "9",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value FALSE}}}} DATA_WIDTH 10}",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "o_y": {
             "direction": "O",
             "left": "9",
             "right": "0"
+          }
+        }
+      },
+      "TileBufferActor_0": {
+        "vlnv": "xilinx.com:module_ref:TileBufferActor:1.0",
+        "xci_name": "atelier4_TileBufferActor_0_0",
+        "xci_path": "ip\\atelier4_TileBufferActor_0_0\\atelier4_TileBufferActor_0_0.xci",
+        "inst_hier_path": "TileBufferActor_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TileBufferActor",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_readActorID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
           },
-          "o_bufferWriteEn": {
-            "direction": "O"
+          "i_readTileID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
           },
-          "o_bcgWriteEn": {
-            "direction": "O"
+          "i_readPosX": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_readPosY": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "o_readColorCode": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "i_writeActorID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "i_writeTileID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "i_writePosX": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_writePosY": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_writeColorCode": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_we": {
+            "direction": "I"
+          },
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "74250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_reset": {
+            "type": "rst",
+            "direction": "I"
           }
         }
       },
@@ -2656,11 +2809,114 @@
           }
         }
       },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "atelier4_xlconstant_0_0",
-        "xci_path": "ip\\atelier4_xlconstant_0_0\\atelier4_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0"
+      "InstructionDecoder_0": {
+        "vlnv": "xilinx.com:module_ref:InstructionDecoder:1.0",
+        "xci_name": "atelier4_InstructionDecoder_0_0",
+        "xci_path": "ip\\atelier4_InstructionDecoder_0_0\\atelier4_InstructionDecoder_0_0.xci",
+        "inst_hier_path": "InstructionDecoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "InstructionDecoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_opcode": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_instruction_data": {
+            "direction": "I",
+            "left": "27",
+            "right": "0"
+          },
+          "o_colorData": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "o_colorSel": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "o_colorWriteEN": {
+            "direction": "O"
+          },
+          "o_tileId": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "o_paletteId": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "o_x": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "o_y": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "o_bufferWriteEn": {
+            "direction": "O"
+          },
+          "o_offsetWriteEn": {
+            "direction": "O"
+          },
+          "o_bcgWriteEn": {
+            "direction": "O"
+          },
+          "o_actorId": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "o_actorTileId": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "o_actorBufferWriteEn": {
+            "direction": "O"
+          },
+          "o_actorCurrentTileWriteEn": {
+            "direction": "O"
+          }
+        }
+      },
+      "ZIndexController_0": {
+        "vlnv": "xilinx.com:module_ref:ZIndexController:1.0",
+        "xci_name": "atelier4_ZIndexController_0_0",
+        "xci_path": "ip\\atelier4_ZIndexController_0_0\\atelier4_ZIndexController_0_0.xci",
+        "inst_hier_path": "ZIndexController_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ZIndexController",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_actorColorValue": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_backgroundColorValue": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "o_readColorValue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
       },
       "BackgroundManager_0": {
         "vlnv": "xilinx.com:module_ref:BackgroundManager:1.0",
@@ -2676,7 +2932,13 @@
           "i_readGlobalPosX": {
             "direction": "I",
             "left": "9",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value FALSE}}}} DATA_WIDTH 10}",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "i_readGlobalPosY": {
             "direction": "I",
@@ -2743,13 +3005,97 @@
             }
           }
         }
+      },
+      "ActorManager_1": {
+        "vlnv": "xilinx.com:module_ref:ActorManager:1.0",
+        "xci_name": "atelier4_ActorManager_1_0",
+        "xci_path": "ip\\atelier4_ActorManager_1_0\\atelier4_ActorManager_1_0.xci",
+        "inst_hier_path": "ActorManager_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ActorManager",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "74250000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_write_ActorID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "i_write_TileID": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "i_write_PosX": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "i_write_PosY": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "i_write_enable": {
+            "direction": "I"
+          },
+          "i_read_GlobalPosX": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "i_read_GlobalPosY": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "o_read_TileID": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "o_read_PosPixelX": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "o_read_PosPixelY": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "o_read_ActorId": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
-      "axi_vdma_0_M_AXI_MM2S": {
+      "processing_system7_0_DDR": {
         "interface_ports": [
-          "axi_vdma_0/M_AXI_MM2S",
-          "smartconnect_1/S00_AXI"
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       },
       "v_proc_ss_0_m_axis": {
@@ -2758,64 +3104,10 @@
           "v_axi4s_vid_out_0/video_in"
         ]
       },
-      "smartconnect_0_M02_AXI": {
-        "interface_ports": [
-          "pixelDataToVideoStre_0/S00_AXI",
-          "smartconnect_0/M02_AXI"
-        ]
-      },
-      "axi_vdma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXI_S2MM",
-          "smartconnect_1/S01_AXI"
-        ]
-      },
-      "smartconnect_1_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_1/M00_AXI",
-          "processing_system7_0/S_AXI_HP0"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "pixelDataToVideoStre_0_M00_AXIS": {
-        "interface_ports": [
-          "pixelDataToVideoStre_0/M00_AXIS",
-          "axi_vdma_0/S_AXIS_S2MM"
-        ]
-      },
-      "smartconnect_0_M03_AXI": {
-        "interface_ports": [
-          "InstructionRegister_0/S00_AXI",
-          "smartconnect_0/M03_AXI"
-        ]
-      },
-      "smartconnect_0_M01_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "axi_vdma_0/S_AXI_LITE"
-        ]
-      },
-      "smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "v_proc_ss_0/s_axi_ctrl"
-        ]
-      },
       "v_axi4s_vid_out_0_vid_io_out": {
         "interface_ports": [
           "v_axi4s_vid_out_0/vid_io_out",
           "rgb2dvi_0/RGB"
-        ]
-      },
-      "rgb2dvi_0_TMDS": {
-        "interface_ports": [
-          "hdmi_out",
-          "rgb2dvi_0/TMDS"
         ]
       },
       "axi_vdma_0_M_AXIS_MM2S": {
@@ -2824,10 +3116,16 @@
           "v_proc_ss_0/s_axis"
         ]
       },
-      "v_tc_0_vtiming_out": {
+      "processing_system7_0_FIXED_IO": {
         "interface_ports": [
-          "v_tc_0/vtiming_out",
-          "v_axi4s_vid_out_0/vtiming_in"
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "axi_vdma_0_M_AXI_MM2S": {
+        "interface_ports": [
+          "axi_vdma_0/M_AXI_MM2S",
+          "smartconnect_1/S00_AXI"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -2836,10 +3134,58 @@
           "processing_system7_0/M_AXI_GP0"
         ]
       },
-      "processing_system7_0_DDR": {
+      "v_tc_0_vtiming_out": {
         "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
+          "v_tc_0/vtiming_out",
+          "v_axi4s_vid_out_0/vtiming_in"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "v_proc_ss_0/s_axi_ctrl"
+        ]
+      },
+      "smartconnect_0_M02_AXI": {
+        "interface_ports": [
+          "pixelDataToVideoStre_0/S00_AXI",
+          "smartconnect_0/M02_AXI"
+        ]
+      },
+      "rgb2dvi_0_TMDS": {
+        "interface_ports": [
+          "hdmi_out",
+          "rgb2dvi_0/TMDS"
+        ]
+      },
+      "pixelDataToVideoStre_0_M00_AXIS": {
+        "interface_ports": [
+          "pixelDataToVideoStre_0/M00_AXIS",
+          "axi_vdma_0/S_AXIS_S2MM"
+        ]
+      },
+      "axi_vdma_0_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_vdma_0/M_AXI_S2MM",
+          "smartconnect_1/S01_AXI"
+        ]
+      },
+      "smartconnect_0_M03_AXI": {
+        "interface_ports": [
+          "InstructionRegister_0/S00_AXI",
+          "smartconnect_0/M03_AXI"
+        ]
+      },
+      "smartconnect_1_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_1/M00_AXI",
+          "processing_system7_0/S_AXI_HP0"
+        ]
+      },
+      "smartconnect_0_M01_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M01_AXI",
+          "axi_vdma_0/S_AXI_LITE"
         ]
       }
     },
@@ -2926,14 +3272,19 @@
           "pixelDataToVideoStre_0/s00_axi_aclk",
           "InstructionRegister_0/s00_axi_aclk",
           "colorRegister_0/i_clk",
+          "OffsetManager_0/i_clk",
+          "TileBufferActor_0/i_clk",
           "TileBufferBackground_0/i_clk",
-          "BackgroundManager_0/i_clk"
+          "BackgroundManager_0/i_clk",
+          "ActorManager_1/i_clk"
         ]
       },
       "xlconstant_6_dout": {
         "ports": [
           "xlconstant_6/dout",
           "colorRegister_0/i_reset",
+          "OffsetManager_0/i_reset",
+          "TileBufferActor_0/i_reset",
           "TileBufferBackground_0/i_reset",
           "BackgroundManager_0/i_reset"
         ]
@@ -2987,12 +3338,6 @@
           "pixelDataToVideoStre_0/i_dataValid"
         ]
       },
-      "TileBufferBackground_0_o_readColorCode": {
-        "ports": [
-          "TileBufferBackground_0/o_readColorCode",
-          "colorRegister_0/i_readColorCode"
-        ]
-      },
       "BackgroundManager_0_o_readTileID": {
         "ports": [
           "BackgroundManager_0/o_readTileID",
@@ -3014,20 +3359,27 @@
       "InstructionDecoder_0_o_x": {
         "ports": [
           "InstructionDecoder_0/o_x",
+          "OffsetManager_0/i_offsetPosX",
+          "TileBufferActor_0/i_writePosX",
           "TileBufferBackground_0/i_writePosX",
-          "BackgroundManager_0/i_writeTilePosX"
+          "BackgroundManager_0/i_writeTilePosX",
+          "ActorManager_1/i_write_PosX"
         ]
       },
       "InstructionDecoder_0_o_y": {
         "ports": [
           "InstructionDecoder_0/o_y",
+          "OffsetManager_0/i_offsetPosY",
+          "TileBufferActor_0/i_writePosY",
           "TileBufferBackground_0/i_writePosY",
-          "BackgroundManager_0/i_writeTilePosY"
+          "BackgroundManager_0/i_writeTilePosY",
+          "ActorManager_1/i_write_PosY"
         ]
       },
       "InstructionDecoder_0_o_paletteId": {
         "ports": [
           "InstructionDecoder_0/o_paletteId",
+          "TileBufferActor_0/i_writeColorCode",
           "TileBufferBackground_0/i_writeColorCode"
         ]
       },
@@ -3053,22 +3405,102 @@
       "pixelDataToVideoStre_0_o_pixel_y": {
         "ports": [
           "pixelDataToVideoStre_0/o_pixel_y",
-          "BackgroundManager_0/i_readGlobalPosY"
+          "OffsetManager_0/i_readGlobalPosY",
+          "ActorManager_1/i_read_GlobalPosY"
         ]
       },
       "pixelDataToVideoStre_0_o_pixel_x": {
         "ports": [
           "pixelDataToVideoStre_0/o_pixel_x",
+          "OffsetManager_0/i_readGlobalPosX",
+          "ActorManager_1/i_read_GlobalPosX"
+        ]
+      },
+      "OffsetManager_0_o_x": {
+        "ports": [
+          "OffsetManager_0/o_x",
           "BackgroundManager_0/i_readGlobalPosX"
         ]
-      }
-    },
-    "comments": {
-      "/xlconstant_0": {
-        "comment_0": "A changer eventuellement..."
       },
-      "/xlconstant_6": {
-        "comment_1": "a changer eventuellement ....l"
+      "OffsetManager_0_o_y": {
+        "ports": [
+          "OffsetManager_0/o_y",
+          "BackgroundManager_0/i_readGlobalPosY"
+        ]
+      },
+      "InstructionDecoder_0_o_offsetWriteEn": {
+        "ports": [
+          "InstructionDecoder_0/o_offsetWriteEn",
+          "OffsetManager_0/i_we"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "InstructionDecoder_0/o_actorId",
+          "TileBufferActor_0/i_writeActorID",
+          "ActorManager_1/i_write_ActorID"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "InstructionDecoder_0/o_actorTileId",
+          "TileBufferActor_0/i_writeTileID",
+          "ActorManager_1/i_write_TileID"
+        ]
+      },
+      "InstructionDecoder_0_o_actorCurrentTileWriteEn": {
+        "ports": [
+          "InstructionDecoder_0/o_actorCurrentTileWriteEn",
+          "ActorManager_1/i_write_enable"
+        ]
+      },
+      "InstructionDecoder_0_o_actorBufferWriteEn": {
+        "ports": [
+          "InstructionDecoder_0/o_actorBufferWriteEn",
+          "TileBufferActor_0/i_we"
+        ]
+      },
+      "TileBufferBackground_0_o_readColorCode": {
+        "ports": [
+          "TileBufferBackground_0/o_readColorCode",
+          "ZIndexController_0/i_backgroundColorValue"
+        ]
+      },
+      "ZIndexController_0_o_readColorValue": {
+        "ports": [
+          "ZIndexController_0/o_readColorValue",
+          "colorRegister_0/i_readColorCode"
+        ]
+      },
+      "TileBufferActor_0_o_readColorCode": {
+        "ports": [
+          "TileBufferActor_0/o_readColorCode",
+          "ZIndexController_0/i_actorColorValue"
+        ]
+      },
+      "ActorManager_1_o_read_ActorId": {
+        "ports": [
+          "ActorManager_1/o_read_ActorId",
+          "TileBufferActor_0/i_readActorID"
+        ]
+      },
+      "ActorManager_1_o_read_TileID": {
+        "ports": [
+          "ActorManager_1/o_read_TileID",
+          "TileBufferActor_0/i_readTileID"
+        ]
+      },
+      "ActorManager_1_o_read_PosPixelX": {
+        "ports": [
+          "ActorManager_1/o_read_PosPixelX",
+          "TileBufferActor_0/i_readPosX"
+        ]
+      },
+      "ActorManager_1_o_read_PosPixelY": {
+        "ports": [
+          "ActorManager_1/o_read_PosPixelY",
+          "TileBufferActor_0/i_readPosY"
+        ]
       }
     },
     "addressing": {

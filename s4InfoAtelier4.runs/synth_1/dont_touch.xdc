@@ -54,16 +54,28 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xl
 # IP: bd/atelier4/ip/atelier4_colorRegister_0_0/atelier4_colorRegister_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_colorRegister_0_0 || ORIG_REF_NAME==atelier4_colorRegister_0_0} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_InstructionDecoder_0_0/atelier4_InstructionDecoder_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_InstructionDecoder_0_0 || ORIG_REF_NAME==atelier4_InstructionDecoder_0_0} -quiet] -quiet
+# IP: bd/atelier4/ip/atelier4_xlconstant_0_0/atelier4_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlconstant_0_0 || ORIG_REF_NAME==atelier4_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_OffsetManager_0_0/atelier4_OffsetManager_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_OffsetManager_0_0 || ORIG_REF_NAME==atelier4_OffsetManager_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_BackgroundManager_0_0/atelier4_BackgroundManager_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_BackgroundManager_0_0 || ORIG_REF_NAME==atelier4_BackgroundManager_0_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_TileBufferActor_0_0/atelier4_TileBufferActor_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_TileBufferActor_0_0 || ORIG_REF_NAME==atelier4_TileBufferActor_0_0} -quiet] -quiet
 
 # IP: bd/atelier4/ip/atelier4_TileBufferBackground_0_0/atelier4_TileBufferBackground_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_TileBufferBackground_0_0 || ORIG_REF_NAME==atelier4_TileBufferBackground_0_0} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_xlconstant_0_0/atelier4_xlconstant_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_xlconstant_0_0 || ORIG_REF_NAME==atelier4_xlconstant_0_0} -quiet] -quiet
+# IP: bd/atelier4/ip/atelier4_InstructionDecoder_0_0/atelier4_InstructionDecoder_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_InstructionDecoder_0_0 || ORIG_REF_NAME==atelier4_InstructionDecoder_0_0} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_BackgroundManager_0_0/atelier4_BackgroundManager_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_BackgroundManager_0_0 || ORIG_REF_NAME==atelier4_BackgroundManager_0_0} -quiet] -quiet
+# IP: bd/atelier4/ip/atelier4_ActorManager_1_0/atelier4_ActorManager_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_ActorManager_1_0 || ORIG_REF_NAME==atelier4_ActorManager_1_0} -quiet] -quiet
+
+# IP: bd/atelier4/ip/atelier4_ZIndexController_0_0/atelier4_ZIndexController_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_ZIndexController_0_0 || ORIG_REF_NAME==atelier4_ZIndexController_0_0} -quiet] -quiet
 
 # XDC: c:/Users/wpepi/projet/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc

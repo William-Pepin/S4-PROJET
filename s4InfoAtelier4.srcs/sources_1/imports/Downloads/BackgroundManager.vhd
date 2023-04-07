@@ -47,29 +47,34 @@ entity BackgroundManager is
 end BackgroundManager;
 
 architecture Behavioral of BackgroundManager is
-type t_tileMapping is array (0 to 7, 0 to 7) of std_logic_vector(7 downto 0);
+type t_tileMapping is array (0 to 4095) of std_logic_vector(5 downto 0);
 
 signal s_tileMapping : t_tileMapping;
+signal s_mappingReadID: std_logic_vector(11 downto 0);
+signal s_mappingWriteID: std_logic_vector(11 downto 0);
 
 begin 
 
-o_readTileID <= s_tileMapping(to_integer(unsigned(i_readGlobalPosX(9 downto 4))),
-                              to_integer(unsigned(i_readGlobalPosY(9 downto 4))));
-o_readPixelX <= i_readGlobalPosX(3 downto 0);
-o_readPixelY <= i_readGlobalPosY(3 downto 0);
+-- read
+process(i_readGlobalPosX, i_readGlobalPosY, s_tileMapping)
+begin
+    s_mappingReadID(11 downto 6) <= i_readGlobalPosX(9 downto 4);
+    s_mappingReadID(5 downto 0) <= i_readGlobalPosY(9 downto 4);
+    o_readTileID(5 downto 0) <= s_tileMapping(to_integer(unsigned(s_mappingReadID)));
+    o_readPixelX <= i_readGlobalPosX(3 downto 0);
+    o_readPixelY <= i_readGlobalPosY(3 downto 0);
+end process;
+
+
 
 --Process d'update des registres
-    process(i_clk, i_reset)      
+    process(i_clk)      
     begin     
-        if(rising_edge(i_clk)) then     
-            if(i_reset ='1') then         
-                 
-             elsif(i_we = '1') then  
-                s_tileMapping(to_integer(unsigned(i_writeTilePosX(9 downto 4))),
-                              to_integer(unsigned(i_writeTilePosY(9 downto 4)))) 
-                              <=i_writeTileID;
-             end if;     
-         end if;     
+        if(rising_edge(i_clk) and i_we = '1') then
+            s_mappingWriteID(11 downto 6) <= i_writeTilePosX(9 downto 4);
+            s_mappingWriteID(5 downto 0) <= i_writeTilePosY(9 downto 4);
+            s_tileMapping(to_integer(unsigned(s_mappingWriteID)))<=i_writeTileID;
+        end if;
     end process;    
 
 end Behavioral;

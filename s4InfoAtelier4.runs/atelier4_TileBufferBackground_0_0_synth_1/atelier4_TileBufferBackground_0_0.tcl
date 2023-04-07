@@ -98,7 +98,10 @@ set_property ip_output_repo c:/Users/wpepi/projet/s4InfoAtelier4.cache/ip [curre
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferBackground.vhd
+read_vhdl -library xil_defaultlib {
+  C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/tile.vhd
+  C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/imports/Downloads/TileBufferBackgroundV2.vhd
+}
 read_ip -quiet C:/Users/wpepi/projet/s4InfoAtelier4.srcs/sources_1/bd/atelier4/ip/atelier4_TileBufferBackground_0_0/atelier4_TileBufferBackground_0_0.xci
 
 OPTRACE "Adding files" END { }

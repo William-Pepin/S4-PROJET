@@ -1,6 +1,6 @@
 Nothing to build in platform 'atelier4_wrapper'
 
-15:22:41 **** Incremental Build of configuration Debug for project project ****
+15:07:59 **** Incremental Build of configuration Debug for project project ****
 make all 
 C:/Xilinx/Vitis/2020.2/gnuwin/bin/make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -9,6 +9,15 @@ C:/Xilinx/Vitis/2020.2/gnuwin/bin/make --no-print-directory main-build
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/wpepi/projet/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:43:8: warning: implicit declaration of function 'setPaletteIdForTileId2'; did you mean 'setPaletteIdForTileId'? [-Wimplicit-function-declaration]
+   43 |        setPaletteIdForTileId2(0, 0, x, y);
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+      |        setPaletteIdForTileId
+../src/main.c:67:10: warning: implicit declaration of function 'setPaletteIdForTileIdActor'; did you mean 'setPaletteIdForTileIdbActor'? [-Wimplicit-function-declaration]
+   67 |          setPaletteIdForTileIdActor(0x10,x,x,y);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          setPaletteIdForTileIdbActor
 'Finished building: ../src/main.c'
 ' '
 'Building target: project.elf'
@@ -19,6 +28,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size project.elf  |tee "project.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 173772	   1472	 160848	 336092	  520dc	project.elf
+ 175372	   1472	 160848	 337692	  5271c	project.elf
 'Finished building: project.elf.size'
 ' '

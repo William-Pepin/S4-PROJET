@@ -1,106 +1,205 @@
 {
-   "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.676619",
-   "Default View_TopLeft":"0,502",
+   "ActiveEmotionalView":"Color Coded",
+   "Addressing View_Layers":"/reset_0_1:false|/processing_system7_0_FCLK_RESET0_N:false|/clk_wiz_0_clk_out1:false|/proc_sys_reset_0_peripheral_aresetn:false|/Net:false|/clk_in1_0_1:false|",
+   "Addressing View_ScaleFactor":"0.523136",
+   "Addressing View_TopLeft":"0,-239",
+   "Color Coded_ExpandedHierarchyInLayout":"",
+   "Color Coded_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port hdmi_out -pg 1 -lvl 13 -x 4720 -y 1250 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 13 -x 4720 -y 960 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 13 -x 4720 -y 980 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x -30 -y 1160 -defaultsOSRD
+preplace port sys_clk -pg 1 -lvl 0 -x -30 -y 1180 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 9 -x 3590 -y 830 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 420 -y 1170 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 7 -x 2760 -y 1260 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 2290 -y 830 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 12 -x 4600 -y 1250 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 7 -x 2760 -y 950 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 5 -x 1880 -y 820 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 11 -x 4330 -y 1300 -defaultsOSRD
+preplace inst v_proc_ss_0 -pg 1 -lvl 10 -x 3980 -y 1090 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 10 -x 3980 -y 1270 -defaultsOSRD
+preplace inst pixelDataToVideoStre_0 -pg 1 -lvl 8 -x 3190 -y 900 -defaultsOSRD
+preplace inst InstructionRegister_0 -pg 1 -lvl 8 -x 3190 -y 1140 -defaultsOSRD
+preplace inst xlconstant_6 -pg 1 -lvl 2 -x 420 -y 640 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 100 -y 360 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 100 -y 460 -defaultsOSRD
+preplace inst colorRegister_0 -pg 1 -lvl 7 -x 2760 -y 500 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 7 -x 2760 -y 1100 -defaultsOSRD
+preplace inst OffsetManager_0 -pg 1 -lvl 3 -x 890 -y 580 -defaultsOSRD
+preplace inst TileBufferActor_0 -pg 1 -lvl 5 -x 1880 -y 190 -defaultsOSRD
+preplace inst TileBufferBackground_0 -pg 1 -lvl 5 -x 1880 -y 530 -defaultsOSRD
+preplace inst InstructionDecoder_0 -pg 1 -lvl 2 -x 420 -y 370 -defaultsOSRD
+preplace inst ZIndexController_0 -pg 1 -lvl 6 -x 2290 -y 440 -defaultsOSRD
+preplace inst BackgroundManager_0 -pg 1 -lvl 4 -x 1370 -y 600 -defaultsOSRD
+preplace inst ActorManager_1 -pg 1 -lvl 4 -x 1370 -y 230 -defaultsOSRD
+preplace netloc v_axi4s_vid_out_0_sof_state_out 1 9 3 3810 1440 NJ 1440 4470
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 9 3 3800 1450 NJ 1450 4480
+preplace netloc reset_0_1 1 0 7 NJ 1160 200 1100 NJ 1100 NJ 1100 NJ 1100 NJ 1100 2550
+preplace netloc clk_in1_0_1 1 0 2 NJ 1180 NJ
+preplace netloc clk_wiz_0_locked 1 2 9 N 1180 NJ 1180 NJ 1180 NJ 1180 2520 1360 NJ 1360 NJ 1360 3790 1380 4170
+preplace netloc Net 1 4 3 1680 720 2060 720 2550
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 4 3 1700 950 NJ 950 2520
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 7 5 3010 1030 3410 1030 3780 1370 4150 1170 4490J
+preplace netloc clk_wiz_0_clk_out1 1 2 10 680 710 1100 420 1660 690 NJ 690 2560 770 2980 770 3400 990 3770 1390 4160 1430 4490J
+preplace netloc xlconstant_6_dout 1 2 5 630 700 1130 470 1700 680 NJ 680 2540
+preplace netloc InstructionDecoder_0_o_colorData 1 2 5 640J -10 NJ -10 NJ -10 NJ -10 2560
+preplace netloc InstructionDecoder_0_o_colorWriteEN 1 2 5 660J 10 NJ 10 NJ 10 NJ 10 2520
+preplace netloc InstructionDecoder_0_o_colorSel 1 2 5 650J 0 NJ 0 NJ 0 NJ 0 2540
+preplace netloc xlslice_0_Dout 1 1 1 NJ 360
+preplace netloc InstructionRegister_0_o_Instruction 1 0 9 -10 560 NJ 560 630J 410 NJ 410 1650J 370 NJ 370 NJ 370 NJ 370 3340
+preplace netloc xlslice_1_Dout 1 1 1 200J 380n
+preplace netloc colorRegister_0_o_readColorValue 1 7 1 3010 500n
+preplace netloc xlconstant_0_dout 1 7 1 2990J 890n
+preplace netloc BackgroundManager_0_o_readTileID 1 4 1 1560 440n
+preplace netloc BackgroundManager_0_o_readPixelX 1 4 1 1650 460n
+preplace netloc BackgroundManager_0_o_readPixelY 1 4 1 1690 480n
+preplace netloc InstructionDecoder_0_o_x 1 2 3 660 370 1110 80 1580
+preplace netloc InstructionDecoder_0_o_y 1 2 3 640 380 1120 90 1620
+preplace netloc InstructionDecoder_0_o_paletteId 1 2 3 670J 60 NJ 60 1640
+preplace netloc InstructionDecoder_0_o_tileId 1 2 3 710J 350 1080 460 1600J
+preplace netloc InstructionDecoder_0_o_bufferWriteEn 1 2 3 630J 400 NJ 400 1590
+preplace netloc InstructionDecoder_0_o_bcgWriteEn 1 2 2 NJ 420 1050
+preplace netloc pixelDataToVideoStre_0_o_pixel_y 1 2 7 700 360 1040 20 NJ 20 NJ 20 NJ 20 NJ 20 3350
+preplace netloc pixelDataToVideoStre_0_o_pixel_x 1 2 7 710 390 1090 360 NJ 360 NJ 360 NJ 360 NJ 360 3330
+preplace netloc OffsetManager_0_o_x 1 3 1 1070 530n
+preplace netloc OffsetManager_0_o_y 1 3 1 1060 550n
+preplace netloc InstructionDecoder_0_o_offsetWriteEn 1 2 1 620 400n
+preplace netloc Net1 1 2 3 650J 330 1060 100 1560J
+preplace netloc Net2 1 2 3 670J 340 1050 70 1660J
+preplace netloc InstructionDecoder_0_o_actorCurrentTileWriteEn 1 2 2 690J 460 1070
+preplace netloc InstructionDecoder_0_o_actorBufferWriteEn 1 2 3 680J 450 NJ 450 1630
+preplace netloc TileBufferBackground_0_o_readColorCode 1 5 1 2060 450n
+preplace netloc ZIndexController_0_o_readColorValue 1 6 1 2550 440n
+preplace netloc TileBufferActor_0_o_readColorCode 1 5 1 2060 190n
+preplace netloc ActorManager_1_o_read_ActorId 1 4 1 1590 80n
+preplace netloc ActorManager_1_o_read_TileID 1 4 1 1570 100n
+preplace netloc ActorManager_1_o_read_PosPixelX 1 4 1 1600 120n
+preplace netloc ActorManager_1_o_read_PosPixelY 1 4 1 1610 140n
+preplace netloc pixelDataToVideoStre_0_M00_AXIS 1 8 1 3380 780n
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 4 6 1670 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 3760
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 11 1 N 1230
+preplace netloc v_tc_0_vtiming_out 1 10 1 N 1260
+preplace netloc smartconnect_0_M03_AXI 1 7 1 2950 980n
+preplace netloc processing_system7_0_FIXED_IO 1 6 7 NJ 800 3000J 1020 3420J 980 NJ 980 NJ 980 NJ 980 NJ
+preplace netloc smartconnect_1_M00_AXI 1 5 1 N 820
+preplace netloc processing_system7_0_M_AXI_GP0 1 6 1 2530 840n
+preplace netloc smartconnect_0_M00_AXI 1 7 3 2960 1050 NJ 1050 NJ
+preplace netloc smartconnect_0_M01_AXI 1 7 2 2970 1010 3360J
+preplace netloc smartconnect_0_M02_AXI 1 7 1 2950 850n
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 9 1 3810 810n
+preplace netloc v_proc_ss_0_m_axis 1 10 1 4170 1080n
+preplace netloc rgb2dvi_0_TMDS 1 12 1 NJ 1250
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 4 6 1690 940 NJ 940 2540J 780 NJ 780 3370J 960 3770
+preplace netloc processing_system7_0_DDR 1 6 7 2520J 790 NJ 790 3390J 970 3780J 960 NJ 960 NJ 960 NJ
+levelinfo -pg 1 -30 100 420 890 1370 1880 2290 2760 3190 3590 3980 4330 4600 4720
+pagesize -pg 1 -db -bbox -sgen -130 -20 4840 1460
+",
+   "Color Coded_ScaleFactor":"0.947323",
+   "Color Coded_TopLeft":"896,-8",
+   "Default View_Layers":"/reset_0_1:true|/processing_system7_0_FCLK_RESET0_N:true|/clk_wiz_0_clk_out1:true|/proc_sys_reset_0_peripheral_aresetn:true|/Net:true|/clk_in1_0_1:true|",
+   "Default View_ScaleFactor":"0.28838",
+   "Default View_TopLeft":"-101,-232",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
    "ExpandedHierarchyInLayout":"",
-   "comment_0":"A changer eventuellement...",
-   "comment_1":"a changer eventuellement ....l",
-   "commentid":"comment_0|comment_1|",
-   "fillcolor_comment_0":"",
-   "fillcolor_comment_1":"",
-   "font_comment_0":"12",
-   "font_comment_1":"12",
+   "Grouping and No Loops_ScaleFactor":"0.314043",
+   "Grouping and No Loops_TopLeft":"439,-427",
+   "Interfaces View_Layers":"/reset_0_1:false|/processing_system7_0_FCLK_RESET0_N:false|/clk_wiz_0_clk_out1:false|/proc_sys_reset_0_peripheral_aresetn:false|/Net:false|/clk_in1_0_1:false|",
+   "Interfaces View_ScaleFactor":"0.758806",
+   "Interfaces View_TopLeft":"281,-165",
+   "No Loops_ScaleFactor":"0.289748",
+   "No Loops_TopLeft":"-100,-286",
+   "Reduced Jogs_Layers":"/reset_0_1:true|/processing_system7_0_FCLK_RESET0_N:true|/clk_wiz_0_clk_out1:true|/proc_sys_reset_0_peripheral_aresetn:true|/Net:true|/clk_in1_0_1:true|",
+   "Reduced Jogs_ScaleFactor":"0.271696",
+   "Reduced Jogs_TopLeft":"-99,-298",
+   "commentid":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port hdmi_out -pg 1 -lvl 11 -x 3740 -y 810 -defaultsOSRD
-preplace port DDR -pg 1 -lvl 11 -x 3740 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 11 -x 3740 -y 80 -defaultsOSRD
-preplace port reset_rtl -pg 1 -lvl 0 -x -10 -y 1120 -defaultsOSRD
-preplace port sys_clk -pg 1 -lvl 0 -x -10 -y 1140 -defaultsOSRD
-preplace inst axi_vdma_0 -pg 1 -lvl 7 -x 2590 -y 450 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 430 -y 1130 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 5 -x 1850 -y 1110 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1350 -y 110 -defaultsOSRD
-preplace inst rgb2dvi_0 -pg 1 -lvl 10 -x 3610 -y 810 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 5 -x 1850 -y 180 -defaultsOSRD
-preplace inst smartconnect_1 -pg 1 -lvl 3 -x 890 -y 470 -defaultsOSRD
-preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 9 -x 3350 -y 860 -defaultsOSRD
-preplace inst v_proc_ss_0 -pg 1 -lvl 8 -x 3000 -y 650 -defaultsOSRD
-preplace inst v_tc_0 -pg 1 -lvl 8 -x 3000 -y 830 -defaultsOSRD
-preplace inst pixelDataToVideoStre_0 -pg 1 -lvl 6 -x 2240 -y 450 -defaultsOSRD
-preplace inst InstructionRegister_0 -pg 1 -lvl 6 -x 2240 -y 170 -defaultsOSRD
-preplace inst xlconstant_6 -pg 1 -lvl 2 -x 430 -y 790 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 1 -x 120 -y 320 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 1 -x 120 -y 420 -defaultsOSRD
-preplace inst colorRegister_0 -pg 1 -lvl 5 -x 1850 -y 360 -defaultsOSRD
-preplace inst InstructionDecoder_0 -pg 1 -lvl 2 -x 430 -y 410 -defaultsOSRD
-preplace inst TileBufferBackground_0 -pg 1 -lvl 4 -x 1350 -y 810 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1850 -y 510 -defaultsOSRD
-preplace inst BackgroundManager_0 -pg 1 -lvl 3 -x 890 -y 740 -defaultsOSRD
-preplace netloc v_axi4s_vid_out_0_sof_state_out 1 7 3 2800 950 3180J 720 3500
-preplace netloc v_axi4s_vid_out_0_vtg_ce 1 7 3 2790 940 3190J 730 3490
-preplace netloc reset_0_1 1 0 5 NJ 1120 220 1060 NJ 1060 NJ 1060 1600
-preplace netloc clk_in1_0_1 1 0 2 NJ 1140 NJ
-preplace netloc clk_wiz_0_locked 1 2 7 NJ 1140 NJ 1140 1640 960 NJ 960 NJ 960 2780 960 3210
-preplace netloc Net 1 2 3 680 230 1070 230 1590
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 3 690 240 NJ 240 1580
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 5 5 2090 560 2410 590 2760 930 3170 710 3510J
-preplace netloc clk_wiz_0_clk_out1 1 2 8 670 910 1120 960 1630 90 2050 340 2400 650 2770 970 3200 990 3510J
-preplace netloc xlconstant_6_dout 1 2 3 640 900 1100 410 N
-preplace netloc InstructionDecoder_0_o_colorData 1 2 3 N 330 NJ 330 NJ
-preplace netloc InstructionDecoder_0_o_colorWriteEN 1 2 3 630 350 NJ 350 NJ
-preplace netloc InstructionDecoder_0_o_colorSel 1 2 3 610 340 NJ 340 1590J
-preplace netloc xlslice_0_Dout 1 1 1 220J 320n
-preplace netloc InstructionRegister_0_o_Instruction 1 0 7 10 250 NJ 250 NJ 250 NJ 250 1610J 70 NJ 70 2410
-preplace netloc xlslice_1_Dout 1 1 1 NJ 420
-preplace netloc colorRegister_0_o_readColorValue 1 5 1 2040 360n
-preplace netloc xlconstant_0_dout 1 5 1 2100J 440n
-preplace netloc TileBufferBackground_0_o_readColorCode 1 4 1 1610 310n
-preplace netloc BackgroundManager_0_o_readTileID 1 3 1 N 720
-preplace netloc BackgroundManager_0_o_readPixelX 1 3 1 N 740
-preplace netloc BackgroundManager_0_o_readPixelY 1 3 1 N 760
-preplace netloc InstructionDecoder_0_o_x 1 2 2 630J 880 1090
-preplace netloc InstructionDecoder_0_o_y 1 2 2 610J 890 1110
-preplace netloc InstructionDecoder_0_o_paletteId 1 2 2 650J 370 1070
-preplace netloc InstructionDecoder_0_o_tileId 1 2 2 660J 870 1060
-preplace netloc InstructionDecoder_0_o_bufferWriteEn 1 2 2 640J 360 1080
-preplace netloc InstructionDecoder_0_o_bcgWriteEn 1 2 1 620 490n
-preplace netloc pixelDataToVideoStre_0_o_pixel_y 1 2 5 700 600 NJ 600 NJ 600 NJ 600 2380
-preplace netloc pixelDataToVideoStre_0_o_pixel_x 1 2 5 690 590 NJ 590 NJ 590 NJ 590 2390
-preplace netloc v_proc_ss_0_m_axis 1 8 1 3210 640n
-preplace netloc smartconnect_0_M02_AXI 1 5 1 2080 190n
-preplace netloc pixelDataToVideoStre_0_M00_AXIS 1 6 1 N 400
-preplace netloc axi_vdma_0_M_AXI_S2MM 1 2 6 700 580 NJ 580 NJ 580 NJ 580 NJ 580 2760
-preplace netloc smartconnect_1_M00_AXI 1 3 1 1060 100n
-preplace netloc processing_system7_0_FIXED_IO 1 4 7 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ
-preplace netloc v_axi4s_vid_out_0_vid_io_out 1 9 1 N 790
-preplace netloc smartconnect_0_M00_AXI 1 5 3 2060 90 NJ 90 2800J
-preplace netloc smartconnect_0_M03_AXI 1 5 1 2070 150n
-preplace netloc smartconnect_0_M01_AXI 1 5 2 2040J 250 2410
-preplace netloc rgb2dvi_0_TMDS 1 10 1 NJ 810
-preplace netloc axi_vdma_0_M_AXIS_MM2S 1 7 1 2770 430n
-preplace netloc v_tc_0_vtiming_out 1 8 1 N 820
-preplace netloc processing_system7_0_M_AXI_GP0 1 4 1 1620 120n
-preplace netloc processing_system7_0_DDR 1 4 7 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ
-preplace netloc axi_vdma_0_M_AXI_MM2S 1 2 6 670 220 NJ 220 1600J 50 NJ 50 NJ 50 2760
-preplace cgraphic comment_1 place left -484 -103 textcolor 4 linecolor 3 linewidth 2
-preplace cgraphic comment_0 place left -230 -7 textcolor 4 linecolor 3 linewidth 2
-levelinfo -pg 1 -10 120 430 890 1350 1850 2240 2590 3000 3350 3610 3740
-pagesize -pg 1 -db -bbox -sgen -110 0 3860 1330
-",
-   "linecolor_comment_0":"",
-   "linecolor_comment_1":"",
-   "linktoobj_comment_0":"/xlconstant_0",
-   "linktoobj_comment_1":"/xlconstant_6",
-   "linktotype_comment_0":"bd_cell",
-   "linktotype_comment_1":"bd_cell",
-   "textcolor_comment_0":"",
-   "textcolor_comment_1":""
+preplace port hdmi_out -pg 1 -lvl 12 -x 4020 -y 1050 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 12 -x 4020 -y 550 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 12 -x 4020 -y 570 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x 0 -y 840 -defaultsOSRD
+preplace port sys_clk -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 8 -x 2920 -y 700 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 400 -y 850 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 6 -x 2210 -y 940 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1730 -y 600 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 11 -x 3900 -y 1050 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 6 -x 2210 -y 660 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 4 -x 1280 -y 730 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 10 -x 3640 -y 1100 -defaultsOSRD
+preplace inst v_proc_ss_0 -pg 1 -lvl 9 -x 3300 -y 890 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 9 -x 3300 -y 1070 -defaultsOSRD
+preplace inst pixelDataToVideoStre_0 -pg 1 -lvl 7 -x 2590 -y 440 -defaultsOSRD
+preplace inst InstructionRegister_0 -pg 1 -lvl 7 -x 2590 -y 720 -defaultsOSRD
+preplace inst xlconstant_6 -pg 1 -lvl 2 -x 400 -y 570 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 120 -y 370 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 120 -y 470 -defaultsOSRD
+preplace inst colorRegister_0 -pg 1 -lvl 6 -x 2210 -y 440 -defaultsOSRD
+preplace inst TileBufferBackground_0 -pg 1 -lvl 5 -x 1730 -y 180 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -x 2210 -y 290 -defaultsOSRD
+preplace inst BackgroundManager_0 -pg 1 -lvl 4 -x 1280 -y 140 -defaultsOSRD
+preplace inst InstructionDecoder_0 -pg 1 -lvl 2 -x 400 -y 380 -defaultsOSRD
+preplace inst OffsetManager_0 -pg 1 -lvl 3 -x 840 -y 500 -defaultsOSRD
+preplace netloc v_axi4s_vid_out_0_sof_state_out 1 8 3 3130 1230 NJ 1230 3780
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 8 3 3120 1170 3470J 970 3780
+preplace netloc reset_0_1 1 0 6 NJ 840 220 920 NJ 920 NJ 920 NJ 920 NJ
+preplace netloc clk_in1_0_1 1 0 2 NJ 860 NJ
+preplace netloc clk_wiz_0_locked 1 2 8 NJ 860 NJ 860 NJ 860 1960 1040 NJ 1040 NJ 1040 3090 1190 3490
+preplace netloc Net 1 3 3 1080 610 1490 710 1970
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 3 1090 620 1470J 720 1960
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 6 5 2430 820 2750 930 3100 1200 3500 1240 3790J
+preplace netloc clk_wiz_0_clk_out1 1 2 9 690 620 1070 310 1490 380 1980 750 2450 810 2740 890 3110 1180 3480 1250 3800J
+preplace netloc xlconstant_6_dout 1 2 4 670 380 1050 320 1500 490 NJ
+preplace netloc InstructionDecoder_0_o_colorData 1 2 4 630J 330 NJ 330 NJ 330 2010
+preplace netloc InstructionDecoder_0_o_colorWriteEN 1 2 4 610J 350 NJ 350 NJ 350 1990
+preplace netloc InstructionDecoder_0_o_colorSel 1 2 4 590J 340 NJ 340 NJ 340 2000
+preplace netloc xlslice_0_Dout 1 1 1 NJ 370
+preplace netloc InstructionRegister_0_o_Instruction 1 0 8 20 630 NJ 630 NJ 630 NJ 630 1460J 730 1960J 760 2400J 800 2730
+preplace netloc xlslice_1_Dout 1 1 1 220J 390n
+preplace netloc colorRegister_0_o_readColorValue 1 6 1 2410 410n
+preplace netloc xlconstant_0_dout 1 6 1 2450J 290n
+preplace netloc TileBufferBackground_0_o_readColorCode 1 5 1 2020 180n
+preplace netloc BackgroundManager_0_o_readTileID 1 4 1 1450 90n
+preplace netloc BackgroundManager_0_o_readPixelX 1 4 1 1460 110n
+preplace netloc BackgroundManager_0_o_readPixelY 1 4 1 1470 130n
+preplace netloc InstructionDecoder_0_o_x 1 2 3 650 280 1040 280 1450J
+preplace netloc InstructionDecoder_0_o_y 1 2 3 660 290 1060 290 1460J
+preplace netloc InstructionDecoder_0_o_paletteId 1 2 3 620 320 1040J 300 1480J
+preplace netloc InstructionDecoder_0_o_tileId 1 2 3 580 270 990 10 1490
+preplace netloc InstructionDecoder_0_o_bufferWriteEn 1 2 3 600J 300 1030J 270 1470
+preplace netloc InstructionDecoder_0_o_bcgWriteEn 1 2 2 640J 310 1010
+preplace netloc pixelDataToVideoStre_0_o_pixel_y 1 2 6 690 370 NJ 370 NJ 370 1980J 230 NJ 230 2730
+preplace netloc pixelDataToVideoStre_0_o_pixel_x 1 2 6 680 360 NJ 360 NJ 360 1970J 220 NJ 220 2740
+preplace netloc OffsetManager_0_o_x 1 3 1 1000 70n
+preplace netloc OffsetManager_0_o_y 1 3 1 1020 90n
+preplace netloc InstructionDecoder_0_o_offsetWriteEn 1 2 1 590 450n
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 8 1 3130 680n
+preplace netloc pixelDataToVideoStre_0_M00_AXIS 1 7 1 2750 390n
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 10 1 N 1030
+preplace netloc smartconnect_0_M03_AXI 1 6 1 2420 690n
+preplace netloc v_tc_0_vtiming_out 1 9 1 N 1060
+preplace netloc smartconnect_0_M00_AXI 1 6 3 2410 850 NJ 850 NJ
+preplace netloc smartconnect_0_M01_AXI 1 6 2 2440J 640 2740
+preplace netloc v_proc_ss_0_m_axis 1 9 1 3500 880n
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 3 6 1100 830 NJ 830 NJ 830 NJ 830 NJ 830 3110
+preplace netloc processing_system7_0_FIXED_IO 1 5 7 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ
+preplace netloc processing_system7_0_DDR 1 5 7 NJ 550 NJ 550 NJ 550 NJ 550 NJ 550 NJ 550 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 5 1 2000 610n
+preplace netloc rgb2dvi_0_TMDS 1 11 1 NJ 1050
+preplace netloc smartconnect_0_M02_AXI 1 6 1 2420 390n
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 3 6 1110 840 NJ 840 NJ 840 NJ 840 NJ 840 3090
+preplace netloc smartconnect_1_M00_AXI 1 4 1 1450 590n
+preplace cgraphic comment_1 place bot -205 149 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_0 place top -38 -145 textcolor 4 linecolor 3 linewidth 2
+levelinfo -pg 1 0 120 400 840 1280 1730 2210 2590 2920 3300 3640 3900 4020
+pagesize -pg 1 -db -bbox -sgen -100 0 4140 1260
+"
 }
 {
-   """da_ps7_cnt""":"1"
-}
-{
-   "/xlconstant_0/comment_0":"comment_0",
-   "/xlconstant_6/comment_1":"comment_1"
+   """"""""""da_ps7_cnt"""""""""":"1"
 }
